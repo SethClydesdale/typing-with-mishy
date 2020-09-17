@@ -1,0 +1,206 @@
+﻿<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+  <head>
+    <meta charset="UTF-8">
+    <title>Typing with Mishy</title>
+    <meta name="title" content="Typing with Mishy">
+    <meta name="twitter:title" content="Typing with Mishy">
+    <meta property="og:title" content="Typing with Mishy">
+    <meta name="description" content="Typing with Mishy is a free typing practice game. Let's practice typing! Mee hee hee!">
+    <meta property="og:description" content="Typing with Mishy is a free typing practice game. Let's practice typing! Mee hee hee!">
+    <link rel="shortcut icon" type="image/x-icon" href="../../resources/images/mishy.ico">
+
+    <meta name="keywords" content="typing game, typing practice software, fan game, free game" lang="en">
+    <meta name="language" content="en">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta property="og:site_name" content="sethclydesdale.github.io">
+    <meta property="og:url" content="https://sethclydesdale.github.io/typing-with-mishy/lang/en/">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://sethclydesdale.github.io/typing-with-mishy/resources/images/mishy-thumb.png">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:creator" content="@SethC1995">
+
+    <link rel="stylesheet" href="../../resources/css/stylesheet.min.css">
+    <script src="../../resources/javascript/head.min.js"></script>
+  </head>
+
+  <body class="main-menu">
+    <!-- LOGO -->
+    <img id="logo" src="../../resources/images/logo/en.png" alt="Typing with Mishy">
+    
+    <!-- CLEAR BONUS ART -->
+    <div id="clear-bonus-art">
+      <div id="bonus-art-top">
+        <img style="display:none;" data-clear-flag="0" id="bonus-art-easy" src="../../resources/images/game/mishy-sticker/009.png">
+        <img style="display:none;" data-clear-flag="3" id="bonus-art-nightmare" src="../../resources/images/game/mishy-sticker/103.png">
+        <img style="display:none;" data-clear-flag="4" id="bonus-art-infinity" src="../../resources/images/game/kiseki/tita-01.png">
+      </div>
+      <img style="display:none;" data-clear-flag="1" id="bonus-art-normal" src="../../resources/images/game/mishy-sticker/255-clean.png">
+      <img style="display:none;" data-clear-flag="2" id="bonus-art-hard" src="../../resources/images/game/mishy-sticker/020.png">
+    </div>
+    <div id="background-extras"></div>
+    
+    <!-- MAIN MENU -->
+    <div id="menu-main" class="menu no-footer">
+      <div id="main-title" class="menu-title">Main Menu</div>
+      <div id="main-title-paused" class="menu-title">Paused</div>
+      
+      <div class="menu-content">
+        <button id="main-menu-start" class="button menu-opt" onclick="Mishy.showMenu('mode', this);">Play</button>
+        <button id="main-menu-resume" class="button menu-opt" onclick="Mishy.resume();">Resume</button>
+        <button class="button menu-opt" onclick="Mishy.showMenu('option', this);">Option</button>
+        <button class="button menu-opt" onclick="Mishy.showMenu('about', this);">About</button>
+        <button class="button menu-opt" onclick="Mishy.showMenu('credits', this);">Credits</button>
+        <button id="main-menu-quit" class="button menu-opt opt-danger" onclick="Mishy.quitGame();">Quit</button>
+      </div>
+    </div>
+    
+    <!-- MODE SELECT -->
+    <div id="menu-mode" class="menu" style="display:none;">
+      <div class="menu-title">Play</div>
+      
+      <div class="menu-content">
+        <button class="button menu-opt mishy-mode-opt" onclick="Mishy.startGame('easy');">Easy</button>
+        <div class="content-title">Coming Soon</div>
+        <button class="button menu-opt mishy-mode-opt" onclick="Mishy.startGame('normal');" disabled>Normal</button>
+        <button class="button menu-opt mishy-mode-opt" onclick="Mishy.startGame('hard');" disabled>Hard</button>
+        <button class="button menu-opt mishy-mode-opt" onclick="Mishy.startGame('nightmare');" disabled>Nightmare</button>
+        <button class="button menu-opt mishy-mode-opt" onclick="Mishy.startGame('infinity');" disabled>Infinity</button>
+      </div>
+      
+      <div class="menu-footer">
+        <button class="button menu-opt" onclick="Mishy.showMenu('main', this);">Back</button>
+      </div>
+    </div>
+    
+    <!-- OPTION -->
+    <div id="menu-option" class="menu" style="display:none;">
+      <div class="menu-title">Option</div>
+      
+      <div class="menu-content">
+        
+        <!--<div class="content-title">Audio</div>
+        <ul class="menu-list">
+          <li><span class="label">BGM</span><button id="toggle-music" class="button" onclick="Mishy.toggle.music();">ON</button></li>
+          <li><span class="label">SE</span><button id="toggle-sfx" class="button" onclick="Mishy.toggle.sfx();">ON</button></li>
+        </ul>-->
+        
+        <div class="content-title">Display</div>
+        <ul class="menu-list">
+          <li><span class="label">CSS Animations</span><button id="toggle-cssanime" class="button" onclick="Mishy.toggle.cssAnime();">ON</button></li>
+        </ul>
+        
+        <div class="content-title">Language</div>
+        <div class="no-in-game-change">
+          <button class="button menu-opt" disabled>English</button>
+          <button class="button menu-opt" onclick="Mishy.changeLang(this);"><a href="../../"></a>Japanese</button>
+        </div>
+      </div>
+      
+      <div class="menu-footer">
+        <button class="button menu-opt" onclick="Mishy.showMenu('main', this);">Back</button>
+      </div>
+    </div>
+    
+    <!-- ABOUT -->
+    <div id="menu-about" class="menu" style="display:none;">
+      <div class="menu-title">About</div>
+      
+      <div class="menu-content">
+        <div class="content-title">About the Game</div>
+        <p>"Typing with Mishy" is a typing practice fan game starring Nihon Falcom's mascot, Mishy, where you practice your typing with...you guessed it, Mishy! I hope you have fun, and remember... ENJOY☆MISHY! Mee hee hee</p>
+        <p>Typing with Mishy is also open source, so <a href="https://github.com/SethClydesdale/typing-with-mishy">you can view the code on GitHub</a> and learn to program with Mishy, too!</p>
+        
+        <div class="content-title">About the Developer</div>
+        <p>Nice to meet you, I'm Seth Clydesdale. I'm a self-taught web developer and a Falcom fan!</p>
+        <p>I mainly made this game for fun and practice. Since I am studying Japanese, I thought it would be great practice to make a beginner level Japanese game, to help not only myself, but also other students studying Japanese and even children just learning how to type.</p>
+        <p>The game was originally only going to be in Japanese, however, I thought other Falcom fans not studying Japanese might be interested in it and would want to try it out as well. Plus it may also help people studying English, and the more people Mishy can help, the better!</p>
+        <p>Why did I choose to make this game with Mishy? Because I love both Falcom and Mishy, and want to spread the word about them! So, please check out and support <a href="https://www.falcom.co.jp/" target="_blank">Nihon Falcom's works</a>!</p>
+      </div>
+      
+      <div class="menu-footer">
+        <button class="button menu-opt" onclick="Mishy.showMenu('main', this);">Back</button>
+      </div>
+    </div>
+    
+    <!-- CREDITS -->
+    <div id="menu-credits" class="menu" style="display:none;">
+      <div class="menu-title">Credits</div>
+      
+      <div class="menu-content">
+        <div class="content-title">Programming</div>
+        <ul class="menu-list">
+          <li><a href="https://github.com/SethClydesdale">Seth Clydesdale</a></li>
+        </ul>
+        
+        <div class="content-title">Illustrations</div>
+        <ul class="menu-list">
+          <li>Copyright© <a href="https://falcom.co.jp/">Nihon Falcom Corporation</a></li>
+          <li><a href="https://store.line.me/stickershop/author/16119/">LINE Sticker Artist(s)</a></li>
+        </ul>
+        
+        <!--<div class="content-title">Music</div>
+        <ul class="menu-list">
+          <li><a href="https://www.falcom.co.jp/music">Falcom Sound Team jdk</a></li>
+          <li><strong>Easy BGM</strong><br>Mishelam Wonderland/The Legend of Heroes: Ao no Kiseki/Copyright© Nihon Falcom Corporation</li>
+          <li><strong>Normal BGM</strong><br>Paper-thin Offense and Defense/The Legend of Heroes: Trails of Cold Steel/Copyright© Nihon Falcom Corporation</li>
+          <li><strong>Hard BGM</strong><br>Get Over The Barrier! -Roaring Version-/The Legend of Heroes: Zero no Kiseki/Copyright© Nihon Falcom Corporation</li>
+          <li><strong>Nightmare BGM</strong><br>Inevitable Struggle -Super Arrange-/The Legend of Heroes: Zero no Kiseki/Copyright© Nihon Falcom Corporation</li>
+          <li><strong>Infinity BGM</strong><br>Silver Will -Super Arrange-/The Legend of Heroes: Trails in the Sky FC/Copyright© Nihon Falcom Corporation</li>
+          <li><strong>Game Clear BGM</strong><br>Stage Clear/Nayuta no Kiseki/Copyright© Nihon Falcom Corporation</li>
+          <li><strong>Game Over BGM</strong><br>Nayuta, Don't Give Up/Nayuta no Kiseki/Copyright© Nihon Falcom Corporation</li>
+        </ul>-->
+      </div>
+      
+      <div class="menu-footer">
+        <button class="button menu-opt" onclick="Mishy.showMenu('main', this);">Back</button>
+      </div>
+    </div>
+    
+    <!-- GAME ZONE -->
+    <div id="game" style="display:none;">
+      <div id="game-stats">
+        <div id="game-stats-inner" class="clear">
+          <div id="mishy-score-box"><div id="mishy-score-title">Score</div><div id="mishy-score">0</div></div>
+          <div id="mishy-status">
+            <div id="mishy-icon"><img id="mishy-face" src="../../resources/images/game/mishy-emoji/001.png" alt=""></div>
+            <div id="mishy-life"><div id="mishy-life-inner" style="width:100px"><div id="mishy-life-bar" style="width:100px"></div></div></div>
+          </div>
+          <div id="mishy-chain" style="display:none;"><span id="chain-count">0</span><span id="chain-label"><i>C</i>hain<em>!!</em></span></div>
+        </div>
+      </div>
+      
+      <div id="mishy-card-container" class="content-block">
+        <div id="mishy-card"></div>
+        <div id="mishy-timer"><div id="mishy-time-bar"><span id="mishy-time"></span></div></div>
+      </div>
+      
+      <div id="mishy-grade"></div>
+      
+      <div id="input-zone" class="content-block">
+        <input id="game-input" type="text" onkeyup="Mishy.highlightText(this); Mishy.checkAnswer(this); Mishy.WPM.update();">
+        <button class="button menu-opt" onclick="Mishy.pause();">Pause</button>
+        <div id="mishy-hint" style="display:none"><img src="../../resources/images/game/mishy-emoji/021.png" alt="Mishy">Hint: Type the words under Mishy</div>
+      </div>
+    </div>
+    
+    <!-- END GAME SCREEN -->
+    <div id="game-end" class="menu" style="display:none;">
+      <div class="menu-title" id="game-win">Game Clear!</div>
+      <div class="menu-title" id="game-over">Game Over</div>
+      
+      <div class="menu-content" id="game-end-stats"></div>
+      
+      <div class="menu-footer">
+        <button class="button menu-opt" onclick="Mishy.resetGame();">Back to Main Menu</button>
+      </div>
+    </div>
+    
+    <!-- AUDIO/JAVASCRIPT -->
+    <!--<audio id="music"></audio>-->
+    <script src="../../resources/javascript/lang/en.min.js"></script>
+    <script src="../../resources/javascript/mishy.min.js"></script>
+    <script src="../../resources/javascript/mode/en.min.js"></script>
+  </body>
+</html>

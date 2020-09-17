@@ -1,0 +1,211 @@
+﻿<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+  <head>
+    <meta charset="UTF-8">
+    <title>みっしぃとタイピング</title>
+    <meta name="title" content="みっしぃとタイピング">
+    <meta name="twitter:title" content="みっしぃとタイピング">
+    <meta property="og:title" content="みっしぃとタイピング">
+    <meta name="description" content="「みっしぃとタイピング」はタイピング練習ゲームです。タイプしましょうね！みしし">
+    <meta property="og:description" content="「みっしぃとタイピング」はタイピング練習ゲームです。タイプしましょうね！みしし">
+    <link rel="shortcut icon" type="image/x-icon" href="resources/images/mishy.ico">
+
+    <meta name="keywords" content="タイピングゲーム, タイピング練習ソフト, ファンゲーム, フリーゲーム" lang="en">
+    <meta name="language" content="en">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta property="og:site_name" content="sethclydesdale.github.io">
+    <meta property="og:url" content="https://sethclydesdale.github.io/typing-with-mishy/">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://sethclydesdale.github.io/typing-with-mishy/resources/images/mishy-thumb.png">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:creator" content="@SethC1995">
+
+    <link rel="stylesheet" href="resources/css/stylesheet.min.css">
+    <script src="resources/javascript/head.min.js"></script>
+  </head>
+
+  <body class="main-menu">
+    <!-- LOGO -->
+    <img id="logo" src="resources/images/logo/ja.png" alt="みっしぃとタイピング">
+    
+    <!-- CLEAR BONUS ART/BACKGROUND EXTRAS -->
+    <div id="clear-bonus-art">
+      <div id="bonus-art-top">
+        <img style="display:none;" data-clear-flag="0" id="bonus-art-easy" src="resources/images/game/mishy-sticker/009.png">
+        <img style="display:none;" data-clear-flag="3" id="bonus-art-nightmare" src="resources/images/game/mishy-sticker/103.png">
+        <img style="display:none;" data-clear-flag="4" id="bonus-art-infinity" src="resources/images/game/kiseki/tita-01.png">
+      </div>
+      <img style="display:none;" data-clear-flag="1" id="bonus-art-normal" src="resources/images/game/mishy-sticker/255-clean.png">
+      <img style="display:none;" data-clear-flag="2" id="bonus-art-hard" src="resources/images/game/mishy-sticker/020.png">
+    </div>
+    <div id="background-extras"></div>
+    
+    <!-- MAIN MENU -->
+    <div id="menu-main" class="menu no-footer">
+      <div id="main-title" class="menu-title">Main Menu</div>
+      <div id="main-title-paused" class="menu-title">Paused</div>
+      
+      <div class="menu-content">
+        <button id="main-menu-start" class="button menu-opt" onclick="Mishy.showMenu('mode', this);">Play</button>
+        <button id="main-menu-resume" class="button menu-opt" onclick="Mishy.resume();">Resume</button>
+        <button class="button menu-opt" onclick="Mishy.showMenu('option', this);">Option</button>
+        <button class="button menu-opt" onclick="Mishy.showMenu('about', this);">About</button>
+        <button class="button menu-opt" onclick="Mishy.showMenu('credits', this);">Credits</button>
+        <button id="main-menu-quit" class="button menu-opt opt-danger" onclick="Mishy.quitGame();">Quit</button>
+      </div>
+    </div>
+    
+    <!-- MODE SELECT -->
+    <div id="menu-mode" class="menu" style="display:none;">
+      <div class="menu-title">Play</div>
+      
+      <div class="menu-content">
+        <button class="button menu-opt mishy-mode-opt" onclick="Mishy.startGame('easy');">Easy</button>
+        <div class="content-title">Coming Soon</div>
+        <button class="button menu-opt mishy-mode-opt" onclick="Mishy.startGame('normal');" disabled>Normal</button>
+        <button class="button menu-opt mishy-mode-opt" onclick="Mishy.startGame('hard');" disabled>Hard</button>
+        <button class="button menu-opt mishy-mode-opt" onclick="Mishy.startGame('nightmare');" disabled>Nightmare</button>
+        <button class="button menu-opt mishy-mode-opt" onclick="Mishy.startGame('infinity');" disabled>Infinity</button>
+      </div>
+      
+      <div class="menu-footer">
+        <button class="button menu-opt" onclick="Mishy.showMenu('main', this);"><span class="btn-kanji">戻</span><span class="btn-kana">もど</span>る</button>
+      </div>
+    </div>
+    
+    <!-- OPTION -->
+    <div id="menu-option" class="menu" style="display:none;">
+      <div class="menu-title">Option</div>
+      
+      <div class="menu-content">
+        
+        <!--<div class="content-title">Audio</div>
+        <ul class="menu-list">
+          <li><span class="label">BGM</span><button id="toggle-music" class="button" onclick="Mishy.toggle.music();">ON</button></li>
+          <li><span class="label">SE</span><button id="toggle-sfx" class="button" onclick="Mishy.toggle.sfx();">ON</button></li>
+        </ul>-->
+        
+        <div class="content-title">Display</div>
+        <ul class="menu-list">
+          <li><span class="label"><ruby>振<rt>ふ</rt></ruby>り<ruby>仮名<rt>がな</rt></ruby></span><button id="toggle-furigana" class="button" onclick="Mishy.toggle.furigana();">ON</button></li>
+          <li><span class="label">CSSのアニメション</span><button id="toggle-cssanime" class="button" onclick="Mishy.toggle.cssAnime();">ON</button></li>
+        </ul>
+        
+        <div class="content-title">Game Setting</div>
+        <ul class="menu-list">
+          <li class="no-in-game-change"><span class="label">ローマ<ruby>字<rt>じ</rt></ruby><ruby>入力<rt>にゅうりょく</rt></ruby></span><button id="toggle-romaji" class="button" onclick="Mishy.toggle.romaji();">ON</button><div class="menu-info"><ruby>消<rt>け</rt></ruby>したら、<ruby>時間<rt>じかん</rt></ruby>が<ruby>減<rt>へ</rt></ruby>ります。ローマ<ruby>字<rt>じ</rt></ruby>も<ruby>見<rt>み</rt></ruby>ません</div></li>
+        </ul>
+        
+        <div class="content-title">Language</div>
+        <div class="no-in-game-change">
+          <button class="button menu-opt" disabled><span class="btn-kanji">日本語</span><span class="btn-kana">にほんご</span></button>
+          <button class="button menu-opt" onclick="Mishy.changeLang(this);"><a href="lang/en/"></a><span class="btn-kanji">英語</span><span class="btn-kana">えいご</span></button>
+        </div>
+      </div>
+      
+      <div class="menu-footer">
+        <button class="button menu-opt" onclick="Mishy.showMenu('main', this);"><span class="btn-kanji">戻</span><span class="btn-kana">もど</span>る</button>
+      </div>
+    </div>
+    
+    <!-- ABOUT -->
+    <div id="menu-about" class="menu" style="display:none;">
+      <div class="menu-title">About</div>
+      
+      <div class="menu-content">
+        <div class="content-title">ゲームについて</div>
+        <p>「みっしぃとタイピング」はタイピング<ruby>練習<rt>れんしゅう</rt></ruby>ゲームとみっしぃファンゲームです。あなたとみっしぃはタイピングを<ruby>練習<rt>れんしゅう</rt></ruby>します。みっしぃと<ruby>楽<rt>たの</rt></ruby>しんでくださいね。エンジョーイ☆みっしぃ！みしし</p>
+        <p>オープンソースのゲームなので、<a href="https://github.com/SethClydesdale/typing-with-mishy">コードを<ruby>見<rt>み</rt></ruby>られますね</a>。あなたとみっしぃはWebプログラムイングを<ruby>習<rt>なら</rt></ruby>えます！</p>
+        
+        <div class="content-title">デベロッパーについて</div>
+        <p><ruby>初<rt>はじ</rt></ruby>めまして、<ruby>セス<rt>Seth</rt></ruby>・<ruby>クライズデールです<rt>Clydesdale</rt></ruby>。Webプログラマーとファルコムファンですよ。</p>
+        <p><ruby>私<rt>わたし</rt></ruby>はファルコムとみっしぃが<ruby>好<rt>す</rt></ruby>きなので、みっしぃファンゲームを<ruby>作<rt>つく</rt></ruby>りました。それに、<ruby>日本語<rt>にほんご</rt></ruby>を<ruby>勉強<rt>べんきょう</rt></ruby>しています。だから、<ruby>日本語<rt>にほんご</rt></ruby>のゲームを<ruby>作<rt>つく</rt></ruby>るのはいい<ruby>練習<rt>れんしゅう</rt></ruby>でした。</p>
+        <p><ruby>間違<rt>まちが</rt></ruby>えたら、<ruby>正<rt>ただ</rt></ruby>してくださいね。よろしくお<ruby>願<rt>ねが</rt></ruby>いします！</p>
+      </div>
+      
+      <div class="menu-footer">
+        <button class="button menu-opt" onclick="Mishy.showMenu('main', this);"><span class="btn-kanji">戻</span><span class="btn-kana">もど</span>る</button>
+      </div>
+    </div>
+    
+    <!-- CREDITS -->
+    <div id="menu-credits" class="menu" style="display:none;">
+      <div class="menu-title">Credits</div>
+      
+      <div class="menu-content">
+        <div class="content-title">Programming</div>
+        <ul class="menu-list">
+          <li><a href="https://github.com/SethClydesdale">Seth Clydesdale</a></li>
+        </ul>
+        
+        <div class="content-title">Illustrations</div>
+        <ul class="menu-list">
+          <li>Copyright© <a href="https://falcom.co.jp/">Nihon Falcom Corporation</a></li>
+          <li><a href="https://store.line.me/stickershop/author/16119/">LINEスタンプのイラスト</a></li>
+        </ul>
+        
+        <!--<div class="content-title">Music</div>
+        <ul class="menu-list">
+          <li><a href="https://www.falcom.co.jp/music">Falcom Sound Team jdk</a></li>
+          <li><strong>Easy BGM</strong><br>ミシュラムワンダーランド/英雄伝説 碧の軌跡/Copyright© Nihon Falcom Corporation</li>
+          <li><strong>Normal BGM</strong><br>紙一重の攻防/英雄伝説 閃の軌跡/Copyright© Nihon Falcom Corporation</li>
+          <li><strong>Hard BGM</strong><br>Get Over The Barrier! -Roaring Version-/零の軌跡/Copyright© Nihon Falcom Corporation</li>
+          <li><strong>Nightmare BGM</strong><br>Inevitable Struggle -Super Arrange-/零の軌跡/Copyright© Nihon Falcom Corporation</li>
+          <li><strong>Infinity BGM</strong><br>銀の意志 -Super Arrange-/空の軌跡/Copyright© Nihon Falcom Corporation</li>
+          <li><strong>Game Clear BGM</strong><br>ステージクリア/那由多の軌跡/Copyright© Nihon Falcom Corporation</li>
+          <li><strong>Game Over BGM</strong><br>ナユタ、負けないで/那由多の軌跡/Copyright© Nihon Falcom Corporation</li>
+        </ul>-->
+      </div>
+      
+      <div class="menu-footer">
+        <button class="button menu-opt" onclick="Mishy.showMenu('main', this);"><span class="btn-kanji">戻</span><span class="btn-kana">もど</span>る</button>
+      </div>
+    </div>
+    
+    <!-- GAME ZONE -->
+    <div id="game" style="display:none;">
+      <div id="game-stats">
+        <div id="game-stats-inner" class="clear">
+          <div id="mishy-score-box"><div id="mishy-score-title">Score</div><div id="mishy-score">0</div></div>
+          <div id="mishy-status">
+            <div id="mishy-icon"><img id="mishy-face" src="resources/images/game/mishy-emoji/001.png" alt=""></div>
+            <div id="mishy-life"><div id="mishy-life-inner" style="width:100px"><div id="mishy-life-bar" style="width:100px"></div></div></div>
+          </div>
+          <div id="mishy-chain" style="display:none;"><span id="chain-count">0</span><span id="chain-label"><i>C</i>hain<em>!!</em></span></div>
+        </div>
+      </div>
+      
+      <div id="mishy-card-container" class="content-block">
+        <div id="mishy-card"></div>
+        <div id="mishy-timer"><div id="mishy-time-bar"><span id="mishy-time"></span></div></div>
+      </div>
+      
+      <div id="mishy-grade"></div>
+      
+      <div id="input-zone" class="content-block">
+        <input id="game-input" type="text" onkeyup="Mishy.highlightText(this); Mishy.checkAnswer(this); Mishy.WPM.update();">
+        <button class="button menu-opt" onclick="Mishy.pause();">Pause</button>
+        <div id="mishy-hint" style="display:none"><img src="resources/images/game/mishy-emoji/021.png" alt="Mishy">ヒント：みっしぃの<ruby>下<rt>した</rt></ruby>の<ruby>言葉<rt>ことば</rt></ruby>をタイプする</div>
+      </div>
+    </div>
+    
+    <!-- END GAME SCREEN -->
+    <div id="game-end" class="menu" style="display:none;">
+      <div class="menu-title" id="game-win">Game Clear!</div>
+      <div class="menu-title" id="game-over">Game Over</div>
+      
+      <div class="menu-content" id="game-end-stats"></div>
+      
+      <div class="menu-footer">
+        <button class="button menu-opt" onclick="Mishy.resetGame();">Main Menuに<span class="btn-kanji">戻</span><span class="btn-kana">もど</span>る</button>
+      </div>
+    </div>
+    
+    <!-- AUDIO/JAVASCRIPT -->
+    <!--<audio id="music"></audio>-->
+    <script src="resources/javascript/lang/ja.min.js"></script>
+    <script src="resources/javascript/mishy.min.js"></script>
+    <script src="resources/javascript/mode/ja.min.js"></script>
+  </body>
+</html>

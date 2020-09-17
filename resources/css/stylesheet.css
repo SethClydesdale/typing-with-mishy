@@ -1,0 +1,1075 @@
+/* animations */
+@keyframes strobe-bg {
+  0% { background-color:#FCC }
+  10% { background-color:#FCF }
+  20% { background-color:#CCF }
+  30% { background-color:#CFF }
+  40% { background-color:#CFC }
+  50% { background-color:#FFC }
+  60% { background-color:#CFC }
+  70% { background-color:#CFF }
+  80% { background-color:#CCF }
+  90% { background-color:#FCF }
+  100% { background-color:#FCC }
+}
+
+@keyframes main-slide {
+  from { background-position:0px 0px }
+    to { background-position:200px 200px }
+}
+
+@keyframes confetti-fall {
+  from { background-position:0px 0px }
+    to { background-position:0px 182px }
+}
+
+@keyframes mishy-drive {
+  from { left:-50%; }
+  to { left:150%; }
+}
+
+@keyframes tio-peek {
+  0% { right:-200px; }
+  25% { right:-200px; }
+  50% { right:-50px; }
+  75% { right:-50px }
+  100% { right:-200px; }
+}
+
+@keyframes grade-slide {
+  from {
+    right:0%;
+    margin-right:0px;
+    opacity:1;
+  }
+
+  to {
+    right:100%;
+    margin-right:-150px;
+    opacity:0;
+  }
+}
+
+@keyframes chain-increase {
+  from {
+    transform:scale(1);
+    opacity:1;
+  }
+  
+  to {
+    transform:scale(2);
+    opacity:0;
+  }
+}
+
+@keyframes score-increase {
+  from {
+    color:#FFF;
+    transform:scale(1);
+    opacity:1;
+  }
+  
+  to {
+    color:#FF0;
+    transform:scale(2);
+    opacity:0;
+  }
+}
+
+/* body/general styles */
+body {
+  color:#333;
+  background-color:#FFF;
+  font-size:13px;
+  font-family:'メイリオ', 'Meiryo', 'Osaka', 'ＭＳ Ｐゴシック', 'MS PGothic', "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Arial, sans-serif;
+  padding:0;
+  margin:0;
+}
+
+body.main-menu {
+  background:url(../images/background/main/0.png) repeat fixed;
+  animation:main-slide 5s linear infinite;
+}
+
+#logo {
+  display:block;
+  height:150px;
+  margin:5px auto;
+  /* below is for ALT text */
+  color:#3BD;
+  text-shadow:0 2px 0 #19B;
+  font-size:32px;
+  font-weight:bold;
+  text-align:center;
+  pointer-events:none;
+  -webkit-touch-callout:none;
+    -webkit-user-select:none;
+     -khtml-user-select:none;
+       -moz-user-select:none;
+        -ms-user-select:none;
+            user-select:none;
+}
+
+a {
+  color:#039;
+  text-decoration:none;
+  outline:none;
+}
+a:hover, a:focus { text-decoration:underline; }
+
+img { max-width:100%; }
+
+ruby rt { font-size:11px; }
+
+.left { text-align:left; }
+.right { text-align:right; }
+.center { text-align:center; }
+
+.med-text { font-size:18px; }
+.big-text { font-size:24px; }
+
+.clear:after {
+  content:"";
+  display:table;
+  clear:both;
+}
+
+
+/* MENUS */
+#main-menu-start, #main-title, #main-menu-lang { display:none; }
+.main-menu #main-menu-start, .main-menu #main-title, .main-menu #main-menu-lang { display:block; }
+.main-menu #main-menu-resume, .main-menu #main-title-paused, .main-menu #main-menu-quit { display:none; }
+
+#main-menu-quit { margin-top:30px; }
+
+.menu {
+  max-width:800px;
+  margin:0px auto 50px auto;
+  background-color:#BEF;
+  background-color:rgba(187, 238, 255, 0.8);
+  border:1px solid #3BD;
+  padding-bottom:70px;
+  position:relative;
+}
+.menu.no-footer { padding-bottom:20px; }
+
+.menu-title {
+  color:#FFF;
+  background:#3BD;
+  font-size:28px;
+  font-weight:bold;
+  text-align:center;
+  margin:-1px -1px 30px -1px;
+  padding:6px;
+}
+
+.menu-content {
+  font-size:16px;
+  padding:0 30px;
+}
+
+.menu-footer {
+  border-top:1px solid #3BD;
+  position:absolute;
+  left:0;
+  right:0;
+  bottom:0;
+}
+
+.menu-list { list-style-type:none; }
+.menu-list li { margin:20px 0; }
+
+.menu-info { display:none; }
+li:hover .menu-info {
+  text-align:center;
+  background-color:#BEF;
+  background-color:rgba(187, 238, 255, 0.8);
+  border-top:1px solid #3BD;
+  display:block;
+  padding:6px;
+  position:fixed;
+  left:0;
+  right:0;
+  bottom:0;
+  z-index:10;
+}
+
+.content-title {
+  font-size:20px;
+  font-weight:bold;
+  color:#19B;
+  border-bottom:2px solid #19B;
+  margin:0;
+}
+
+.label {
+  text-align:right;
+  display:inline-block;
+  vertical-align:middle;
+  margin-right:20px;
+  width:30%;
+  min-width:150px;
+}
+
+
+/* BUTTONS */
+.button, a.button, .button, a.button {
+  color:#FFF;
+  background:#3BD;
+  font-size:18px;
+  font-weight:bold;
+  font-family:'メイリオ', 'Meiryo', 'Osaka', 'ＭＳ Ｐゴシック', 'MS PGothic', "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Arial, sans-serif;
+  text-align:center;
+  text-decoration:none;
+  border:none;
+  border-bottom:2px solid #19B;
+  display:inline-block;
+  padding:6px 12px;
+  cursor:pointer;
+  outline:none;
+  -webkit-touch-callout:none;
+    -webkit-user-select:none;
+     -khtml-user-select:none;
+       -moz-user-select:none;
+        -ms-user-select:none;
+            user-select:none;
+}
+
+.button.menu-opt, a.button.menu-opt {
+  display:block;
+  width:100%;
+  max-width:300px;
+  margin:10px auto;
+}
+
+.button:hover, a.button:hover { background:#2AC; }
+.button:focus, a.button:focus { background:#19B; }
+
+.button[disabled] {
+  color:#CCC;
+  background-color:#999;
+  border-color:#666;
+  cursor:default;
+}
+
+
+/* DIFFICULTY BACKGROUNDS */
+.playing-game.easy-mode {
+  background:url(../../resources/images/background/game/easy.png) repeat fixed #CFC;
+}
+
+.playing-game.normal-mode {
+  background:url(../../resources/images/background/game/normal.png) repeat fixed #FFC;
+}
+
+.playing-game.hard-mode {
+  background:url(../../resources/images/background/game/hard.png) repeat fixed #FDC;
+}
+
+.playing-game.nightmare-mode {
+  background:url(../../resources/images/background/game/nightmare.png) repeat fixed #FCC;
+}
+
+.playing-game.infinity-mode {
+  background:url(../../resources/images/background/game/infinity.png) repeat fixed #FCF;
+  animation:strobe-bg 20s linear infinite;
+}
+
+.game-clear {
+  background:url(../../resources/images/background/game/game-clear.png) repeat fixed #CFF;
+}
+
+.game-over {
+  background:url(../../resources/images/background/game/game-over.png) repeat fixed #333;
+}
+
+/* DIFFICULTY BACKGROUND EXTRAS */
+body:before, body:after, #background-extras:before, #background-extras:after {
+  content:"";
+  position:fixed;
+  z-index:-1;
+} 
+
+/* EASY BACKGROUND EXTRAS */
+/* sun */
+.easy-mode:before {
+  background:url(../../resources/images/game/mishy-emoji/077.png) no-repeat;
+  background-size:100%;
+  width:100px;
+  height:100px;
+  top:0;
+  left:0;
+  transform:rotate(-35deg);
+}
+
+/* cloud */
+.easy-mode #background-extras:after {
+  background:url(../../resources/images/game/mishy-emoji/078.png) no-repeat;
+  background-size:100%;
+  width:100px;
+  height:100px;
+  top:25px;
+  right:50px;
+}
+
+/* mishy car */
+.easy-mode:after {
+  background:url(../../resources/images/game/mishy-sticker/093.png) no-repeat;
+  background-size:100%;
+  width:200px;
+  height:200px;
+  bottom:-15px;
+  left:100px;
+  animation:mishy-drive 20s linear infinite;
+}
+
+/* grass */
+.easy-mode #background-extras:before {
+  background:url(../../resources/images/background/extra/grass.png) repeat;
+  height:54px;
+  left:0;
+  right:0;
+  bottom:0;
+}
+
+/* GAME OVER BACKGROUND EXTRAS */
+/* Evil Mishy */
+.game-over:before {
+  background:url(../../resources/images/game/mishy-sticker/103.png) no-repeat;
+  background-size:100%;
+  width:150px;
+  height:150px;
+  bottom:200px;
+  left:150px;
+}
+
+/* Mishy running away */
+.game-over:after {
+  background:url(../../resources/images/game/mishy-sticker/011.png) no-repeat;
+  background-size:100%;
+  width:259px;
+  height:224px;
+  bottom:0px;
+  left:-30px;
+}
+
+/* Mishette crying */
+.game-over #background-extras:before {
+  background:url(../../resources/images/game/mishy-sticker/239-clean.png) no-repeat;
+  background-size:100%;
+  width:175px;
+  height:175px;
+  bottom:-33px;
+  right:-22px;
+}
+
+/* Tio preparing to save Mishy */
+.game-over #background-extras:after {
+  background:url(../../resources/images/game/kiseki/tio-01.png) no-repeat;
+  background-size:100%;
+  width:259px;
+  height:224px;
+  bottom:-7px;
+  right:60px;
+}
+
+/* GAME CLEAR BACKGROUND EXTRAS */
+/* Tio peeking in on the party */
+.game-clear:before {
+  background:url(../../resources/images/game/kiseki/tio-02.png) no-repeat;
+  background-size:100%;
+  width:170px;
+  height:222px;
+  right:-90px;
+  top:-10px;
+  transform:rotate(-90deg);
+  animation:tio-peek 10s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite;
+}
+
+/* confetti */
+.game-clear #background-extras:before {
+  background:url(../../resources/images/background/extra/confetti.png) repeat;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  opacity:0.7;
+  animation:confetti-fall 5s linear infinite;
+}
+
+/* Mishy w/party cracker */
+.game-clear:after {
+  background:url(../../resources/images/game/mishy-sticker/126-clean.png) no-repeat;
+  background-size:100%;
+  width:259px;
+  height:224px;
+  left:0px;
+  bottom:-7px;
+}
+
+/* Mishette cheering */
+.game-clear #background-extras:after {
+  background:url(../../resources/images/game/mishy-sticker/041-clean.png) no-repeat;
+  background-size:100%;
+  width:193px;
+  height:198px;
+  right:10px;
+  bottom:-6px;
+}
+
+
+/* MODE CLEAR BANNER */
+.mishy-mode-opt.mode-clear {
+  position:relative;
+  overflow:hidden;
+}
+
+.mishy-mode-opt.mode-clear:before {
+  content:"CLEAR!";
+  font-size:12px;
+  color:#FF0;
+  background:rgba(0, 0, 0, 0.2);
+  text-align:center;
+  display:block;
+  width:200px;
+  height:20px;
+  line-height:20px;
+  position:absolute;
+  top:9px;
+  right:-77px;
+  transform:rotate(40deg);
+  text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+}
+
+
+/* END GAME SCREEN */
+#game-over, .game-over #game-win { display:none; }
+.game-over #game-over { display:block; }
+
+#game-end-texts {
+  font-size:20px;
+  font-weight:bold;
+}
+#game-end-stats .label { font-weight:bold; }
+
+.game-mode {
+  font-weight:bold;
+  text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+}
+
+     .game-mode.mode-easy { color:#0F0; }
+   .game-mode.mode-normal { color:#FF0; }
+     .game-mode.mode-hard { color:#F90; }
+.game-mode.mode-nightmare { color:#F66; }
+ .game-mode.mode-infinity { color:#F6F; }
+
+#grade-listing li { margin:0; }
+#game-end-stats .mishy-grade-card {
+  opacity:1;
+  animation:none;
+  position:static;
+  text-align:left;
+}
+
+/* perfect clear style */
+#perfect-clear {
+  color:#FD0;
+  font-size:16px;
+  font-weight:bold;
+  margin-left:6px;
+  text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000,
+     0px 2px 3px rgba(0, 0, 0, 0.7),
+     0 0 5px #FD0;
+}
+
+#perfect-clear:before {
+  content:"";
+  background:url(../images/game/mishy-emoji/023.png) no-repeat center;
+  background-size:60px;
+  height:60px;
+  width:60px;
+  display:inline-block;
+  vertical-align:middle;
+}
+
+
+/* GAME STYLES */
+/* time bar */
+#mishy-timer {
+  background-color:#CCC;
+  border:1px solid #3BD;
+  height:25px;
+  position:relative;
+  overflow:hidden;
+  margin-top:-1px;
+  position:relative;
+}
+
+#mishy-timer:before, #mishy-timer:after {
+  content:"";
+  background-color:#19B;
+  width:2px;
+  display:block;
+  position:absolute;
+  top:0;
+  bottom:0;
+}
+
+#mishy-timer:before {
+  left:25%;
+  margin-left:-2px;
+}
+
+#mishy-timer:after {
+  right:25%;
+  margin-right:-2px;
+}
+
+#mishy-time-bar {
+  background:#3BD;
+  font-weight:bold;
+  height:25px;
+  /*transition:150ms linear;*/
+}
+
+#mishy-time {
+  color:#FFF;
+  font-size:18px;
+  text-align:center;
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  line-height:27px;
+  text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+}
+
+/* life bar */
+#mishy-status {
+  margin-left:5px;
+  position:relative;
+  float:left;
+}
+
+#mishy-icon {
+  background:#3BD;
+  border:1px solid #19B;
+  box-sizing:border-box;
+  height:40px;
+  width:40px;
+  border-radius:100%;
+  overflow:hidden;
+  position:relative;
+  z-index:1;
+}
+
+#mishy-face {
+  height:40px;
+  width:40px;
+  max-width:40px;
+  margin:-1px 0 0 -1px;
+}
+
+#mishy-life {
+  background:#CCC;
+  border:1px solid #19B;
+  width:100px;
+  height:20px;
+  position:absolute;
+  top:9px;
+  left:45px;
+  z-index:1;
+}
+
+#mishy-life-inner { height:100%; }
+#mishy-life-bar {
+  background:#3BD;
+  height:100%;
+}
+
+/* hp lost style */
+.hp-loss #mishy-life-inner {
+  background:#F00;
+  transition:width 500ms;
+}
+
+/* hp gain style */
+.hp-gain #mishy-life-inner { background:#6F3; }
+.hp-gain #mishy-life-bar { transition:width 500ms; }
+
+/* score */
+#mishy-score-box {
+  font-size:18px;
+  font-weight:bold;
+  color:#FFF;
+  position:absolute;
+  left:0;
+  right:0;
+  text-align:center;
+  text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000,
+     0px 2px 3px rgba(0, 0, 0, 0.7);
+}
+
+#mishy-score-title { margin-top:-10px; }
+#mishy-score { margin-top:-5px; }
+
+[data-score-anime]:before {
+  content:attr(data-score-anime);
+  position:absolute;
+  display:inline-block;
+  animation:score-increase 300ms linear 1;
+}
+
+/* chain */
+#game-stats {
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+}
+
+#game-stats-inner {
+  font-size:0;
+  height:60px;
+  max-width:600px;
+  box-sizing:border-box;
+  padding:10px 0;
+  margin:0 auto;
+  position:relative;
+}
+
+#mishy-chain {
+  font-weight:bold;
+  font-style:italic;
+  float:right;
+  margin-right:5px;
+}
+
+#chain-count {
+  color:#FFF;
+  font-size:28px;
+  text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000,
+     0px 2px 3px rgba(0, 0, 0, 0.7),
+     0 0 10px #FFF;
+}
+
+#chain-label {
+  color:#FF8;
+  font-size:15px;
+  text-transform:uppercase;
+  margin-left:10px;
+  text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000,
+     0px 2px 3px rgba(0, 0, 0, 0.7);
+}
+
+#chain-label i { font-size:20px; } /* "C" size */
+#chain-label em { /* "!!" size */
+  font-size:20px;
+  margin-left:3px;
+}
+
+[data-chain-anime]:before {
+  content:attr(data-chain-anime);
+  position:absolute;
+  display:inline-block;
+  animation:chain-increase 300ms linear 1;
+}
+
+/* grades */
+#mishy-grade {
+  height:60px;
+  max-width:600px;
+  margin:0 auto;
+  position:relative;
+  overflow:hidden;
+  pointer-events:none;
+  -webkit-touch-callout:none;
+    -webkit-user-select:none;
+     -khtml-user-select:none;
+       -moz-user-select:none;
+        -ms-user-select:none;
+            user-select:none;
+}
+
+.mishy-grade-card {
+  position:absolute;
+  display:inline-block;
+  width:150px;
+  opacity:0;
+  animation:grade-slide 5s linear 1;
+}
+
+.cssanime-off #mishy-grade { text-align:center; }
+.cssanime-off .mishy-grade-card {
+  position:static;
+  animation:none;
+  opacity:1;
+}
+
+.mishy-grade-image {
+  height:60px;
+  vertical-align:middle;
+}
+
+.mishy-grade-text {
+  font-size:16px;
+  font-weight:bold;
+  display:inline-block;
+  text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000,
+     0px 2px 3px rgba(0, 0, 0, 0.7),
+     0 0 10px #FFF;
+}
+
+.grade-great .mishy-grade-text {
+  color:#FF0;
+  text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000,
+     0px 2px 3px rgba(0, 0, 0, 0.7),
+     0 0 5px #FF0;
+}
+
+.grade-good .mishy-grade-text {
+  color:#0F0;
+  text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000,
+     0px 2px 3px rgba(0, 0, 0, 0.7),
+     0 0 5px #0F0;
+}
+
+.grade-okay .mishy-grade-text {
+  color:#0FF;
+  text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000,
+     0px 2px 3px rgba(0, 0, 0, 0.7),
+     0 0 5px #0FF;
+}
+
+.grade-miss .mishy-grade-text {
+  color:#F66;
+  text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000,
+     0px 2px 3px rgba(0, 0, 0, 0.7),
+     0 0 5px #F66;
+}
+
+/* highlighted text */
+.highlighted {
+  color:#FFF;
+  background:#090;
+}
+
+/* word cards */
+.content-block {
+  max-width:600px;
+  margin:50px auto;
+}
+
+#input-zone { margin-top:0; }
+
+#game-input {
+  color:#333;
+  background-color:#BEF;
+  background-color:rgba(187, 238, 255, 0.8);
+  border:1px solid #3BD;
+  font-size:24px;
+  text-align:center;
+  height:50px;
+  width:100%;
+  padding:10px;
+  box-sizing:border-box;
+  outline:none;
+}
+
+#mishy-hint {
+  color:#FFF;
+  font-size:16px;
+  font-weight:bold;
+  text-align:center;
+  text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000,
+     0px 2px 3px rgba(0, 0, 0, 0.7);
+}
+
+#mishy-hint img {
+  height:50px;
+  margin-right:5px;
+  vertical-align:middle;
+}
+
+#mishy-card-container, #game-stats {
+  pointer-events:none;
+  -webkit-touch-callout:none;
+    -webkit-user-select:none;
+     -khtml-user-select:none;
+       -moz-user-select:none;
+        -ms-user-select:none;
+            user-select:none;
+}
+
+#mishy-card-container {
+  margin-top:60px;
+  margin-bottom:0;
+}
+
+#mishy-card {
+  background-color:#BEF;
+  background-color:rgba(187, 238, 255, 0.8);
+  border:1px solid #3BD;
+  pointer-events:none;
+}
+
+.mishy {
+  display:block;
+  max-height:200px;
+  margin:10px auto;
+}
+.card-image { height:200px; }
+
+.word-zone {
+  text-align:center;
+  margin:10px auto;
+}
+
+.word-zone .words {
+  font-size:24px;
+  font-weight:bold;
+}
+
+.word-zone .helper {
+  /*margin-top:-10px;*/
+  font-size:14px;
+}
+
+
+/* OPTION BUTTONS OFF */
+.button.opt-off {
+  background-color:#999;
+  border-color:#777
+}
+
+.button.opt-off:hover { background-color:#888; }
+.button.opt-off:focus { background-color:#777; }
+
+
+/* DANGER BUTTONS */
+.button.opt-danger {
+  background-color:#D33;
+  border-color:#B11;
+}
+
+.button.opt-danger:hover { background-color:#C22; }
+.button.opt-danger:focus { background-color:#B11; }
+
+
+
+/* SETTINGS */
+/* hide furigana */
+.furigana-off ruby rt, .furigana-off .btn-kana, .btn-kanji { display:none; }
+.furigana-off .btn-kanji { display:inline; }
+
+
+/* disable CSS3 animations; good option to have for low-end PCs */
+body.cssanime-off, .cssanime-off [data-chain-anime], .cssanime-off [data-score-anime], .cssanime-off.playing-game.infinity-mode, .cssanime-off.easy-mode:after, .cssanime-off.game-clear:before, .cssanime-off.game-clear #background-extras:before { animation:none; }
+.cssanime-off [data-chain-anime]:before, .cssanime-off [data-score-anime]:before { content:none; }
+
+/* disable options that cannot be changed in game */
+.playing-game .no-in-game-change {
+  opacity:0.3;
+  pointer-events:none;
+  -webkit-touch-callout:none;
+    -webkit-user-select:none;
+     -khtml-user-select:none;
+       -moz-user-select:none;
+        -ms-user-select:none;
+            user-select:none;
+}
+
+/* GENKI MODAL */
+#genki-modal-overlay {
+  background:#000 no-repeat center;
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  opacity:0.5;
+  z-index:9999;
+}
+
+#genki-modal-body {
+  background-color:#BEF;
+  background-color:rgba(187, 238, 255, 0.8);
+  border:1px solid #3BD;
+  position:fixed;
+  top:10%;
+  left:25%;
+  right:25%;
+  bottom:30%;
+  z-index:99999;
+}
+
+#genki-modal-header {
+  color:#FFF;
+  background:#3BD;
+  text-align:center;
+  margin:0;
+  padding:0 6px;
+  height:40px;
+  line-height:40px;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+}
+
+#genki-modal-content {
+  font-size:15px;
+  padding:6px;
+  position:absolute;
+  top:40px;
+  left:0;
+  right:0;
+  bottom:40px;
+  overflow-y:auto;
+}
+
+#genki-modal-buttons {
+  height:40px;
+  line-height:40px;
+  position:absolute;
+  bottom:0;
+  left:0;
+  right:0;
+}
+
+#genki-modal-buttons .button {
+  font-size:14px;
+  line-height:normal;
+  margin:0 6px 0 6px;
+}
+
+
+/* CLEAR BONUS ART */
+#clear-bonus-art img {
+  position:fixed;
+  width:200px;
+  z-index:-1;
+  pointer-events:none;
+  -webkit-touch-callout:none;
+    -webkit-user-select:none;
+     -khtml-user-select:none;
+       -moz-user-select:none;
+        -ms-user-select:none;
+            user-select:none;
+}
+
+#bonus-art-top img { position:absolute; }
+
+#bonus-art-top {
+  max-width:800px;
+  margin:0 auto;
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+}
+
+#bonus-art-normal {
+  bottom:0;
+  right:0;
+}
+
+#bonus-art-hard {
+  bottom:-10px;
+  left:-10px;
+}
+
+#bonus-art-easy {
+  top:30px;
+  left:30px;
+}
+
+#bonus-art-nightmare {
+  top:45px;
+  left:30%;
+}
+
+#bonus-art-infinity {
+  top:10px;
+  right:30px;
+}
+
+
+/* MEDIA QUERIES */
+@media (max-width:500px) {
+  #mishy-card-container { margin-top:100px; }
+  #game-stats-inner { padding-top:50px; }
+  #mishy-score-box { top:10px; }
+}
+
+/* bonus art adjustments */
+@media (max-width:650px) {
+  #clear-bonus-art img { width:100px; }
+
+  #bonus-art-easy {
+    top:90px;
+    left:0px;
+  }
+
+  #bonus-art-nightmare {
+    top:110px;
+    left:25%;
+  }
+
+  #bonus-art-infinity {
+    top:85px;
+    right:0px;
+  }
+}
