@@ -180,9 +180,12 @@ ruby rt { font-size:11px; }
      0px 2px 3px rgba(0, 0, 0, 0.7);
 }
 
+#ja .main-menu.loading.fade-loader-out:after { content:"みしし" }
+#en .main-menu.loading.fade-loader-out:after { content:"Mee hee hee" }
 .main-menu.loading.fade-loader-out:before, .main-menu.loading.fade-loader-out:after {
   opacity:0;
   pointer-events:none;
+  animation:none;
 }
 
 
