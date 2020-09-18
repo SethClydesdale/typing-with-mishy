@@ -31,8 +31,8 @@
 @keyframes tio-peek {
   0% { right:-200px; }
   25% { right:-200px; }
-  50% { right:-50px; }
-  75% { right:-50px }
+  50% { right:-90px; }
+  75% { right:-90px }
   100% { right:-200px; }
 }
 
