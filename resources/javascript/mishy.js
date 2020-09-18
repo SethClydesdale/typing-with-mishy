@@ -1250,14 +1250,12 @@
       
       // set random background
       Mishy.setMainBG();
+      
+      // remove loading placeholder now that everything is set up
+      document.body.className = document.body.className.replace(' loading', '');
     }
   };
   
   // globally define Mishy, for debugging, initialization, etc.
   window.Mishy = Mishy;
-  
-  // remove loading placeholder after page has loaded
-  window.onload = function () {
-    document.body.className = document.body.className.replace(' loading', '');
-  };
 }(window, document));
