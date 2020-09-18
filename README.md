@@ -8,7 +8,7 @@
 
 
 #### 日本語
-「みっしぃとタイピング」はタイピング<ruby>練習<rt>れんしゅう</rt></ruby>ゲームとみっしぃファンゲームです。あなたとみっしぃはタイピングを<ruby>練習<rt>れんしゅう</rt></ruby>します。<ruby>次<rt>つぎ</rt></ruby>のリンクをクリックしてゲームをします！みっしぃと<ruby>楽<rt>たの</rt></ruby>しんでくださいね。エンジョーイ☆みっしぃ！みしし
+「みっしぃとタイピング」はタイピング<ruby>練習<rt>れんしゅう</rt></ruby>ゲームとみっしぃファンゲームです。みっしぃとタイピングを<ruby>練習<rt>れんしゅう</rt></ruby>します。<ruby>次<rt>つぎ</rt></ruby>のリンクをクリックしてゲームをします！みっしぃと<ruby>楽<rt>たの</rt></ruby>しんでくださいね。エンジョーイ☆みっしぃ！みしし
 
 - [**ゲームをする**](https://sethclydesdale.github.io/typing-with-mishy/)
 
@@ -16,6 +16,7 @@
 
 **Quick Links**
 - [About](#about)
+- [Feedback and Bug Reports](#feedback-and-bug-reports)
 - [Special Thanks](#special-thanks)
 
 
@@ -27,6 +28,15 @@ The game was originally only going to be in Japanese, however, I thought other F
 Why did I choose to make this game with Mishy? Because I love both Falcom and Mishy, and want to spread the word about them! So, please check out and support [Nihon Falcom's](https://falcom.co.jp/) works!
 
 
+### Feedback and Bug Reports
+If you have any feedback, bug reports, or questions, please let me know via the following contact methods.
+
+- [Open a new issue on GitHub](https://github.com/SethClydesdale/typing-with-mishy/issues)
+- [DM me on Twitter](https://twitter.com/messages/compose?recipient_id=369201778)
+- [PM me on Reddit](https://www.reddit.com/message/compose/?to=SelentoAnuri)
+
+
 ### Special Thanks
 - [Nihon Falcom](https://falcom.co.jp/) for the illustrations, and of course, Mishy.
   - The majority of the Mishy illustrations are from [LINE](https://store.line.me/stickershop/author/16119/en). Please support the illustrator(s) who made these lovely Mishy stamps if you use LINE. (I don't know your name(s), but thank you!)
+  - Illustrations and Mishy Copyright (c) Nihon Falcom Corporation

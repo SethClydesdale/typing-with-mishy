@@ -1185,9 +1185,58 @@
     },
     
     
+    // functions for preloading game assets
+    preload : {
+      imgPath : getPaths() + 'resources/images/',
+      
+      // main preloader
+      assets : function () {
+        var images = [
+          // grades
+          'game/mishy-emoji/014.png', 'game/mishy-emoji/001.png', 'game/mishy-emoji/007.png', 'game/mishy-emoji/009.png', 'game/mishy-emoji/023.png', 
+          // HP faces
+          'game/mishy-emoji/020.png', 'game/mishy-emoji/072.png', 
+          // Win/Loss prompt
+          'game/mishy-sticker/031.png', 'game/mishy-sticker/063.png', 
+          // backgrounds
+          'background/main/0.png', 'background/main/1.png', 'background/main/2.png', 'background/main/3.png', 'background/main/4.png', 'background/main/5.png', 
+          'background/game/easy.png', 'background/game/normal.png', 'background/game/hard.png', 'background/game/nightmare.png', 'background/game/infinity.png', 'background/game/game-clear.png', 'background/game/game-over.png', 
+          // background extras
+          'game/mishy-emoji/078.png', 'game/mishy-sticker/093.png', 'background/extra/grass.png', 'game/mishy-sticker/103.png', 'game/mishy-sticker/011.png', 'game/mishy-sticker/239-clean.png', 'game/kiseki/tio-01.png', 'game/kiseki/tio-02.png', 'background/extra/confetti.png', 'game/mishy-sticker/126-clean.png', 'game/mishy-sticker/041-clean.png', 
+          // misc
+          'game/mishy-emoji/039.png'
+        ], i, j, k, img;
+
+        // loop through modes and gather images that require preloading
+        for (i in Mishy.mode) {
+          for (k in Mishy.mode[i]) {
+            img = 'game/' + (Mishy.mode[i][k].folder ? Mishy.mode[i][k].folder : 'mishy-sticker') + '/' + Mishy.mode[i][k].img + '.png';
+
+            // only add the image if it's not present
+            if (images.indexOf(img) == -1) images.push(img);
+          }
+        }
+
+        // finally, preload all the images
+        for (i = 0, j = images.length; i < j; i++) {
+          Mishy.preload.image(images[i]);
+        }
+        
+        Mishy.preload.list = images;
+      },
+
+      // preloads an image
+      image : function (src) {
+        var img = new Image();
+        img.src = Mishy.preload.imgPath + src;
+      }
+    },
+    
+    
     // sets up Mishy's functionality
     init : function () {
-      window.Mishy = this;
+      // preload assets
+      Mishy.preload.assets();
       
       // reapply saved settings
       for (var i in Mishy.toggle) {
@@ -1204,7 +1253,11 @@
     }
   };
   
+  // globally define Mishy, for debugging, initialization, etc.
+  window.Mishy = Mishy;
   
-  // initialize Mishy
-  Mishy.init();
+  // remove loading placeholder after page has loaded
+  window.onload = function () {
+    document.body.className = document.body.className.replace(' loading', '');
+  };
 }(window, document));

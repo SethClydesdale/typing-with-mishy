@@ -11,7 +11,7 @@
       body:before, body:after { display:none; }
       #bg-404 {
         min-height:300px;
-        background:url(https://sethclydesdale.github.io/typing-with-mishy/resources/images/404.png) no-repeat 0px 0px;
+        background:no-repeat 0px 0px;
         background-size:200px 300px;
         padding-left:200px;
       }
@@ -23,12 +23,59 @@
       <h1 class="menu-title">404 Not Found</h1>
       
       <div class="menu-content center">
-        <div id="bg-404">
+        <div id="bg-404" style="background-image:url(https://sethclydesdale.github.io/typing-with-mishy/resources/images/404.png)">
           <p style="font-size:20px;">Sorry, the page you're looking for cannot be found.</p>
           <p style="font-size:18px;">お探しのページは見つかりませんでした。</p>
           <button style="margin:10px;max-width:100%;" class="button menu-opt" onclick="this.querySelector('A').click();"><a href="https://sethclydesdale.github.io/typing-with-mishy/"></a>Return to the Index / TOPページに戻る</button>
         </div>
       </div>
     </div>
+    <script>(function (window, document) {
+      // makes corrections to the page if used on the local file system
+      if (window.location.protocol == 'file:') {
+        var domain = 'https://sethclydesdale.github.io/typing-with-mishy/',
+            a = document.querySelectorAll('a[href*="' + domain + '"], script[src*="' + domain + '"], img[src*="' + domain + '"], link[href*="' + domain + '"], #bg-404'),
+            i = 0,
+            j = a.length, script;
+        
+        for (; i < j; i++) {
+          switch (a[i].tagName) {
+            // change the anchor values to their offline files
+            case 'A' :
+              a[i].href = a[i].href.replace(domain, '');
+              /404\.html$/.test(a[i].href) ? a[i].href = './index.html' : a[i].href += 'index.html';
+              break;
+            
+            // change link sources to their offline resources
+            case 'LINK' :
+              a[i].href = a[i].href.replace(domain, '');
+              break;
+              
+            // change the js source to the offline version
+            case 'SCRIPT' :
+              // since we cannot stop js execution, check if the user actually has no internet connection before appending the script
+              if (!/ga\.js$/.test(a[i].src) && !navigator.onLine) {
+                script = document.createElement('SCRIPT');
+                script.src = a[i].src.replace(domain, '');
+                script.type = 'text/javascript';
+                
+                document.body.removeChild(a[i]);
+                document.body.appendChild(script);
+              }
+              break;
+              
+            // change image source
+            case 'IMG' :
+              a[i].src = a[i].src.replace(domain, '');
+              break;
+              
+            // change background image source
+            case 'DIV' :
+              a[i].style.backgroundImage = a[i].style.backgroundImage.replace(domain, '');
+              break;
+          }
+        }
+      }
+    }(window, document));</script>
   </body>
 </html>

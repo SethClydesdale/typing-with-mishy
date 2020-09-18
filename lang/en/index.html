@@ -25,7 +25,7 @@
     <script src="../../resources/javascript/head.min.js"></script>
   </head>
 
-  <body class="main-menu">
+  <body class="main-menu loading">
     <!-- LOGO -->
     <img id="logo" src="../../resources/images/logo/en.png" alt="Typing with Mishy">
     
@@ -52,6 +52,7 @@
         <button class="button menu-opt" onclick="Mishy.showMenu('option', this);">Option</button>
         <button class="button menu-opt" onclick="Mishy.showMenu('about', this);">About</button>
         <button class="button menu-opt" onclick="Mishy.showMenu('credits', this);">Credits</button>
+        <button class="button menu-opt" onclick="Mishy.showMenu('feedback', this);">Feedback</button>
         <button id="main-menu-quit" class="button menu-opt opt-danger" onclick="Mishy.quitGame();">Quit</button>
       </div>
     </div>
@@ -158,6 +159,25 @@
       </div>
     </div>
     
+    <!-- FEEDBACK -->
+    <div id="menu-feedback" class="menu" style="display:none;">
+      <div class="menu-title">Feedback</div>
+      
+      <div class="menu-content">
+        <p></p>
+        <p>If you have any feedback, bug reports, or questions, please contact me via one of the following links.</p>
+        <ul class="menu-list with-bullets">
+          <li><a href="https://github.com/SethClydesdale/typing-with-mishy/issues" target="_blank">GitHub</li>
+          <li><a href="https://twitter.com/messages/compose?recipient_id=369201778" target="_blank">Twitter</a></li>
+          <li><a href="https://www.reddit.com/message/compose/?to=SelentoAnuri" target="_blank">Reddit</a></li>
+        </ul>
+      </div>
+      
+      <div class="menu-footer">
+        <button class="button menu-opt" onclick="Mishy.showMenu('main', this);">Back</button>
+      </div>
+    </div>
+    
     <!-- GAME ZONE -->
     <div id="game" style="display:none;">
       <div id="game-stats">
@@ -202,5 +222,6 @@
     <script src="../../resources/javascript/lang/en.min.js"></script>
     <script src="../../resources/javascript/mishy.min.js"></script>
     <script src="../../resources/javascript/mode/en.min.js"></script>
+    <script>Mishy.init(); // initialize Mishy</script>
   </body>
 </html>

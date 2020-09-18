@@ -13,6 +13,12 @@
   100% { background-color:#FCC }
 }
 
+@keyframes loading {
+   33% { content:"Now Loading." }
+   66% { content:"Now Loading.." }
+  100% { content:"Now Loading..." }
+}
+
 @keyframes main-slide {
   from { background-position:0px 0px }
     to { background-position:200px 200px }
@@ -135,6 +141,42 @@ ruby rt { font-size:11px; }
 }
 
 
+/* LOADING PLACEHOLDER */
+body.main-menu.loading:before {
+  content:"";
+  background:#CFF;
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  z-index:100;
+}
+
+body.main-menu.loading:after {
+  content:"Now Loading...";
+  color:#FFF;
+  font-size:42px;
+  font-weight:bold;
+  font-style:italic;
+  text-align:center;
+  height:100px;
+  margin-top:-100px;
+  position:fixed;
+  top:50%;
+  left:0;
+  right:0;
+  z-index:101;
+  animation:loading 2s linear infinite;
+  text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000,
+     0px 2px 3px rgba(0, 0, 0, 0.7);
+}
+
+
 /* MENUS */
 #main-menu-start, #main-title, #main-menu-lang { display:none; }
 .main-menu #main-menu-start, .main-menu #main-title, .main-menu #main-menu-lang { display:block; }
@@ -178,6 +220,13 @@ ruby rt { font-size:11px; }
 
 .menu-list { list-style-type:none; }
 .menu-list li { margin:20px 0; }
+
+.menu-list.with-bullets li {
+  background:url(../../resources/images/game/mishy-emoji/039.png) no-repeat 0 50%;
+  background-size:30px;
+  min-height:25px;
+  padding-left:35px;
+}
 
 .menu-info { display:none; }
 li:hover .menu-info {
@@ -1054,8 +1103,10 @@ body.cssanime-off, .cssanime-off [data-chain-anime], .cssanime-off [data-score-a
   #mishy-score-box { top:10px; }
 }
 
-/* bonus art adjustments */
+/* bonus/extra art adjustments */
 @media (max-width:650px) {
+  body.main-menu.loading:after { font-size:24px; }
+  
   #clear-bonus-art img { width:100px; }
 
   #bonus-art-easy {
@@ -1071,5 +1122,53 @@ body.cssanime-off, .cssanime-off [data-chain-anime], .cssanime-off [data-score-a
   #bonus-art-infinity {
     top:85px;
     right:0px;
+  }
+  
+  /* game clear art */
+  /* Mishy w/party cracker */
+  .game-clear:after {
+    width:150px;
+    height:150px;
+    bottom:-30px;
+  }
+
+  /* Mishette cheering */
+  .game-clear #background-extras:after {
+    width:100px;
+    height:100px;
+    bottom:0px;
+  }
+  
+  /* game over art */
+  /* Evil Mishy */
+  .game-over:before {
+    width:100px;
+    height:100px;
+    bottom:125px;
+    left:100px;
+  }
+
+  /* Mishy running away */
+  .game-over:after {
+    width:150px;
+    height:150px;
+    bottom:-15px;
+    left:-15px;
+  }
+
+  /* Mishette crying */
+  .game-over #background-extras:before {
+    width:100px;
+    height:100px;
+    bottom:-18px;
+    right:-12px;
+  }
+
+  /* Tio preparing to save Mishy */
+  .game-over #background-extras:after {
+    width:150px;
+    height:150px;
+    bottom:-25px;
+    right:35px;
   }
 }
