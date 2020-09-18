@@ -142,7 +142,7 @@ ruby rt { font-size:11px; }
 
 
 /* LOADING PLACEHOLDER */
-body.main-menu.loading:before {
+.main-menu.loading:before {
   content:"";
   background:#CFF;
   position:fixed;
@@ -151,9 +151,11 @@ body.main-menu.loading:before {
   right:0;
   bottom:0;
   z-index:100;
+  opacity:1;
+  transition:opacity 1000ms;
 }
 
-body.main-menu.loading:after {
+.main-menu.loading:after {
   content:"Now Loading...";
   color:#FFF;
   font-size:42px;
@@ -167,6 +169,8 @@ body.main-menu.loading:after {
   left:0;
   right:0;
   z-index:101;
+  opacity:1;
+  transition:opacity 1000ms;
   animation:loading 2s linear infinite;
   text-shadow:
    -1px -1px 0 #000,  
@@ -174,6 +178,11 @@ body.main-menu.loading:after {
     -1px 1px 0 #000,
      1px 1px 0 #000,
      0px 2px 3px rgba(0, 0, 0, 0.7);
+}
+
+.main-menu.loading.fade-loader-out:before, .main-menu.loading.fade-loader-out:after {
+  opacity:0;
+  pointer-events:none;
 }
 
 

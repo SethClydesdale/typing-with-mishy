@@ -2,7 +2,7 @@
   'use strict';
   
   // Mishy runs the entire game for us behind the scenes. Thank you, Mishy!
-  var Mishy = { // みしし
+  window.Mishy = { // みしし
     
     // general states
     playing : false, // tells Mishy if the game has already started and is being played
@@ -1222,7 +1222,10 @@
           Mishy.preload.image(images[i]);
         }
         
-        Mishy.preload.list = images;
+        // log preload list to console for debugging (debug mode only)
+        if (/debug=true/.test(window.location.search)) {
+          Mishy.preload.list = images;
+        }
       },
 
       // preloads an image
@@ -1250,12 +1253,18 @@
       
       // set random background
       Mishy.setMainBG();
-      
-      // remove loading placeholder now that everything is set up
-      document.body.className = document.body.className.replace(' loading', '');
     }
   };
   
-  // globally define Mishy, for debugging, initialization, etc.
-  window.Mishy = Mishy;
+  
+  // remove loading placeholder on page load
+  window.onload = function () {
+    // gracefully fade the loading placeholder out
+    document.body.className += ' fade-loader-out';
+    
+    // finally wipe the loading placeholder from existence after 1 second of glory
+    window.setTimeout(function() {
+      document.body.className = document.body.className.replace(/ loading| fade-loader-out/g, '');
+    }, 1000);
+  };
 }(window, document));
