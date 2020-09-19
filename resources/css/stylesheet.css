@@ -859,6 +859,7 @@ body:before, body:after, #background-extras:before, #background-extras:after {
 }
 
 /* highlighted text */
+.highlighted:empty { display:none; }
 .highlighted {
   color:#FFF;
   background:#090;
@@ -942,6 +943,7 @@ body:before, body:after, #background-extras:before, #background-extras:after {
 .word-zone .words {
   font-size:24px;
   font-weight:bold;
+  letter-spacing:0.01px;
 }
 
 .word-zone .helper {

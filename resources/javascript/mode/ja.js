@@ -645,7 +645,56 @@
   
   // Normal Mode
   Mishy.mode.normal = [
+    {
+      words : 'みっしぃはねています',
+      helper : 'mi sshi ha ne te i ma su',
+      img : '004',
+      pause : true // pause the first card for normal mode, so the player can read the hint and warm up
+    },
     
+    {
+      words : 'すのーぼーどするのをゆめみています',
+      helper : 'su no - bo - do su ru no wo yu me mi te i ma su',
+      img : '012'
+    },
+    
+    {
+      words : 'それから、おんせんにはいりました',
+      helper : 'so re ka ra , o n se nn ni ha i ri ma shi ta',
+      img : '013'
+    },
+    
+    {
+      words : 'ぎゅうにゅうをのんでいます',
+      helper : 'gyu u nyu u wo no n de i ma su',
+      img : '014'
+    },
+    
+    {
+      words : 'すごくおいしいだよ',
+      helper : 'su go ku o i shi i da yo',
+      img : '010'
+    },
+    
+    {
+      words : 'みっしぃはおきます',
+      helper : 'mi sshi ha o ki ma su',
+      img : '001',
+      folder : 'mishy-anime'
+    },
+    
+    {
+      words : 'ちょうしょくをたべたい',
+      helper : 'cho u sho ku wo ta be ta i',
+      img : '024'
+    },
+    
+    {
+      words : 'みーしぇぇぇ！',
+      helper : 'mi - she xe xe !',
+      img : '025-clean'
+    },
+    // TODO: Mishy calls for Mishette, but she doesn't answer; she was taken by Evil Mishy!
   ];
   
   

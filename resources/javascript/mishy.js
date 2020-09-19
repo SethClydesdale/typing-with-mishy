@@ -1253,6 +1253,11 @@
       
       // set random background
       Mishy.setMainBG();
+      
+      // show beta test option (mode that is currently in development)
+      if (/debug=true/.test(window.location.search)) {
+        document.getElementById('beta-test').style.display = '';
+      }
     }
   };
   
