@@ -677,10 +677,28 @@
     },
     
     {
-      words : 'みっしぃはおきます',
+      words : 'あれ？',
+      helper : 'a re ?',
+      img : '100'
+    },
+    
+    {
+      words : 'わるしし、みーしぇをらちする',
+      helper : 'wa ru shi shi , mi - she wo ra chi su ru',
+      img : '103-abduction'
+    },
+    
+    {
+      words : 'おきます',
       helper : 'mi sshi ha o ki ma su',
       img : '001',
       folder : 'mishy-anime'
+    },
+    
+    {
+      words : 'こわかった！',
+      helper : 'ko wa ka tta !',
+      img : '034'
     },
     
     {
@@ -694,7 +712,43 @@
       helper : 'mi - she xe xe !',
       img : '025-clean'
     },
-    // TODO: Mishy calls for Mishette, but she doesn't answer; she was taken by Evil Mishy!
+    
+    {
+      words : 'なに？',
+      helper : 'na ni ?',
+      img : '026'
+    },
+    
+    {
+      words : 'みーしぇはどこですか！？',
+      helper : 'mi - she ha do ko de su ka',
+      img : '050'
+    },
+    
+    {
+      words : 'あのゆめ。。。',
+      helper : 'a no yu me . . .',
+      img : '053-dream'
+    },
+    
+    {
+      words : 'さがしてみます',
+      helper : 'sa ga shi te mi ma su',
+      img : '131'
+    },
+    
+    {
+      words : 'みーしぇをたすけましょう！！',
+      helper : 'mi - she wo ta su ke ma sho u ! !',
+      img : '068'
+    },
+    
+    {
+      words : 'くるまをうんてんしています',
+      helper : 'ku ru ma wo u n te n shi te i ma su',
+      img : '093'
+    },
+    // As Mishy is searching for Mishette, he asks one of his biggest fans for help. <TO BE CONTINUED>
   ];
   
   
