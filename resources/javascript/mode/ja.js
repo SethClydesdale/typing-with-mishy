@@ -748,7 +748,73 @@
       helper : 'ku ru ma wo u n te n shi te i ma su',
       img : '093'
     },
-    // As Mishy is searching for Mishette, he asks one of his biggest fans for help. <TO BE CONTINUED>
+    
+    {
+      words : 'すみません、みーしぇをみましたか。',
+      helper : 'su mi ma se n , mi - she wo mi ma shi ta ka .',
+      img : '106-clean'
+    },
+    
+    {
+      words : 'あ、みっしぃ！！',
+      helper : 'a , mi sshi xi ! !',
+      img : 'tio-01',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'うおっ！',
+      helper : 'u o xtu !',
+      img : '034',
+    },
+    
+    {
+      words : 'こほん、すみません。',
+      helper : 'ko ho n , su mi ma se n .',
+      img : 'tio-kao-05',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'てぃお・ぷらとーです。よろしく。',
+      helper : 'te xi o / pu ra to - de su . yo ro shi ku .',
+      img : 'tio-03',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : '（てぃおはみっしぃがだいすきだよ）',
+      helper : '( te xi o ha mi sshi xi ga da i su ki da yo )',
+      img : '020'
+    },
+    
+    {
+      words : 'みーしぇをさがしていますか。',
+      helper : 'mi - she wo sa ga shi te i ma su ka .',
+      img : 'tio-kao-01',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'はい！',
+      helper : 'ha i !',
+      img : '114'
+    },
+    
+    {
+      words : 'わかりました。わたしにまかせてください。',
+      helper : 'wa ka ri ma shi ta . wa ta shi ni ma ka se te ku da sa i .',
+      img : 'tio-kao-02',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'えいおんしすてむきどう！',
+      helper : 'e i o n shi su te mu ki do u !',
+      img : 'tio-kao-08',
+      folder : 'kiseki'
+    },
+    // Tio begins searching for Mishette using the Aeon System, will she be able to locate her!? <TO BE CONTINUED>
   ];
   
   

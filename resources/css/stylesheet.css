@@ -928,12 +928,12 @@ body:before, body:after, #background-extras:before, #background-extras:after {
   pointer-events:none;
 }
 
-.mishy {
+.card-image {
   display:block;
   max-height:200px;
   margin:10px auto;
 }
-.card-image { height:200px; }
+.card-image-container { height:200px; }
 
 .word-zone {
   text-align:center;

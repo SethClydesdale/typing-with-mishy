@@ -116,7 +116,7 @@
           
         case 'normal':
           // time multipliers
-          Mishy.multiplier = 1;
+          Mishy.multiplier = 1.5;
           Mishy.multiType = '*';
           
           // score multiplier
@@ -134,8 +134,8 @@
           
         case 'hard':
           // time multipliers
-          Mishy.multiplier = 1.5;
-          Mishy.multiType = '/';
+          Mishy.multiplier = 1;
+          Mishy.multiType = '*';
           
           // score multiplier
           Mishy.score.multi = 3;
@@ -152,7 +152,7 @@
           
         case 'nightmare':
           // time multipliers
-          Mishy.multiplier = 2;
+          Mishy.multiplier = 1.5;
           Mishy.multiType = '/';
           
           // score multiplier
@@ -170,7 +170,7 @@
           
         case 'infinity':
           // time multipliers
-          Mishy.multiplier = 2.5;
+          Mishy.multiplier = 2;
           Mishy.multiType = '/';
           
           // score multiplier
@@ -253,7 +253,7 @@
         
         // create new card
         Mishy.cache.card.innerHTML = '<div class="mishy-card">'+
-          (card.img || card.custom ? '<div class="card-image"><img class="mishy" src="' + (card.custom ? card.custom : getPaths() + 'resources/images/game/' + (card.folder || 'mishy-sticker') + '/' + card.img + '.png') + '" alt="Mishy"></div>' : '')+
+          (card.img || card.custom ? '<div class="card-image-container"><img class="card-image" src="' + (card.custom ? card.custom : getPaths() + 'resources/images/game/' + (card.folder || 'mishy-sticker') + '/' + card.img + '.png') + '" alt="Mishy"></div>' : '')+
           '<div class="word-zone">'+
             '<div id="card-words" class="words">' + card.words + '</div>'+
             (card.helper && Mishy.romaji && !Mishy.noHelper ? '<div class="helper">' + card.helper + '</div>' : '')+
@@ -270,7 +270,7 @@
 
           // multiply or divide the time
           switch (Mishy.multiType) {
-            case '*': // multipy time
+            case '*': // multiply time
               Mishy.time = Math.ceil(Mishy.time * Mishy.multiplier);
               break;
 
@@ -283,7 +283,7 @@
           }
 
           // lowest possible time should be 2 seconds
-          if (Mishy.time < 2) Mishy.time = 2000;
+          if (Mishy.time < 2000) Mishy.time = 2000;
         }
         
         // if set, use the time included with the card
@@ -414,7 +414,7 @@
     // completed @ 75% or higher time: GREAT; HP+5
     // completed @ 26%-74% time: GOOD; HP+3
     // completed @ 25% or less time: OKAY; HP+1
-    // missed: MISS; -25HP to -50HP based on difficulty
+    // missed: MISS; -25HP to -60HP based on the difficulty
     showGrade : function () {
       var time = (Mishy.timeLeft / Mishy.time) * 100, // get time percentage
           card = document.createElement('DIV'), // creation of the grade card container
