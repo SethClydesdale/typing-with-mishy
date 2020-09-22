@@ -796,8 +796,8 @@
     },
     
     {
-      words : 'はい！',
-      helper : 'ha i !',
+      words : 'はい！わるみっしぃはみーしぇをらちしました。',
+      helper : 'ha i ! wa ru mi sshi xi ha mi - she wo ra chi shi ma shi ta .',
       img : '114'
     },
     
@@ -814,7 +814,97 @@
       img : 'tio-kao-08',
       folder : 'kiseki'
     },
-    // Tio begins searching for Mishette using the Aeon System, will she be able to locate her!? <TO BE CONTINUED>
+    
+    {
+      words : 'すごいですね',
+      helper : 'su go i de su ne',
+      img : '124'
+    },
+    
+    {
+      words : 'ふう',
+      helper : 'fu u',
+      img : 'tio-kao-07',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'みしゅらむわんだーらんどでふたりをかんちしました。',
+      helper : 'mi shu ra mu wa n da - ra n do de fu ta ri wo ka n chi shi ma shi ta .',
+      img : 'tio-kao-04',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'ほんとうですか！？',
+      helper : 'ho n to u de su ka ! ?',
+      img : '122'
+    },
+    
+    {
+      words : 'ええ、いきましょう！',
+      helper : 'e e , i ki ma sho u !',
+      img : 'tio-kao-02',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'らじゃー',
+      helper : 'ra ja -',
+      img : '032'
+    },
+    
+    {
+      words : 'みしゅらむわんだーらんど',
+      helper : 'mi shu ra mu wa n da - ra n do',
+      img : 'mwl-01',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'みーしぇは？',
+      helper : 'mi - she ha ?',
+      img : '071'
+    },
+    
+    {
+      words : 'ほらーこーすたーです。',
+      helper : 'ho ra - ko - su ta - de su .',
+      img : 'tio-kao-01',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'ほらー？',
+      helper : 'ho ra - ?',
+      img : '079'
+    },
+    
+    {
+      words : 'ぞわぞわ',
+      helper : 'zo wa zo wa',
+      img : '209'
+    },
+    
+    {
+      words : 'みっしぃ、あちらをみてください！',
+      helper : 'mi sshi xi , a chi ra wo mi te ku da sa i !',
+      img : 'tio-kao-08',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'きゃー',
+      helper : 'kya -',
+      img : '154'
+    },
+    
+    {
+      words : 'あ、わるみっしぃとみーしぇ！',
+      helper : 'wa ru mi sshi xi to mi - she !',
+      img : '103-found'
+    },
+    // Now that Evil Mishy has been found, will our unlikely duo be able to save Mishette!? <TO BE CONTINUED>
   ];
   
   

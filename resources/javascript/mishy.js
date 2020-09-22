@@ -1236,6 +1236,26 @@
     },
     
     
+    // removes the loading placeholder
+    stopLoading : function () {
+      if (/loading/.test(document.body.className) && !/fade-loader-out/.test(document.body.className)) {
+        // gracefully fade the loading placeholder out
+        document.body.className += ' fade-loader-out';
+
+        // finally wipe the loading placeholder from existence after 1 second of glory
+        window.setTimeout(function() {
+          document.body.className = document.body.className.replace(/ loading| fade-loader-out/g, '');
+        }, 1000);
+        
+        // clear the fallback timeout
+        if (Mishy.loaderTimeout) {
+          window.clearTimeout(Mishy.loaderTimeout);
+          delete Mishy.loaderTimeout;
+        }
+      }
+    },
+    
+    
     // sets up Mishy's functionality
     init : function () {
       // preload assets
@@ -1263,13 +1283,8 @@
   
   
   // remove loading placeholder on page load
-  window.onload = function () {
-    // gracefully fade the loading placeholder out
-    document.body.className += ' fade-loader-out';
-    
-    // finally wipe the loading placeholder from existence after 1 second of glory
-    window.setTimeout(function() {
-      document.body.className = document.body.className.replace(/ loading| fade-loader-out/g, '');
-    }, 1000);
-  };
+  window.onload = Mishy.stopLoading;
+  
+  // fallback that removes the loading placeholder after 10 seconds of waiting
+  Mishy.loaderTimeout = window.setTimeout(Mishy.stopLoading, 10000);
 }(window, document));

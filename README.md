@@ -2,15 +2,19 @@
 
 
 #### English
-"Typing with Mishy" is a typing practice fan game starring Nihon Falcom's mascot, Mishy, where you practice your typing with...you guessed it, Mishy! Click the link below to start playing! I hope you have fun, and remember... ENJOY☆MISHY! Mee hee hee
+"Typing with Mishy" is a typing practice fan game starring Nihon Falcom's mascot, Mishy, where you practice your typing with...you guessed it, Mishy! Click the link below to start playing!
 
 - [**Play Game**](https://sethclydesdale.github.io/typing-with-mishy/lang/en/)
 
+I hope you have fun, and remember... ENJOY☆MISHY! Mee hee hee
+
 
 #### 日本語
-「みっしぃとタイピング」はタイピング<ruby>練習<rt>れんしゅう</rt></ruby>ゲームとみっしぃファンゲームです。みっしぃとタイピングを<ruby>練習<rt>れんしゅう</rt></ruby>します。<ruby>次<rt>つぎ</rt></ruby>のリンクをクリックしてゲームをします！みっしぃと<ruby>楽<rt>たの</rt></ruby>しんでくださいね。エンジョーイ☆みっしぃ！みしし
+「みっしぃとタイピング」はタイピング<ruby>練習<rt>れんしゅう</rt></ruby>ゲームとみっしぃファンゲームです。みっしぃとタイピングを<ruby>練習<rt>れんしゅう</rt></ruby>します。<ruby>次<rt>つぎ</rt></ruby>のリンクをクリックしてゲームをします！
 
 - [**ゲームをする**](https://sethclydesdale.github.io/typing-with-mishy/)
+
+<ruby>楽<rt>たの</rt></ruby>しんでくださいね。エンジョーイ☆みっしぃ！みしし
 
 -----
 

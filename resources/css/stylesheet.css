@@ -713,7 +713,7 @@ body:before, body:after, #background-extras:before, #background-extras:after {
 #game-stats-inner {
   font-size:0;
   height:60px;
-  max-width:600px;
+  max-width:800px;
   box-sizing:border-box;
   padding:10px 0;
   margin:0 auto;
@@ -768,7 +768,7 @@ body:before, body:after, #background-extras:before, #background-extras:after {
 /* grades */
 #mishy-grade {
   height:60px;
-  max-width:600px;
+  max-width:800px;
   margin:0 auto;
   position:relative;
   overflow:hidden;
@@ -867,7 +867,7 @@ body:before, body:after, #background-extras:before, #background-extras:after {
 
 /* word cards */
 .content-block {
-  max-width:600px;
+  max-width:800px;
   margin:50px auto;
 }
 

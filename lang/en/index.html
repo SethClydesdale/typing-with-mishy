@@ -202,6 +202,7 @@
       <div id="input-zone" class="content-block">
         <input id="game-input" type="text" onkeyup="Mishy.highlightText(this); Mishy.checkAnswer(this); Mishy.WPM.update();">
         <button class="button menu-opt" onclick="Mishy.pause();">Pause</button>
+        <script>if (/debug=true/.test(window.location.search)) document.write('<button class="button menu-opt" onclick="Mishy.nextCard();">Next</button>');</script>
         <div id="mishy-hint" style="display:none"><img src="../../resources/images/game/mishy-emoji/021.png" alt="Mishy">Hint: Type the words under Mishy</div>
       </div>
     </div>
