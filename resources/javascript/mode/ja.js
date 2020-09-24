@@ -783,8 +783,8 @@
     },
     
     {
-      words : '（てぃおはみっしぃがだいすきだよ）',
-      helper : '( te xi o ha mi sshi xi ga da i su ki da yo )',
+      words : '（てぃおはみっしぃのだいふぁんですよ）',
+      helper : '( te xi o ha mi sshi xi no dai fa n de su yo )',
       img : '020'
     },
     
@@ -881,6 +881,13 @@
     },
     
     {
+      words : 'ほらーこーすたー',
+      helper : 'ho ra - ko - su ta -',
+      img : 'horror-coaster',
+      folder : 'kiseki'
+    },
+    
+    {
       words : 'ぞわぞわ',
       helper : 'zo wa zo wa',
       img : '209'
@@ -904,7 +911,65 @@
       helper : 'wa ru mi sshi xi to mi - she !',
       img : '103-found'
     },
-    // Now that Evil Mishy has been found, will our unlikely duo be able to save Mishette!? <TO BE CONTINUED>
+    
+    {
+      words : 'みーしぇをかいほうしなさい！',
+      helper : 'mi - she wo ka i ho u shi na sa i !',
+      img : '075'
+    },
+    
+    {
+      words : 'わるしし',
+      helper : 'wa ru shi shi',
+      img : '103'
+    },
+    
+    {
+      words : 'きをつけてください！',
+      helper : 'ki wo tsu ke te ku da sa i !',
+      img : 'tio-kao-02',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'がーん！',
+      helper : 'ga - n !',
+      img : '076'
+    },
+    
+    {
+      words : 'おたすけてくださーい！',
+      helper : 'o ta su ke te ku da sa - i !',
+      img : '129'
+    },
+    
+    {
+      words : '。。。まったく。',
+      helper : '. . . ma tta ku .',
+      img : 'tio-04',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'えーてるばすたー！',
+      helper : 'e - te ru ba su ta - !',
+      img : 'tio-scraft-01',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'たすかりました！',
+      helper : 'ta su ka ri ma shi ta !',
+      img : '153-clean'
+    },
+    
+    {
+      words : 'がんばりましょう、みっしぃ！',
+      helper : 'ga n ba ri ma sho u , mi sshi xi !',
+      img : 'tio-to-mishy',
+      folder : 'kiseki'
+    },
+    // With our heroes now resolved to defeat Evil Mishy, will they be able to prevail!? <TO BE CONTINUED>
   ];
   
   
@@ -922,9 +987,9 @@
   
   // Infinity Mode
   // contains exclusive infinity mode cards + all cards from prior modes (order is completely randomized)
-  Mishy.mode.infinity = [
+  Mishy.mode.infinity = [].concat(Mishy.mode.easy, Mishy.mode.normal, Mishy.mode.hard, Mishy.mode.nightmare, [
     
-  ].concat(Mishy.mode.easy, Mishy.mode.normal, Mishy.mode.hard, Mishy.mode.nightmare);
+  ]);
   
   
 }(window, document));

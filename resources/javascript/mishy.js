@@ -185,8 +185,25 @@
             end : 0
           });*/
           
+          // clean up the arrays for infinity mode
+          if (!Mishy.infinityCleaned) {
+            for (var i = 0, j = Mishy.mode.infinity.length; i < j; i++) {
+              // deletes the custom time parameter (this way all cards are super fast!)
+              if (Mishy.mode.infinity[i].time) delete Mishy.mode.infinity[i].time;
+
+              // deletes the pause parameter (only way you're catching a break is the pause button!)
+              if (Mishy.mode.infinity[i].pause) delete Mishy.mode.infinity[i].pause;
+            }
+            
+            // mark that the infinity array was cleaned so that it doesn't do a second pass
+            Mishy.infinityCleaned = true;
+          }
+          
+          // infinity was originally going to be randomized, however, upon careful consideration I decided to keep the order of each mode
+          // this way you get to replay all 4 stories (+a bonus story), challenging yourself at super high speed!
+          // # remnant code below #
           // randomize the contents of the infinity array
-          var randomizedInfinity = [], n = 0;
+          /*var randomizedInfinity = [], n = 0;
 
           while (Mishy.mode.infinity.length) {
             // get random index
@@ -206,7 +223,7 @@
           }
 
           // clone the randomized array and done!
-          Mishy.mode.infinity = randomizedInfinity.slice();
+          Mishy.mode.infinity = randomizedInfinity.slice();*/
           break;
           
         default:
