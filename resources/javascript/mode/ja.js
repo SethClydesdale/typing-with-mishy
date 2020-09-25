@@ -27,7 +27,7 @@
   Mishy.mode.ja = true;
   
   
-  // Easy Mode
+  // Easy Mode - "Mishy's Daily Life"
   Mishy.mode.easy = [
     {
       words : 'おはよう',
@@ -643,7 +643,7 @@
   ];
   
   
-  // Normal Mode
+  // Normal Mode - "Mishy's Dream"
   Mishy.mode.normal = [
     {
       words : 'みっしぃはねています',
@@ -969,7 +969,137 @@
       img : 'tio-to-mishy',
       folder : 'kiseki'
     },
-    // With our heroes now resolved to defeat Evil Mishy, will they be able to prevail!? <TO BE CONTINUED>
+    
+    {
+      words : 'ぜろ・ふぃーるど',
+      helper : 'ze ro / fi - ru do',
+      img : 'tio-scraft-02',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'ありがとう、てぃお！',
+      helper : 'a ri ga to u , te xi o !',
+      img : '186-zero-field'
+    },
+    
+    {
+      words : 'みっしぃ・ろけっと',
+      helper : 'mi sshi xi / ro ke tto',
+      img : '303-rocket'
+    },
+    
+    {
+      words : 'みーしぇ・ぱんち',
+      helper : 'mi - she / pa n chi',
+      img : '103-finisher'
+    },
+    
+    {
+      words : 'けーおー',
+      helper : 'ke - o -',
+      img : '103-ko'
+    },
+    
+    {
+      words : 'えー',
+      helper : 'e -',
+      img : '188'
+    },
+    
+    {
+      words : 'すてーたす、おーるぐりーんです。',
+      helper : 'su te - ta su , o - ru gu ri - n de su .',
+      img : 'tio-kao-05',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'いぇい！',
+      helper : 'i xe i !',
+      img : '255-clean'
+    },
+    
+    {
+      words : 'ないすぱんち、みーしぇ！',
+      helper : 'na i su pa n chi , mi - she !',
+      img : '157'
+    },
+    
+    {
+      words : 'よかった。。。',
+      helper : 'yo ka tta . . .',
+      img : 'tio-kao-10',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'お',
+      helper : 'o',
+      img : '257-o'
+    },
+    
+    {
+      words : 'き',
+      helper : 'ki',
+      img : '257-ki'
+    },
+    
+    {
+      words : 'て',
+      helper : 'te',
+      img : '257-te'
+    },
+    
+    {
+      words : 'おきて、みっしぃ。',
+      helper : 'o ki te , mi sshi xi .',
+      img : '257-clean'
+    },
+    
+    {
+      words : 'えー？',
+      helper : 'e - ?',
+      img : '067-clean'
+    },
+    
+    {
+      words : 'ゆめでした',
+      helper : 'yu me de shi ta',
+      img : '072-clean'
+    },
+    
+    {
+      words : 'いってきます！',
+      helper : 'i tte ki ma su !',
+      img : '101-clean'
+    },
+    
+    {
+      words : 'いってらっしゃい！',
+      helper : 'i tte ra ssha i !',
+      img : '044-clean'
+    },
+    
+    {
+      words : 'まってください！',
+      helper : 'ma tte ku da sa i !',
+      img : 'tio-05-hidden',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'おべんとうをわすれました。',
+      helper : 'o be n to u wo wa su re ma shi ta .',
+      img : 'tio-05',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'ゆめじゃなかった！？',
+      helper : 'e - , yu me ja na ka tta ! ?',
+      img : '188'
+    }
   ];
   
   

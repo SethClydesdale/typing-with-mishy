@@ -31,6 +31,7 @@
     
     // misc
     mainBG : [0], // tells Mishy how many backgrounds you've unlocked
+    debug : /debug=true/.test(window.location.search), // tells Mishy if debug mode is enabled
     
     
     // player stats
@@ -718,6 +719,20 @@
                 bonus += Mishy.mode[Mishy.gameMode][i].words.length;
               }
             }
+            
+            // multiply or divide the bonus time range based on the difficulty
+            switch (Mishy.multiType) {
+              case '*':
+                bonus *= Mishy.multiplier;
+                break;
+                
+              case '/': // this will need to be tested to see if the bonus time is possible to accomplish when divided
+                bonus /= Mishy.multiplier;
+                break;
+                
+              default:
+                break;
+            }
 
             // determine the bonus multiplier
             bonus = Mishy.stats.time <= Math.round(bonus / 5) ? 5 :
@@ -1124,6 +1139,8 @@
     // play audio
     /*play : {
       
+      // music was originally going to be added, however, to respect Falcom's free music declaration, I decided not to.
+      // feel free to use the code below (and its remnants throughout the script as reference material for playing/looping audio)
       // play music
       music : function (filename, loop) {
         var music = Mishy.cache.music;
@@ -1145,7 +1162,7 @@
           // playing events
           music.ontimeupdate = function () {
             // log time for debugging
-            if (/debug=true/.test(window.location.search)) {
+            if (Mishy.debug) {
               console.log(this.currentTime);
             } 
 
@@ -1240,7 +1257,7 @@
         }
         
         // log preload list to console for debugging (debug mode only)
-        if (/debug=true/.test(window.location.search)) {
+        if (Mishy.debug) {
           Mishy.preload.list = images;
         }
       },
@@ -1292,7 +1309,7 @@
       Mishy.setMainBG();
       
       // show beta test option (mode that is currently in development)
-      if (/debug=true/.test(window.location.search)) {
+      if (Mishy.debug) {
         document.getElementById('beta-test').style.display = '';
       }
     }

@@ -27,7 +27,7 @@
   Mishy.mode.ja = true;
   
   
-  // Easy Mode
+  // Easy Mode - "Mishy's Daily Life"
   Mishy.mode.easy = [
     {
       words : 'Morning',
@@ -543,7 +543,7 @@
   ];
   
   
-  // Normal Mode
+  // Normal Mode - "Mishy's Dream"
   Mishy.mode.normal = [
     
   ];
