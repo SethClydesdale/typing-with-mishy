@@ -906,6 +906,23 @@ body:before, body:after, #background-extras:before, #background-extras:after {
   vertical-align:middle;
 }
 
+#mishy-debugger { text-align:center; }
+#mishy-debugger input {
+  color:#333;
+  font-size: 24px;
+  text-align:center;
+  vertical-align:middle;
+  background-color:#bef;
+  background-color:rgba(187,238,255,.8);
+  border:1px solid #3bd;
+  max-width:100px;
+  height:50px;
+  padding:10px;
+  margin:10px;
+  box-sizing:border-box;
+  outline:0;
+}
+
 #mishy-card-container, #game-stats {
   pointer-events:none;
   -webkit-touch-callout:none;

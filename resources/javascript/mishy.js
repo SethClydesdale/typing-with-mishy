@@ -1308,9 +1308,41 @@
       // set random background
       Mishy.setMainBG();
       
-      // show beta test option (mode that is currently in development)
+      // show beta test option (mode that is currently in development) and special debug options
       if (Mishy.debug) {
         document.getElementById('beta-test').style.display = '';
+        
+        // special debug functions
+        Mishy.debugTools = {
+          // go to previous card
+          prev : function () {
+            Mishy.progress = Mishy.progress - 2 <= -1 ? 0 : Mishy.progress - 2;
+            Mishy.nextCard();
+            Mishy.cache.debugCardIndex.value = Mishy.progress;
+            Mishy.cache.debugCardIndex.max = Mishy.mode[Mishy.gameMode].length;
+            Mishy.paused = true;
+          },
+          
+          // go to the next card
+          next : function () {
+            Mishy.nextCard();
+            Mishy.cache.debugCardIndex.value = Mishy.progress;
+            Mishy.cache.debugCardIndex.max = Mishy.mode[Mishy.gameMode].length;
+            Mishy.paused = true;
+          }
+        };
+        
+        // create prev/next button for cycling through cards
+        var debug = document.createElement('DIV');
+        
+        debug.id = 'mishy-debugger';
+        debug.innerHTML = 
+          '<button class="button" onmousedown="Mishy.debugTools.prev(); window.CardChange = setInterval(Mishy.debugTools.prev, 200);" onmouseup="window.CardChange && clearInterval(CardChange);">Prev</button>'+
+          '<input id="debug-card-index" type="number" onchange="Mishy.progress = this.value; this.max = Mishy.mode[Mishy.gameMode].length;" min="0" value="1">'+
+          '<button class="button" onmousedown="Mishy.debugTools.next(); window.CardChange = setInterval(Mishy.debugTools.next, 200);" onmouseup="window.CardChange && clearInterval(CardChange);">Next</button>';
+        
+        document.getElementById('input-zone').insertBefore(debug, document.getElementById('mishy-hint'));
+        Mishy.cache.debugCardIndex = document.getElementById('debug-card-index');
       }
     }
   };

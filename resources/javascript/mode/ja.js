@@ -689,8 +689,14 @@
     },
     
     {
+      words : 'のー！！',
+      helper : 'no - ! !',
+      img : '222'
+    },
+    
+    {
       words : 'おきます',
-      helper : 'mi sshi ha o ki ma su',
+      helper : 'o ki ma su',
       img : '001',
       folder : 'mishy-anime'
     },
@@ -756,15 +762,15 @@
     },
     
     {
-      words : 'あ、みっしぃ！！',
-      helper : 'a , mi sshi xi ! !',
+      words : 'あっ、みっしぃ！！',
+      helper : 'a xtsu , mi sshi xi ! !',
       img : 'tio-01',
       folder : 'kiseki'
     },
     
     {
       words : 'うおっ！',
-      helper : 'u o xtu !',
+      helper : 'u o xtsu !',
       img : '034',
     },
     
@@ -908,13 +914,13 @@
     
     {
       words : 'あ、わるみっしぃとみーしぇ！',
-      helper : 'wa ru mi sshi xi to mi - she !',
+      helper : 'a , wa ru mi sshi xi to mi - she !',
       img : '103-found'
     },
     
     {
-      words : 'みーしぇをかいほうしなさい！',
-      helper : 'mi - she wo ka i ho u shi na sa i !',
+      words : 'みーしぇをかいほうしなさいよ！',
+      helper : 'mi - she wo ka i ho u shi na sa i yo !',
       img : '075'
     },
     
@@ -984,27 +990,45 @@
     },
     
     {
-      words : 'みっしぃ・ろけっと',
-      helper : 'mi sshi xi / ro ke tto',
+      words : 'まかせて！',
+      helper : 'ma ka se te !',
+      img : '042-clean'
+    },
+    
+    {
+      words : 'さささ',
+      helper : 'sa sa sa',
+      img : '170'
+    },
+    
+    {
+      words : 'くるくる',
+      helper : 'ku ru ku ru',
+      img : '303-clean'
+    },
+    
+    {
+      words : 'みっしぃ・ろけっと！',
+      helper : 'mi sshi xi / ro ke tto !',
       img : '303-rocket'
     },
     
     {
-      words : 'みーしぇ・ぱんち',
-      helper : 'mi - she / pa n chi',
+      words : 'みーしぇ・ぱんち！',
+      helper : 'mi - she / pa n chi !',
       img : '103-finisher'
-    },
-    
-    {
-      words : 'けーおー',
-      helper : 'ke - o -',
-      img : '103-ko'
     },
     
     {
       words : 'えー',
       helper : 'e -',
       img : '188'
+    },
+    
+    {
+      words : 'けーおー',
+      helper : 'ke - o -',
+      img : '103-ko'
     },
     
     {
@@ -1031,6 +1055,12 @@
       helper : 'yo ka tta . . .',
       img : 'tio-kao-10',
       folder : 'kiseki'
+    },
+    
+    {
+      words : 'おめでとうー！！',
+      helper : 'o me de to u - ! !',
+      img : '182'
     },
     
     {
@@ -1064,9 +1094,22 @@
     },
     
     {
-      words : 'ゆめでした',
-      helper : 'yu me de shi ta',
+      words : 'ゆめでした。。。',
+      helper : 'yu me de shi ta . . .',
       img : '072-clean'
+    },
+    
+    {
+      words : 'ちょうしょくをたべています',
+      helper : 'cho u sho ku wo ta be te i ma su',
+      img : '003',
+      folder : 'mishy-anime'
+    },
+    
+    {
+      words : 'てぃおはどこかな？',
+      helper : 'te xi o ha do ko ka na ?',
+      img : '030',
     },
     
     {
@@ -1097,8 +1140,14 @@
     
     {
       words : 'ゆめじゃなかった！？',
-      helper : 'e - , yu me ja na ka tta ! ?',
-      img : '188'
+      helper : 'yu me ja na ka tta ! ?',
+      img : '188-clean'
+    },
+    
+    {
+      words : 'はっぴーえんど',
+      helper : 'ha ppi - e n do',
+      img : '021'
     }
   ];
   
