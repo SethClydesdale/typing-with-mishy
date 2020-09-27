@@ -1237,6 +1237,7 @@
           'background/game/easy.png', 'background/game/normal.png', 'background/game/hard.png', 'background/game/nightmare.png', 'background/game/infinity.png', 'background/game/game-clear.png', 'background/game/game-over.png', 
           // background extras
           'game/mishy-emoji/078.png', 'game/mishy-sticker/093.png', 'background/extra/grass.png', 'game/mishy-sticker/103.png', 'game/mishy-sticker/011.png', 'game/mishy-sticker/239-clean.png', 'game/kiseki/tio-01.png', 'game/kiseki/tio-02.png', 'background/extra/confetti.png', 'game/mishy-sticker/126-clean.png', 'game/mishy-sticker/041-clean.png', 
+          'game/mishy-sticker/004.png', 'game/kiseki/tio-06.png', 'background/extra/clouds.png',
           // misc
           'game/mishy-emoji/039.png'
         ], i, j, k, img;
@@ -1310,7 +1311,8 @@
       
       // show beta test option (mode that is currently in development) and special debug options
       if (Mishy.debug) {
-        document.getElementById('beta-test').style.display = '';
+        var beta = document.getElementById('beta-test');
+        if (beta) beta.style.display = '';
         
         // special debug functions
         Mishy.debugTools = {
@@ -1337,9 +1339,9 @@
         
         debug.id = 'mishy-debugger';
         debug.innerHTML = 
-          '<button class="button" onmousedown="Mishy.debugTools.prev(); window.CardChange = setInterval(Mishy.debugTools.prev, 200);" onmouseup="window.CardChange && clearInterval(CardChange);">Prev</button>'+
+          '<button class="button" onmousedown="Mishy.debugTools.prev(); window.CardChange = setInterval(Mishy.debugTools.prev, 200);" onmouseup="window.CardChange && clearInterval(CardChange);" onmouseout="window.CardChange && clearInterval(CardChange);">Prev</button>'+
           '<input id="debug-card-index" type="number" onchange="Mishy.progress = this.value; this.max = Mishy.mode[Mishy.gameMode].length;" min="0" value="1">'+
-          '<button class="button" onmousedown="Mishy.debugTools.next(); window.CardChange = setInterval(Mishy.debugTools.next, 200);" onmouseup="window.CardChange && clearInterval(CardChange);">Next</button>';
+          '<button class="button" onmousedown="Mishy.debugTools.next(); window.CardChange = setInterval(Mishy.debugTools.next, 200);" onmouseup="window.CardChange && clearInterval(CardChange);" onmouseout="window.CardChange && clearInterval(CardChange);">Next</button>';
         
         document.getElementById('input-zone').insertBefore(debug, document.getElementById('mishy-hint'));
         Mishy.cache.debugCardIndex = document.getElementById('debug-card-index');

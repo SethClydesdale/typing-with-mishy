@@ -933,7 +933,7 @@
     {
       words : 'きをつけてください！',
       helper : 'ki wo tsu ke te ku da sa i !',
-      img : 'tio-kao-02',
+      img : 'tio-kao-08',
       folder : 'kiseki'
     },
     

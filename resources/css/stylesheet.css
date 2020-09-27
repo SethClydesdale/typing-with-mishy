@@ -42,6 +42,14 @@
   100% { right:-200px; }
 }
 
+@keyframes evil-mishy-peek {
+  0% { bottom:-300px; }
+  25% { bottom:-300px; }
+  50% { bottom:-95px; }
+  75% { bottom:-95px }
+  100% { bottom:-300px; }
+}
+
 @keyframes grade-slide {
   from {
     right:0%;
@@ -348,7 +356,7 @@ li:hover .menu-info {
 body:before, body:after, #background-extras:before, #background-extras:after {
   content:"";
   position:fixed;
-  z-index:-1;
+  z-index:-5;
 } 
 
 /* EASY BACKGROUND EXTRAS */
@@ -391,6 +399,49 @@ body:before, body:after, #background-extras:before, #background-extras:after {
   left:0;
   right:0;
   bottom:0;
+}
+
+/* NORMAL BACKGROUND EXTRAS */
+/* Mishy sleeping */
+.normal-mode:before {
+  background:url(../../resources/images/game/mishy-sticker/004.png) no-repeat;
+  background-size:100%;
+  width:150px;
+  height:150px;
+  bottom:-20px;
+  left:0px;
+  z-index:-4;
+}
+
+/* Tio */
+.normal-mode:after {
+  background:url(../../resources/images/game/kiseki/tio-06.png) no-repeat;
+  background-size:100%;
+  width:204px;
+  height:225px;
+  bottom:5px;
+  right:5px;
+}
+
+/* Evil Mishy peeking in */
+.normal-mode #background-extras:before {
+  background:url(../../resources/images/game/mishy-sticker/103.png) no-repeat;
+  background-size:100%;
+  width:259px;
+  height:224px;
+  bottom:-95px;
+  left:50%;
+  margin-left:-129.5px;
+  animation:evil-mishy-peek 20s ease infinite;
+}
+
+/* clouds */
+.normal-mode #background-extras:after {
+  background:url(../../resources/images/background/extra/clouds.png) repeat;
+  height:54px;
+  left:0;
+  right:0;
+  bottom:1px;
 }
 
 /* GAME OVER BACKGROUND EXTRAS */
@@ -444,7 +495,7 @@ body:before, body:after, #background-extras:before, #background-extras:after {
   right:-90px;
   top:-10px;
   transform:rotate(-90deg);
-  animation:tio-peek 10s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite;
+  animation:tio-peek 10s ease infinite;
 }
 
 /* confetti */
@@ -997,7 +1048,7 @@ body:before, body:after, #background-extras:before, #background-extras:after {
 
 
 /* disable CSS3 animations; good option to have for low-end PCs */
-body.cssanime-off, .cssanime-off [data-chain-anime], .cssanime-off [data-score-anime], .cssanime-off.playing-game.infinity-mode, .cssanime-off.easy-mode:after, .cssanime-off.game-clear:before, .cssanime-off.game-clear #background-extras:before { animation:none; }
+body.cssanime-off, .cssanime-off [data-chain-anime], .cssanime-off [data-score-anime], .cssanime-off.playing-game.infinity-mode, .cssanime-off.easy-mode:after, .cssanime-off.game-clear:before, .cssanime-off.game-clear #background-extras:before, .cssanime-off.normal-mode #background-extras:before { animation:none; }
 .cssanime-off [data-chain-anime]:before, .cssanime-off [data-score-anime]:before { content:none; }
 
 /* disable options that cannot be changed in game */
@@ -1201,5 +1252,27 @@ body.cssanime-off, .cssanime-off [data-chain-anime], .cssanime-off [data-score-a
     height:150px;
     bottom:-25px;
     right:35px;
+  }
+  
+  /* normal mode art */
+  /* Mishy sleeping */
+  .normal-mode:before {
+    width:100px;
+    height:100px;
+    bottom:-15px;
+  }
+
+  /* Tio */
+  .normal-mode:after {
+    width:100px;
+    height:110px;
+    right:0px;
+  }
+
+  /* Evil Mishy peeking in */
+  .normal-mode #background-extras:before {
+    width:150px;
+    height:150px;
+    margin-left:-75px;
   }
 }
