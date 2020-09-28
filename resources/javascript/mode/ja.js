@@ -1109,7 +1109,7 @@
     {
       words : 'てぃおはどこかな？',
       helper : 'te xi o ha do ko ka na ?',
-      img : '030',
+      img : '030'
     },
     
     {
@@ -1152,9 +1152,70 @@
   ];
   
   
-  // Hard Mode
+  // Hard Mode - "Mishy's Date"
   Mishy.mode.hard = [
+    {
+      words : 'あるひ、みしゅらむわんだーらんどで',
+      helper : 'a ru hi , mi shu ra mu wa n da - ra n do de',
+      img : 'mwl-01',
+      folder : 'kiseki'
+    },
     
+    {
+      words : 'こんにちは！わんだーらんどにようこそっ。',
+      helper : 'ko nn ni chi ha ! wa n da - ra n do ni yo u ko so xtsu .',
+      img : '002'
+    },
+    
+    {
+      words : 'みししっ、たのしんでいってね～！',
+      helper : 'mi shi shi xtsu , ta no shi n de i tte ne ~ !',
+      img : '003'
+    },
+    
+    {
+      words : 'やすみじかん',
+      helper : 'ya su mi ji ka nn',
+      img : '175'
+    },
+    
+    {
+      words : 'みっしぃ、おしごとおつかれさま。',
+      helper : 'mi sshi xi , o shi go to o tsu ka re sa ma .',
+      img : '165'
+    },
+    
+    {
+      words : 'ありがとう',
+      helper : 'a ri ga to u',
+      img : '097'
+    },
+    
+    {
+      words : 'つかれています',
+      helper : 'tsu ka re te i ma su',
+      img : '058-clean'
+    },
+    
+    {
+      words : 'ひるねをします',
+      helper : 'hi ru ne wo shi ma su',
+      img : '176-clean'
+    },
+    
+    {
+      words : 'ねすぎないでください',
+      helper : 'ne su gi na i de ku da sa i',
+      img : '257-clean'
+    },
+    
+    {
+      words : 'とくむしえんか',
+      helper : 'to ku mu shi e n ka',
+      img : 'sss-01',
+      folder : 'kiseki'
+    },
+    // What reason do we have for visiting the Special Support Section..? <TO BE CONTINUED>
   ];
   
   
