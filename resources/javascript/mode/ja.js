@@ -27,7 +27,7 @@
   Mishy.mode.ja = true;
   
   
-  // Easy Mode - "Mishy's Daily Life"
+  // Easy Mode - "みっしぃと日常"
   Mishy.mode.easy = [
     {
       words : 'おはよう',
@@ -643,7 +643,7 @@
   ];
   
   
-  // Normal Mode - "Mishy's Dream"
+  // Normal Mode - "みっしぃと夢"
   Mishy.mode.normal = [
     {
       words : 'みっしぃはねています',
@@ -1066,7 +1066,7 @@
     {
       words : 'お',
       helper : 'o',
-      img : '257-o'
+      img : 'black'
     },
     
     {
@@ -1152,7 +1152,7 @@
   ];
   
   
-  // Hard Mode - "Mishy's Date"
+  // Hard Mode - "みっしぃとデート"
   Mishy.mode.hard = [
     {
       words : 'あるひ、みしゅらむわんだーらんどで',
@@ -1215,7 +1215,172 @@
       img : 'sss-01',
       folder : 'kiseki'
     },
-    // What reason do we have for visiting the Special Support Section..? <TO BE CONTINUED>
+    
+    {
+      words : 'ゆさゆさ、ゆさゆさ、ゆさゆさ',
+      helper : 'yu sa yu sa , yu sa yu sa , yu sa yu sa',
+      img : 'black'
+    },
+    
+    {
+      words : 'ん。。なんだ。。。じしん？',
+      helper : 'n . . na n da . . . ji shi n ?',
+      img : 'lloyd-kao-22',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'ろいど・ばにんぐす',
+      helper : 'ro i do / ba ni n gu su',
+      img : 'lloyd-01',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'しゅつりょくみにまむ、ごくしょうれべる。',
+      helper : 'shu tsu ryo ku mi ni ma mu , go ku sho u re be ru .',
+      img : 'black'
+    },
+    
+    {
+      words : 'とうけつぷろせすてんかい。。。はつどう。',
+      helper : 'to u ke tsu pu ro se su te n ka i . . . ha tsu do u .',
+      img : 'black'
+    },
+    
+    {
+      words : 'つめたっ！？',
+      helper : 'tsu me ta xtsu ! ?',
+      img : 'lloyd-kao-27',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'おはようございます。ろいどさん。',
+      helper : 'o ha yo u go za i ma su . ro i do sa n .',
+      img : 'tio-kao-15',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'てぃお・ぷらとー',
+      helper : 'te xi o / pu ra to -',
+      img : 'tio-03',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'ああ、おはよう。。。',
+      helper : 'a a , o ha yo u . . .',
+      img : 'lloyd-kao-18',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'なんでてぃおがここに。。？',
+      helper : 'na n de te xi o ga ko ko ni . . ?',
+      img : 'lloyd-kao-21',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'みしゅらむにいくのじかんなのに',
+      helper : 'mi shu ra mu ni i ku no ji ka nn na no ni',
+      img : 'tio-kao-05',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'ろいどさんがおりてこないのでおこしにきました。',
+      helper : 'ro i do sa n ga o ri te ko na i no de o ko shi ni ki ma shi ta .',
+      img : 'tio-kao-04',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'あ、もうそんなじかんだったか。',
+      helper : 'a , mo u so nn na ji ka n da tta ka .',
+      img : 'lloyd-kao-21',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'はは。でも、やっぱりてぃおのおめあてはてーむぱーくなのか？',
+      helper : 'ha ha . de mo , ya ppa ri te xi o no o me a te ha te - mu pa - ku na no ka ?',
+      img : 'lloyd-kao-25',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'もちのろんです。',
+      helper : 'mo chi no ro n de su .',
+      img : 'tio-kao-05',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'みっしぃにあえるのがたのしみです。',
+      helper : 'mi sshi xi ni a e ru no ga ta no shi mi de su .',
+      img : 'tio-kao-03',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'おい、てぃおすけ。ろいどがおきてる？',
+      helper : 'o i , te xi o su ke . ro i do ga o ki te ru ?',
+      img : 'randy-kao-06',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'らんでぃ・おるらんど',
+      helper : 'ra n de xi / o ru ra n do',
+      img : 'randy-01',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'ちょうしょくのじゅんびもしてあるから、たべましょう。',
+      helper : 'cho u sho ku no ju n bi mo shi te a ru kara , ta be ma sho u .',
+      img : 'elie-kao-03',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'えりぃ・まくだえる',
+      helper : 'e ri xi / ma ku da e ru',
+      img : 'elie-01',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'きーあ、みっしぃにきっくをしたいかな～！',
+      helper : 'mi sshi xi ni ki kku wo shi ta i ka na ~ !',
+      img : 'kea-kao-11',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'きーあ・ばにんぐす',
+      helper : 'ki - a / ba ni n gu su',
+      img : 'kea-01',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'わぉん！',
+      helper : 'wa o n !',
+      img : 'zeit-kao-01',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'つぁいと',
+      helper : 'tsu a i to',
+      img : 'zeit-01',
+      folder : 'kiseki'
+    },
+    // It is quite the rowdy morning at the SSS.. how will their trip to MWL fare? <TO BE CONTINUED>
   ];
   
   

@@ -36,7 +36,7 @@ Why did I choose to make this game with Mishy? Because I love both Falcom and Mi
 If you have any feedback, bug reports, or questions, please let me know via the following contact methods.
 
 - [Open a new issue on GitHub](https://github.com/SethClydesdale/typing-with-mishy/issues)
-- [DM me on Twitter](https://twitter.com/messages/compose?recipient_id=369201778)
+- [DM or Tweet me on Twitter](https://twitter.com/SethC1995)
 - [PM me on Reddit](https://www.reddit.com/message/compose/?to=SelentoAnuri)
 
 
