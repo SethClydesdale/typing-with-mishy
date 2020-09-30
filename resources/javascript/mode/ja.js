@@ -1380,7 +1380,194 @@
       img : 'zeit-01',
       folder : 'kiseki'
     },
-    // It is quite the rowdy morning at the SSS.. how will their trip to MWL fare? <TO BE CONTINUED>
+    
+    {
+      words : 'ちょうしょくご、みしゅらむわんだーらんどにいった。',
+      helper : 'cho u sho ku go , mi shu ra mu wa n da - ra n do ni i tta .',
+      img : 'mwl-02',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'うわあああっ。。。！',
+      helper : 'u wa a a a xtsu . . . !',
+      img : 'kea-kao-10',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'ここがみしゅらむわんだーらんど。。。',
+      helper : 'ko ko ga mi shu ra mu wa n da - ra n do . . .',
+      img : 'lloyd-kao-03',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : '。。。じいぃん',
+      helper : '. . . ji i xi nn',
+      img : 'tio-kao-04',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'あとらくしょんがたくさんあるねえ。',
+      helper : 'a to ra ku sho n ga ta ku sa nn a ru ne e',
+      img : 'randy-kao-10',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'かがみのしろ、このてーむぱーくのもにゅめんとてきなばしょだそうです。',
+      helper : 'ka ga mi no shi ro , ko no te - mu pa - ku no mo nyu me n to te ki na ba sho da so u de su .',
+      img : 'elie-kao-01',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'ねがいをかなえるかがみというのがさいじょうかいにおかれているらしくてっ',
+      helper : 'ne ga i wo ka na e ru ka ga mi to i u no ga sa i jo u ka i ni o ka re te i ru ra shi ku te xtsu',
+      img : 'elie-kao-05',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'ねがいをかなえるかがみですか。',
+      helper : 'ne ga i wo ka na e ru ka ga mi de su ka .',
+      img : 'tio-kao-06',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'ええ、かねをならしてかがみのまえにたつとねがいがかなうんていわれていますね。',
+      helper : 'e e , ka ne wo na ra shi te ka ga mi no ma e ni ta tsu to ne ga i ga ka na u n te i wa re te i ma su ne .',
+      img : 'elie-kao-03',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'ま、やっぱりかっぷるとかふぁみりーがおおいっすね。',
+      helper : 'ma , ya ppa ri ka ppu ru to ka fa mi ri - ga o o i ssu ne .',
+      img : 'randy-kao-05',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'なにせ、そのかねをならすはんどるがさゆうにふたつついてるくらいだし。',
+      helper : 'na ni se, so no ka ne wo na ra su ha n do ru ga sa yu u ni fu ta tsu tsu i te ru ku ra i da shi .',
+      img : 'randy-kao-05',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'た、たしかにそれはひとりでならすとせつなそうだな。',
+      helper : 'ta , ta shi ka ni so re ha hi to ri de na ra su to se tsu na so u da na .',
+      img : 'lloyd-kao-12',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'ねえねえ！',
+      helper : 'ne e ne e !',
+      img : 'kea-kao-02',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'あっちにみえるおやしきってだれかすんでるのー？',
+      helper : 'a cchi ni mi e ru o ya shi ki tte da re ka su n de ru no - ?',
+      img : 'kea-kao-11',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'ほらーこーすたーというです。',
+      helper : 'ho ra - ko - su ta - to i u de su .',
+      img : 'tio-kao-05',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'どうやらさいしんぎじゅつくししたおそろしいもえきさいてぃんぐなあとらくしょんのようですね。',
+      helper : 'do u ya ra sa i shi n gi ju tsu ku shi shi ta o so ro shi i mo e ki sa i te xi n gu na a to ra ku sho nn no yo u de su ne.',
+      img : 'tio-kao-03',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'そ、そんなものがあたらしくできたんだ。。。',
+      helper : 'so , so nn na mo no ga a ta ra shi ku de ki ta n da . . .',
+      img : 'elie-kao-07',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : '。。。それをいうならみっしぃのおっかけもはずせないのではないかと。',
+      helper : '. . . so re wo i u na ra mi sshi xi no o kka ke mo ha zu se na i no de ha na i ka to .',
+      img : 'tio-kao-04',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'ぱーくをじゅんかいしているかれをおいかけていくというしゅこうです。',
+      helper : 'pa - ku wo ju n ka i shi te i ru ka re wo o i ka ke te i ku to i u shu ko u de su .',
+      img : 'tio-kao-02',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'うんがよければかれのいもうとであるみーしぇというきゃらにもあうことができるとか。。。！',
+      helper : 'u n ga yo ke re ba ka re no i mo u to de a ru mi - she to i u kya ra ni mo a u ko to ga de ki ru to ka . . . !',
+      img : 'tio-kao-08',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'そ、そうなのか。',
+      helper : 'so , so u na no ka .',
+      img : 'lloyd-kao-13',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'てぃおすけのめがまじだぜ。。。',
+      helper : 'te xi o su ke no me ga ma ji da ze . . .',
+      img : 'randy-kao-02',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'わんだーらんどにようこそ。',
+      helper : 'wa n da - ra n do ni yo u ko so .',
+      img : '003'
+    },
+    
+    {
+      words : '。。。みっしぃ！',
+      helper : '. . . mi sshi xi !',
+      img : 'tio-kao-08',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'てぃ、てぃお？',
+      helper : 'te xi , te xi o ?',
+      img : 'lloyd-kao-06',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'こほん、みっしぃとでーとをします。',
+      helper : 'ko ho n , mi sshi xi to de - to wo shi ma su .',
+      img : 'tio-kao-05',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'で、でーと！？',
+      helper : 'de - to ! ?',
+      img : '188-date',
+    },
+    // Thus begins Tio's date with.. Mishy. What fate lies in store for these two!? <TO BE CONTINUED>
   ];
   
   

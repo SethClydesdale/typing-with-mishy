@@ -993,6 +993,7 @@ body:before, body:after, #background-extras:before, #background-extras:after {
   background-color:#BEF;
   background-color:rgba(187, 238, 255, 0.8);
   border:1px solid #3BD;
+  min-height:305px;
   pointer-events:none;
 }
 
