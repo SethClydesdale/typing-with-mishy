@@ -1419,28 +1419,21 @@
     {
       words : 'かがみのしろ、このてーむぱーくのもにゅめんとてきなばしょだそうです。',
       helper : 'ka ga mi no shi ro , ko no te - mu pa - ku no mo nyu me n to te ki na ba sho da so u de su .',
-      img : 'elie-kao-01',
+      img : 'castle-of-mirrors-01',
       folder : 'kiseki'
     },
     
     {
       words : 'ねがいをかなえるかがみというのがさいじょうかいにおかれているらしくてっ',
       helper : 'ne ga i wo ka na e ru ka ga mi to i u no ga sa i jo u ka i ni o ka re te i ru ra shi ku te xtsu',
-      img : 'elie-kao-05',
+      img : 'castle-of-mirrors-02',
       folder : 'kiseki'
     },
     
     {
-      words : 'ねがいをかなえるかがみですか。',
-      helper : 'ne ga i wo ka na e ru ka ga mi de su ka .',
-      img : 'tio-kao-06',
-      folder : 'kiseki'
-    },
-    
-    {
-      words : 'ええ、かねをならしてかがみのまえにたつとねがいがかなうんていわれていますね。',
-      helper : 'e e , ka ne wo na ra shi te ka ga mi no ma e ni ta tsu to ne ga i ga ka na u n te i wa re te i ma su ne .',
-      img : 'elie-kao-03',
+      words : 'かねをならしてかがみのまえにたつとねがいがかなうんていわれていますね。',
+      helper : 'ka ne wo na ra shi te ka ga mi no ma e ni ta tsu to ne ga i ga ka na u n te i wa re te i ma su ne .',
+      img : 'castle-of-mirrors-03',
       folder : 'kiseki'
     },
     
@@ -1475,21 +1468,21 @@
     {
       words : 'あっちにみえるおやしきってだれかすんでるのー？',
       helper : 'a cchi ni mi e ru o ya shi ki tte da re ka su n de ru no - ?',
-      img : 'kea-kao-11',
+      img : 'horror-coaster-01',
       folder : 'kiseki'
     },
     
     {
       words : 'ほらーこーすたーというです。',
       helper : 'ho ra - ko - su ta - to i u de su .',
-      img : 'tio-kao-05',
+      img : 'horror-coaster-02',
       folder : 'kiseki'
     },
     
     {
       words : 'どうやらさいしんぎじゅつくししたおそろしいもえきさいてぃんぐなあとらくしょんのようですね。',
       helper : 'do u ya ra sa i shi n gi ju tsu ku shi shi ta o so ro shi i mo e ki sa i te xi n gu na a to ra ku sho nn no yo u de su ne.',
-      img : 'tio-kao-03',
+      img : 'horror-coaster-03',
       folder : 'kiseki'
     },
     
@@ -1536,8 +1529,8 @@
     },
     
     {
-      words : 'わんだーらんどにようこそ。',
-      helper : 'wa n da - ra n do ni yo u ko so .',
+      words : 'わんだーらんどにようこそ！',
+      helper : 'wa n da - ra n do ni yo u ko so !',
       img : '003'
     },
     
@@ -1565,9 +1558,138 @@
     {
       words : 'で、でーと！？',
       helper : 'de - to ! ?',
-      img : '188-date',
+      img : '188-date'
     },
-    // Thus begins Tio's date with.. Mishy. What fate lies in store for these two!? <TO BE CONTINUED>
+    
+    {
+      words : 'おいおい、まさか。。。',
+      helper : 'o i o i , ma sa ka . . .',
+      img : 'randy-kao-06',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'はは、さすがてぃおだ。みっしぃがだいすきだよ。',
+      helper : 'ha ha , sa su ga te xi o da . mi sshi xi ga da i su ki da yo .',
+      img : 'lloyd-kao-10',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'それじゃあ、いきましょうか。',
+      helper : 'mi sshi xi , i ki ma sho u ka .',
+      img : 'tio-kao-03',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'いっしょにほらーこーすたーにのりたいです。',
+      helper : 'i ssho ni ho ra - ko - su ta - ni no ri ta i de su .',
+      img : 'tio-kao-08',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'ほらーこーすたー？',
+      helper : 'ho ra - ko - su ta - ?',
+      img : '079'
+    },
+    
+    {
+      words : 'ぎゃー !',
+      helper : 'gya - !',
+      img : '196'
+    },
+    
+    {
+      words : 'まったく。。。しかたない。',
+      helper : 'ma tta ku . . . shi ka ta na i .',
+      img : 'tio-kao-12',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'おにいちゃん～',
+      helper : 'o ni i cha n ~',
+      img : 'tio-mishette',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'あ、みーしぇっ',
+      helper : 'a , mi - she xtsu',
+      img : '028-clean'
+    },
+    
+    {
+      words : 'よし、つかまえました。',
+      helper : 'yo shi , tsu ka ma e ma shi ta .',
+      img : 'tio-kao-02',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'ほらーこーすたー。。。すたーと！',
+      helper : 'ho ra - ko - su ta - . . . su ta - to !',
+      img : 'horror-coaster',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'あ',
+      helper : 'a',
+      img : 'horror-coaster-04',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'い',
+      helper : 'i',
+      img : 'horror-coaster-05',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'う',
+      helper : 'u',
+      img : 'horror-coaster-06',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'え',
+      helper : 'e',
+      img : 'horror-coaster-07',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'お',
+      helper : 'o',
+      img : 'horror-coaster-08',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'おつかれさまでした。',
+      helper : 'o tsu ka re sa ma de shi ta .',
+      img : 'tio-kao-05',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'こ、こわかった。。。',
+      helper : 'ko , ko wa ka tta . . .',
+      img : '031'
+    },
+    
+    {
+      words : 'つぎはかがみのしろです。',
+      helper : 'tsu gi ha ka ga mi no shi ro de su .',
+      img : 'tio-kao-03',
+      folder : 'kiseki'
+    },
+    // After their fun on the horror coaster, Tio sets off to the castle of mirrors with Mishy in tow. <TO BE CONTINUED>
   ];
   
   
