@@ -1602,8 +1602,8 @@
     },
     
     {
-      words : 'まったく。。。しかたない。',
-      helper : 'ma tta ku . . . shi ka ta na i .',
+      words : 'ふう、しかたない。',
+      helper : 'fu u , shi ka ta na i .',
       img : 'tio-kao-12',
       folder : 'kiseki'
     },
@@ -1684,12 +1684,90 @@
     },
     
     {
-      words : 'つぎはかがみのしろです。',
-      helper : 'tsu gi ha ka ga mi no shi ro de su .',
+      words : 'かがみのしろにいきましょう。',
+      helper : 'ka ga mi no shi ro ni i ki ma sho u .',
       img : 'tio-kao-03',
       folder : 'kiseki'
     },
-    // After their fun on the horror coaster, Tio sets off to the castle of mirrors with Mishy in tow. <TO BE CONTINUED>
+    
+    {
+      words : 'かがみのしろ',
+      helper : 'ka ga mi no shi ro',
+      img : 'castle-of-mirrors',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'みつけたぞっ！',
+      helper : 'mi tsu ke ta zo xtsu !',
+      img : 'lloyd-kao-03',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'きゃっ、みつかっちゃった～',
+      helper : 'kya xtsu , mi tsu ka ccha tta ~',
+      img : '255-clean'
+    },
+    
+    {
+      words : 'みししっ、のろまなみっしぃおにいちゃんとはおおちがいだよ～',
+      helper : 'mi shi shi xtsu , no ro ma na mi sshi xi o ni i cha n to ha o o chi ga i da yo ~',
+      img : '257-clean'
+    },
+    
+    {
+      words : 'みーしぇって、みっしぃにけっこうてきびしいなあ。。。',
+      helper : 'mi - she tte , mi sshi xi ni ke kko u te ki bi shi i na a . . .',
+      img : 'lloyd-kao-07',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'はっくしょん！',
+      helper : 'ha kku sho n !',
+      img : '010'
+    },
+    
+    {
+      words : 'きれいなあ',
+      helper : 'ki re i na a',
+      img : '053-clean'
+    },
+    
+    {
+      words : 'まるで、おとぎばなしにでてくるようなおしろみたいです。',
+      helper : 'ma ru de , o to gi ba na shi ni de te ku ru yo u na o shi ro mi ta i de su .',
+      img : 'castle-of-mirrors-04',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'そういえば、ここにはねがいをかなえるかがみってものがおかれているってはなしだったな。',
+      helper : 'so u i e ba , ko ko ni ha ne ga i wo ka na e ru ka ga mi tte mo no ga o ka re te i ru tte ha na shi da tta na.',
+      img : '027'
+    },
+    
+    {
+      words : 'しろのさいじょうかいにおかれているそうですが。。。',
+      helper : 'shi ro no sa i jo u kai ni o ka re te i ru so u de su ga . . .',
+      img : 'tio-kao-01',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'じゃあ、さいじょうかいまでのぼってさがしてみようか。',
+      helper : 'ja a , sa i jo u ka i ma de no bo tte sa ga shi te mi yo u ka .',
+      img : '100'
+    },
+    
+    {
+      words : 'はい、いってみましょう。',
+      helper : 'ha i , i tte mi ma sho u .',
+      img : 'tio-kao-01',
+      folder : 'kiseki'
+    },
+    // Tio and Mishy head off to the final floor of the castle of mirrors to grant their wishes... <TO BE CONTINUED> (this one got pretty long, but the end is near haha)
   ];
   
   
