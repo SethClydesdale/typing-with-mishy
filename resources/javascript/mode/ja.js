@@ -1082,8 +1082,8 @@
     },
     
     {
-      words : 'おきて、みっしぃ。',
-      helper : 'o ki te , mi sshi xi .',
+      words : 'みっしぃ、おきて。',
+      helper : 'mi sshi xi , o ki te .',
       img : '257-clean'
     },
     
@@ -1355,7 +1355,7 @@
     
     {
       words : 'きーあ、みっしぃにきっくをしたいかな～！',
-      helper : 'mi sshi xi ni ki kku wo shi ta i ka na ~ !',
+      helper : 'ki - a , mi sshi xi ni ki kku wo shi ta i ka na ~ !',
       img : 'kea-kao-11',
       folder : 'kiseki'
     },
@@ -1369,14 +1369,14 @@
     
     {
       words : 'わぉん！',
-      helper : 'wa o n !',
+      helper : 'wa xo n !',
       img : 'zeit-kao-01',
       folder : 'kiseki'
     },
     
     {
       words : 'つぁいと',
-      helper : 'tsu a i to',
+      helper : 'tsu xa i to',
       img : 'zeit-01',
       folder : 'kiseki'
     },
@@ -1424,8 +1424,8 @@
     },
     
     {
-      words : 'ねがいをかなえるかがみというのがさいじょうかいにおかれているらしくてっ',
-      helper : 'ne ga i wo ka na e ru ka ga mi to i u no ga sa i jo u ka i ni o ka re te i ru ra shi ku te xtsu',
+      words : 'ねがいをかなえるかがみというのがさいじょうかいにおかれているらしくて',
+      helper : 'ne ga i wo ka na e ru ka ga mi to i u no ga sa i jo u ka i ni o ka re te i ru ra shi ku te',
       img : 'castle-of-mirrors-02',
       folder : 'kiseki'
     },
@@ -1577,7 +1577,7 @@
     
     {
       words : 'それじゃあ、いきましょうか。',
-      helper : 'mi sshi xi , i ki ma sho u ka .',
+      helper : 'so re ja a , i ki ma sho u ka .',
       img : 'tio-kao-03',
       folder : 'kiseki'
     },
@@ -1596,7 +1596,7 @@
     },
     
     {
-      words : 'ぎゃー !',
+      words : 'ぎゃー！',
       helper : 'gya - !',
       img : '196'
     },
@@ -1732,13 +1732,14 @@
     {
       words : 'きれいなあ',
       helper : 'ki re i na a',
-      img : '053-clean'
+      img : 'castle-of-mirrors-04-mishy',
+      folder : 'kiseki'
     },
     
     {
       words : 'まるで、おとぎばなしにでてくるようなおしろみたいです。',
       helper : 'ma ru de , o to gi ba na shi ni de te ku ru yo u na o shi ro mi ta i de su .',
-      img : 'castle-of-mirrors-04',
+      img : 'castle-of-mirrors-04-tio',
       folder : 'kiseki'
     },
     
@@ -1767,7 +1768,204 @@
       img : 'tio-kao-01',
       folder : 'kiseki'
     },
-    // Tio and Mishy head off to the final floor of the castle of mirrors to grant their wishes... <TO BE CONTINUED> (this one got pretty long, but the end is near haha)
+    
+    {
+      words : 'さいじょうかい',
+      helper : 'sa i jo u ka i',
+      img : 'castle-of-mirrors-05',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'ねがいをかなえるかがみ',
+      helper : 'ne ga i wo ka na e ru ka ga mi',
+      img : 'castle-of-mirrors-06',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'いざとなると、なんだかきんちょうしてきます。',
+      helper : 'i za to na ru to , na n da ka ki n cho u shi te ki ma su .',
+      img : 'tio-kao-05',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'それじゃあ、あのかねをならしてみましょう。',
+      helper : 'so re ja a , a no ka ne wo na ra shi te mi ma sho u .',
+      img : '106-clean'
+    },
+    
+    {
+      words : 'かねをならしています',
+      helper : 'ka ne wo na ra shi te i ma su',
+      img : 'castle-of-mirrors-07',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'よし、つぎはうえにあるかがみのまえにいこう。',
+      helper : 'yo shi , tsu gi ha ue ni a ru ka ga mi no ma e ni i ko u .',
+      img : '005',
+      folder : 'mishy-emoji'
+    },
+    
+    {
+      words : 'それじゃあ、さっそくねがいことをしてみよう。',
+      helper : 'so re ja a , sa sso ku ne ga i ko to wo shi te mi yo u .',
+      img : 'castle-of-mirrors-08-mishy',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'はい、やってみましょう。',
+      helper : 'ha i , ya tte mi ma sho u .',
+      img : 'castle-of-mirrors-08-tio',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : '。。。。。。。。。。',
+      helper : '. . . . . . . . . .',
+      img : 'castle-of-mirrors-08',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : '。。。こんなところかな。',
+      helper : '. . . ko nn na to ko ro ka na .',
+      img : '042-clean'
+    },
+    
+    {
+      words : 'はい、わたしもです。',
+      helper : 'ha i , wa ta shi mo de su .',
+      img : 'tio-kao-05',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'みっしぃはどんなおねがいを？',
+      helper : 'mi sshi xi ha do nn na o ne ga i wo ?',
+      img : 'tio-kao-01',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'みしゅらむわんだーらんどをこれからもまもっていけますようにかな。',
+      helper : 'mi shu ra mu wa n da - ra n do wo ko re ka ra mo ma mo tte i ke ma su yo u ni ka na .',
+      img : '005'
+    },
+    
+    {
+      words : 'なるほど。。。みっしぃらしいですね。',
+      helper : 'na ru ho do . . . mi sshi xi ra shi de su ne .',
+      img : 'tio-kao-01',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'そういうてぃおは、なにをおねがいしたんだ？',
+      helper : 'so u i u te xi o ha , na ni wo o ne ga i shi ta n da ?',
+      img : '026'
+    },
+    
+    {
+      words : 'いつもみっしぃといっしょにいます。',
+      helper : 'i tsu mo mi sshi xi to i ssho ni i ma su .',
+      img : 'tio-kao-05',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'だいすきです。',
+      helper : 'da i su ki de su .',
+      img : 'tio-kao-10',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'てぃ、てぃお',
+      helper : 'te xi , te xi o',
+      img : 'lloyd-kao-06',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'ろいどさん！？どうしてここに。。。',
+      helper : 'ro i do sa n ! ? do u shi te ko ko ni . . .',
+      img : 'tio-kao-06',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'みっしぃはどこですか。',
+      helper : 'mi sshi xi ha do ko de su ka .',
+      img : 'tio-kao-08',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'そ、それは。。。',
+      helper : 'so , so re ha . . .',
+      img : 'lloyd-kao-12',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'なんでもありません。おきになさらず。',
+      helper : 'na n de mo a ri ma se n . o ki ni na sa ra zu .',
+      img : 'tio-kao-04',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'そ、それじゃあ、もどろう。',
+      helper : 'so, so re ja a , mo do ro u .',
+      img : 'lloyd-kao-03',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : '。。。はい。',
+      helper : '. . . ha i .',
+      img : 'tio-kao-04',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'おかしいですが、かがみのしろいっしょにまわれてたのしかったです。',
+      helper : 'o ka shi xi de su ga , ka ga mi no shi ro i ssho ni ma wa re te ta no shi ka tta de su .',
+      img : 'tio-kao-03',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'それでは、いったんしつれいしますね。',
+      helper : 'so re de ha , i tta n shi tsu re i shi ma su ne .',
+      img : 'tio-kao-03',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'ああ、またあとでな。',
+      helper : 'a a , ma ta a to de na .',
+      img : 'lloyd-kao-01',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'ええ、ではまた。',
+      helper : 'e e , de ha ma ta .',
+      img : 'tio-kao-01',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'どんなしれんがおとずれようと、このみっしぃへのあいをゆるがすことなどできない。',
+      helper : 'do nn na shi re n ga o to zu re yo u to , ko no mi sshi xi he no a i wo yu ru ga su ko to na do de ki na i .',
+      img : '021'
+    }
   ];
   
   
@@ -1778,7 +1976,6 @@
   
   
   // Infinity Mode
-  // contains exclusive infinity mode cards + all cards from prior modes (order is completely randomized)
   Mishy.mode.infinity = [].concat(Mishy.mode.easy, Mishy.mode.normal, Mishy.mode.hard, Mishy.mode.nightmare, [
     
   ]);

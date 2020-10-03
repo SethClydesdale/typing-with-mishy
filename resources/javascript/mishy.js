@@ -720,19 +720,7 @@
               }
             }
             
-            // multiply or divide the bonus time range based on the difficulty
-            switch (Mishy.multiType) {
-              case '*':
-                bonus *= Mishy.multiplier;
-                break;
-                
-              case '/': // this will need to be tested to see if the bonus time is possible to accomplish when divided
-                bonus /= Mishy.multiplier;
-                break;
-                
-              default:
-                break;
-            }
+            bonus *= 1.5; // multiply the bonus time requirement by 1.5 to add a slight margin of error
 
             // determine the bonus multiplier
             bonus = Mishy.stats.time <= Math.round(bonus / 5) ? 5 :
