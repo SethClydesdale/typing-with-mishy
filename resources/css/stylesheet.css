@@ -263,6 +263,11 @@ li:hover .menu-info {
   z-index:10;
 }
 
+.info-title {
+  color:#19B;
+  font-weight:bold;
+}
+
 .content-title {
   font-size:20px;
   font-weight:bold;
@@ -557,6 +562,12 @@ body:before, body:after, #background-extras:before, #background-extras:after {
      1px 1px 0 #000;
 }
 
+/* mode list */
+#mode-list {
+  list-style-type:none;
+  margin:0;
+  padding:0;
+}
 
 /* END GAME SCREEN */
 #game-over, .game-over #game-win { display:none; }

@@ -27,7 +27,7 @@
   Mishy.mode.ja = true;
   
   
-  // Easy Mode - "Mishy's Daily Life"
+  // Easy Mode - "Day with Mishy"
   Mishy.mode.easy = [
     {
       words : 'Morning',
@@ -543,7 +543,7 @@
   ];
   
   
-  // Normal Mode - "Mishy's Dream"
+  // Normal Mode - "Dream with Mishy"
   Mishy.mode.normal = [
     {
       words : 'Mishy is sleeping',
@@ -899,7 +899,7 @@
     
     {
       words : 'Wa',
-      img : '257-o'
+      img : 'black'
     },
     
     {
@@ -972,9 +972,700 @@
   ];
   
   
-  // Hard Mode
+  // Hard Mode - "Date with Mishy"
   Mishy.mode.hard = [
+    {
+      words : 'One day at Mishelam Wonderland',
+      img : 'mwl-01',
+      folder : 'kiseki'
+    },
     
+    {
+      words : 'Hiya! Welcome to Mishelam Wonderland.',
+      img : '002'
+    },
+    
+    {
+      words : 'Mee hee hee, have fun!',
+      img : '003'
+    },
+    
+    {
+      words : 'break time',
+      img : '175'
+    },
+    
+    {
+      words : 'Good work, Mishy.',
+      img : '165'
+    },
+    
+    {
+      words : 'thanks',
+      img : '097'
+    },
+    
+    {
+      words : "I'm tired",
+      img : '058-clean'
+    },
+    
+    {
+      words : "I'll take a nap",
+      img : '176-clean'
+    },
+    
+    {
+      words : "Don't oversleep",
+      img : '257-clean'
+    },
+    
+    {
+      words : 'Special Support Section',
+      img : 'sss-01',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : '*NUDGE NUDGE NUDGE*',
+      img : 'black'
+    },
+    
+    {
+      words : '*yawn*...huh...an earthquake?',
+      img : 'lloyd-kao-22',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'Lloyd Bannings',
+      img : 'lloyd-01',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'Output: minimum, Power Level: low.',
+      img : 'black'
+    },
+    
+    {
+      words : 'Freezing process...begin.',
+      img : 'black'
+    },
+    
+    {
+      words : 'C-COLD!?',
+      img : 'lloyd-kao-27',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'Good morning, Lloyd.',
+      img : 'tio-kao-15',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'Tio Plato',
+      img : 'tio-03',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'Ah, good morning.',
+      img : 'lloyd-kao-18',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'Actually, why are you even in my room?',
+      img : 'lloyd-kao-21',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : "It's almost time to go to Mishelam Wonderland",
+      img : 'tio-kao-05',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'so I came to wake you up.',
+      img : 'tio-kao-04',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : "Oh, I didn't realize how late it was.",
+      img : 'lloyd-kao-21',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'Haha. Still, you must be looking forward to the theme park, huh?',
+      img : 'lloyd-kao-25',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'But of course.',
+      img : 'tio-kao-05',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : "I'm looking forward to meeting Mishy.",
+      img : 'tio-kao-03',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'Hey Tio Tot. Is Lloyd up yet?',
+      img : 'randy-kao-06',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'Randy Orlando',
+      img : 'randy-01',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : "Breakfast is almost ready, so let's eat.",
+      img : 'elie-kao-03',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'Elie MacDowell',
+      img : 'elie-01',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'I want to kick Mishy!',
+      img : 'kea-kao-11',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'KeA Bannings',
+      img : 'kea-01',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'Woof!',
+      img : 'zeit-kao-01',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'Zeit',
+      img : 'zeit-01',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'After breakfast, everyone went to the theme park.',
+      img : 'mwl-02',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'Wooooow...!',
+      img : 'kea-kao-10',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'So this is Mishelam Wonderland...',
+      img : 'lloyd-kao-03',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : '*moved to tears*',
+      img : 'tio-kao-04',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'They sure do have a lot of attractions.',
+      img : 'randy-kao-10',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : "The Castle of Mirrors is like this theme park's monument.",
+      img : 'castle-of-mirrors-01',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : "I heard there's a mirror on the top floor that grants wishes.",
+      img : 'castle-of-mirrors-02',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'They say that, after ringing the bell, wishes made in front of the mirror will come true.',
+      img : 'castle-of-mirrors-03',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : "I bet it's real popular with couples and families.",
+      img : 'randy-kao-05',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : "After all, there's handles on both sides of the bell for ringing it.",
+      img : 'randy-kao-05',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'Y-Yeah, ringing it by yourself sounds kinda difficult.',
+      img : 'lloyd-kao-12',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'Hey!',
+      img : 'kea-kao-02',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'Does anyone live in that mansion over there?',
+      img : 'horror-coaster-01',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : "That's the Horror Coaster.",
+      img : 'horror-coaster-02',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'It appears to be both a terrifying and exciting attraction utilizing the latest technology.',
+      img : 'horror-coaster-03',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'S-So they made something like that, did they...',
+      img : 'elie-kao-07',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : "...On that subject, you can't miss chasing after Mishy.",
+      img : 'tio-kao-04',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'The idea is to chase after him as he goes around the park.',
+      img : 'tio-kao-02',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : "If you're lucky, you can even meet Mishy's little sister, Mishette..!",
+      img : 'tio-kao-08',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'I-I see.',
+      img : 'lloyd-kao-13',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : "Damn, Tio Tot's hella serious about Mishy.",
+      img : 'randy-kao-02',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'Welcome to Mishelam Wonderland!',
+      img : '003'
+    },
+    
+    {
+      words : '...Mishy!',
+      img : 'tio-kao-08',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'T-Tio?',
+      img : 'lloyd-kao-06',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : "*cough* I'm going on a date with Mishy.",
+      img : 'tio-kao-05',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'D-Date!?',
+      img : '188-date'
+    },
+    
+    {
+      words : "Bruh, I was not expecting that.",
+      img : 'randy-kao-06',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : "Haha, that's our Tio for you. She really likes Mishy.",
+      img : 'lloyd-kao-10',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : "Well then, let's get going, Mishy.",
+      img : 'tio-kao-03',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'I want to ride the Horror Coaster together.',
+      img : 'tio-kao-08',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'Horror Coaster?',
+      img : '079'
+    },
+    
+    {
+      words : '*running away, screaming*',
+      img : '196'
+    },
+    
+    {
+      words : '*sigh* Seems I have no choice then.',
+      img : 'tio-kao-12',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'Brother~',
+      img : 'tio-mishette',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'Oh, Mishett-',
+      img : '028-clean'
+    },
+    
+    {
+      words : 'Got you!',
+      img : 'tio-kao-02',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'Horror Coaster...START!',
+      img : 'horror-coaster',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'a',
+      img : 'horror-coaster-04',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'i',
+      img : 'horror-coaster-05',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'u',
+      img : 'horror-coaster-06',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'e',
+      img : 'horror-coaster-07',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'o',
+      img : 'horror-coaster-08',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'Good job, Mishy.',
+      img : 'tio-kao-05',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'That was s-scary...',
+      img : '031'
+    },
+    
+    {
+      words : "Let's go to the Castle of Mirrors next.",
+      img : 'tio-kao-03',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'Castle of Mirrors',
+      img : 'castle-of-mirrors',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'Found you!',
+      img : 'lloyd-kao-03',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'Eek! You found me~',
+      img : '255-clean'
+    },
+    
+    {
+      words : "Mee hee hee, you're totally different from my stupid brother Mishy~",
+      img : '257-clean'
+    },
+    
+    {
+      words : 'Mishette is pretty harsh towards Mishy, huh...',
+      img : 'lloyd-kao-07',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'ACHOO!',
+      img : '010'
+    },
+    
+    {
+      words : 'Sooo pretty',
+      img : 'castle-of-mirrors-04-mishy',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : "It's like a castle out of a fairytale.",
+      img : 'castle-of-mirrors-04-tio',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : "Oh that's right, there's a mirror that grants wishes in here somewhere.",
+      img : '027'
+    },
+    
+    {
+      words : 'I believe it was on the top floor...',
+      img : 'tio-kao-01',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : "In that case, let's head to the top floor and look for it.",
+      img : '100'
+    },
+    
+    {
+      words : "Yes, let's.",
+      img : 'tio-kao-01',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'top floor',
+      img : 'castle-of-mirrors-05',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'wish granting mirror',
+      img : 'castle-of-mirrors-06',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : "Now that I'm here, I'm getting kind of nervous.",
+      img : 'tio-kao-05',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : "Well then, let's try ringing the bell together.",
+      img : '106-clean'
+    },
+    
+    {
+      words : 'ringing the bell',
+      img : 'castle-of-mirrors-07',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : "Alright, let's stand in front of the mirror next.",
+      img : '005',
+      folder : 'mishy-emoji'
+    },
+    
+    {
+      words : "Let's make a wish.",
+      img : 'castle-of-mirrors-08-mishy',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : "Agreed, let's give it a try.",
+      img : 'castle-of-mirrors-08-tio',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : '..........',
+      img : 'castle-of-mirrors-08',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : '...That should do it.',
+      img : '042-clean'
+    },
+    
+    {
+      words : "Yes, I'm finished as well.",
+      img : 'tio-kao-05',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'What did you wish for, Mishy?',
+      img : 'tio-kao-01',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : "That I can continue to protect Mishelam Wonderland and the smiles of those who visit.",
+      img : '005'
+    },
+    
+    {
+      words : "I see...that's very like you, Mishy.",
+      img : 'tio-kao-01',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'So what did you wish for, Tio?',
+      img : '026'
+    },
+    
+    {
+      words : 'That I can always be with you, Mishy.',
+      img : 'tio-kao-05',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'I love you.',
+      img : 'tio-kao-10',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'T-Tio',
+      img : 'lloyd-kao-06',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'Lloyd!? Why are you here..?',
+      img : 'tio-kao-06',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'Where did Mishy go!?',
+      img : 'tio-kao-08',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'W-Well..',
+      img : 'lloyd-kao-12',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'Nevermind, forget I said anything.',
+      img : 'tio-kao-04',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : "R-Right, let's head back.",
+      img : 'lloyd-kao-03',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : '...agreed.',
+      img : 'tio-kao-04',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : "I could've sworn you were Mishy, but regardless I had fun touring the castle together.",
+      img : 'tio-kao-03',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : "I'll excuse myself for now.",
+      img : 'tio-kao-03',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'Yeah, later.',
+      img : 'lloyd-kao-01',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'Yes, see you later.',
+      img : 'tio-kao-01',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'No matter what trial may appear, my love for Mishy will never fade.',
+      img : '020'
+    }
   ];
   
   

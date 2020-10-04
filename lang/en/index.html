@@ -62,9 +62,20 @@
       <div class="menu-title">Play</div>
       
       <div class="menu-content">
-        <button class="button menu-opt mishy-mode-opt" onclick="Mishy.startGame('easy');">Easy</button>
-        <button class="button menu-opt mishy-mode-opt" onclick="Mishy.startGame('normal');">Normal</button>
-        <button id="beta-test" class="button menu-opt mishy-mode-opt" onclick="Mishy.startGame('hard');" style="display:none;">Hard</button>
+        <ul id="mode-list">
+          <li>
+            <button class="button menu-opt mishy-mode-opt" onclick="Mishy.startGame('easy');">Easy</button>
+            <div class="menu-info"><span class="info-title">Day with Mishy</span></div>
+          </li>
+          <li>
+            <button class="button menu-opt mishy-mode-opt" onclick="Mishy.startGame('normal');">Normal</button>
+            <div class="menu-info"><span class="info-title">Dream with Mishy</span></div>
+          </li>
+          <li id="beta-test" style="display:none;">
+            <button class="button menu-opt mishy-mode-opt" onclick="Mishy.startGame('hard');">Hard</button>
+            <div class="menu-info"><span class="info-title">Date with Mishy</span></div>
+          </li>
+        </ul>
         <div class="content-title">Coming Soon</div>
         <button class="button menu-opt mishy-mode-opt" onclick="Mishy.startGame('hard');" disabled>Hard</button>
         <button class="button menu-opt mishy-mode-opt" onclick="Mishy.startGame('nightmare');" disabled>Nightmare</button>

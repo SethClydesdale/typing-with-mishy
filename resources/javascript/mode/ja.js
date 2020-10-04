@@ -1964,7 +1964,7 @@
     {
       words : 'どんなしれんがおとずれようと、このみっしぃへのあいをゆるがすことなどできない。',
       helper : 'do nn na shi re n ga o to zu re yo u to , ko no mi sshi xi he no a i wo yu ru ga su ko to na do de ki na i .',
-      img : '021'
+      img : '020'
     }
   ];
   
