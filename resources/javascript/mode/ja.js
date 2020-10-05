@@ -1969,9 +1969,40 @@
   ];
   
   
-  // Nightmare Mode
+  // Nightmare Mode - "みっしぃと軌跡"
   Mishy.mode.nightmare = [
+    {
+      words : 'えいゆうでんせつ：みっしぃときせき',
+      helper : 'e i yu u de n se tsu : mi sshi xi to ki se ki',
+      img : '193-clean'
+    },
     
+    {
+      words : 'えいゆうをあいましょう',
+      helper : 'e i yu u wo a i ma sho u',
+      img : '131-clean'
+    },
+    // possibly include game title before this, then introduce it's characters
+    {
+      words : 'りべーるおうこく',
+      helper : 'ri be - ru o u ko ku',
+      img : 'liberl',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'あ、あんですってー！？',
+      helper : 'a , a n de su tte - ! ?',
+      //img : 'estelle-01', // <-- TODO: Find screaming Estelle
+      //folder : 'kiseki'
+    },
+    
+    {
+      words : 'えすてる・ぶらいと',
+      helper : 'e su te ru / bu ra i to',
+      img : 'estelle-02',
+      folder : 'kiseki'
+    },
   ];
   
   

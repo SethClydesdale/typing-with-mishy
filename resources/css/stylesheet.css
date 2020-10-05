@@ -50,6 +50,14 @@
   100% { bottom:-300px; }
 }
 
+@keyframes mishette-peek {
+  0% { top:-300px; }
+  25% { top:-300px; }
+  50% { top:-140px; }
+  75% { top:-140px }
+  100% { top:-300px; }
+}
+
 @keyframes grade-slide {
   from {
     right:0%;
@@ -447,6 +455,51 @@ body:before, body:after, #background-extras:before, #background-extras:after {
   left:0;
   right:0;
   bottom:1px;
+}
+
+/* HARD BACKGROUND EXTRAS */
+/* Lloyd and Elie */
+.hard-mode:before {
+  background:url(../../resources/images/game/kiseki/lloyd-elie.png) no-repeat;
+  background-size:100%;
+  width:300px;
+  height:200px;
+  bottom:-25px;
+  left:-2px;
+  z-index:-4;
+}
+
+/* Randy and KeA */
+.hard-mode:after {
+  background:url(../../resources/images/game/kiseki/randy-kea.png) no-repeat;
+  background-size:100%;
+  width:300px;
+  height:200px;
+  bottom:-10px;
+  right:-2px;
+}
+
+/* Tio and Mishy */
+.hard-mode #background-extras:before {
+  background:url(../../resources/images/game/kiseki/mishy-tio.png) no-repeat;
+  background-size:100%;
+  width:300px;
+  height:200px;
+  bottom:-40px;
+  left:50%;
+  margin-left:-150px;
+}
+
+/* Mishette peeking in */
+.hard-mode #background-extras:after {
+  background:url(../../resources/images/game/mishy-sticker/255-clean.png) no-repeat;
+  background-size:100%;
+  width:259px;
+  height:224px;
+  top:-140px;
+  right:50%;
+  transform:rotate(180deg);
+  animation:mishette-peek 20s ease infinite;
 }
 
 /* GAME OVER BACKGROUND EXTRAS */
@@ -1060,7 +1113,7 @@ body:before, body:after, #background-extras:before, #background-extras:after {
 
 
 /* disable CSS3 animations; good option to have for low-end PCs */
-body.cssanime-off, .cssanime-off [data-chain-anime], .cssanime-off [data-score-anime], .cssanime-off.playing-game.infinity-mode, .cssanime-off.easy-mode:after, .cssanime-off.game-clear:before, .cssanime-off.game-clear #background-extras:before, .cssanime-off.normal-mode #background-extras:before { animation:none; }
+body.cssanime-off, .cssanime-off [data-chain-anime], .cssanime-off [data-score-anime], .cssanime-off.playing-game.infinity-mode, .cssanime-off.easy-mode:after, .cssanime-off.game-clear:before, .cssanime-off.game-clear #background-extras:before, .cssanime-off.normal-mode #background-extras:before, .cssanime-off .hard-mode #background-extras:after { animation:none; }
 .cssanime-off [data-chain-anime]:before, .cssanime-off [data-score-anime]:before { content:none; }
 
 /* disable options that cannot be changed in game */
@@ -1286,5 +1339,30 @@ body.cssanime-off, .cssanime-off [data-chain-anime], .cssanime-off [data-score-a
     width:150px;
     height:150px;
     margin-left:-75px;
+  }
+  
+  /* hard mode art */
+  /* Lloyd and Elie */
+  .hard-mode:before {
+    width:100px;
+    height:80px;
+    bottom:-22px;
+    left:-2px;
+  }
+
+  /* Randy and KeA */
+  .hard-mode:after {
+    width:100px;
+    height:80px;
+    bottom:-18px;
+    right:-2px;
+  }
+
+  /* Tio and Mishy */
+  .hard-mode #background-extras:before {
+    width:100px;
+    height:80px;
+    bottom:-28px;
+    margin-left:-50px;
   }
 }
