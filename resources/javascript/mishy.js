@@ -1233,10 +1233,12 @@
         // loop through modes and gather images that require preloading
         for (i in Mishy.mode) {
           for (k in Mishy.mode[i]) {
-            img = 'game/' + (Mishy.mode[i][k].folder ? Mishy.mode[i][k].folder : 'mishy-sticker') + '/' + Mishy.mode[i][k].img + '.png';
+            if (Mishy.mode[i][k].img) {
+              img = 'game/' + (Mishy.mode[i][k].folder ? Mishy.mode[i][k].folder : 'mishy-sticker') + '/' + Mishy.mode[i][k].img + '.png';
 
-            // only add the image if it's not present
-            if (images.indexOf(img) == -1) images.push(img);
+              // only add the image if it's not present
+              if (images.indexOf(img) == -1) images.push(img);
+            }
           }
         }
 
