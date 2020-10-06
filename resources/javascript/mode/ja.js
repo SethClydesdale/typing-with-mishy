@@ -1972,17 +1972,37 @@
   // Nightmare Mode - "みっしぃと軌跡"
   Mishy.mode.nightmare = [
     {
+      words : 'ぼくのすきなげーむしりーずは',
+      helper : 'bo ku no su ki na ge - mu shi ri - zu ha',
+      img : '226-clean'
+    },
+    
+    {
+      words : 'きせきしりーずですよ',
+      helper : 'ki se ki shi ri - zu de su yo',
+      img : 'kiseki-series',
+      folder : 'kiseki'
+    },
+    
+    {
       words : 'えいゆうでんせつ：みっしぃときせき',
       helper : 'e i yu u de n se tsu : mi sshi xi to ki se ki',
       img : '193-clean'
     },
     
     {
-      words : 'えいゆうをあいましょう',
+      words : 'きゃらをあいましょう',
       helper : 'e i yu u wo a i ma sho u',
-      img : '131-clean'
+      img : '213-clean'
     },
-    // possibly include game title before this, then introduce it's characters
+    
+    {
+      words : 'そらのきせき',
+      helper : 'so ra no ki se ki',
+      img : 'sora-no-kiseki',
+      folder : 'kiseki'
+    },
+    
     {
       words : 'りべーるおうこく',
       helper : 'ri be - ru o u ko ku',
@@ -1993,14 +2013,84 @@
     {
       words : 'あ、あんですってー！？',
       helper : 'a , a n de su tte - ! ?',
-      //img : 'estelle-01', // <-- TODO: Find screaming Estelle
-      //folder : 'kiseki'
+      img : 'andesutte',
+      folder : 'kiseki'
     },
     
     {
       words : 'えすてる・ぶらいと',
       helper : 'e su te ru / bu ra i to',
-      img : 'estelle-02',
+      img : 'estelle-01',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'よしゅあ・ぶらいと',
+      helper : 'yo shu a / bu ra i to',
+      img : 'joshua-01',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'しぇらざーど・はーヴぇい',
+      helper : 'she ra za - do / ha - ve i',
+      img : 'schera-01',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'おりびえ・れんはいむ',
+      helper : 'o ri bi e / re n ha i mu',
+      img : 'olivier-01',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'くろーぜ・りんつ',
+      helper : 'ku ro - ze / ri n tsu',
+      img : 'kloe-01',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'あがっと・くろすなー',
+      helper : 'ku ro - ze / ri n tsu',
+      img : 'agate-01',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'てぃーた・らっせる',
+      helper : 'te xi - ta / ra sse ru',
+      img : 'tita-01',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'じん・ヴぁせっく',
+      helper : 'ji n / va se kku',
+      img : 'zin-01',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'あおのきせき',
+      helper : 'a o no ki se ki',
+      img : 'ao-no-kiseki',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'なゆたのきせき',
+      helper : 'na yu ta no ki se ki',
+      img : 'nayuta-no-kiseki',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'せんのきせき',
+      helper : 'se nn no ki se ki',
+      img : 'sen-no-kiseki',
       folder : 'kiseki'
     },
   ];

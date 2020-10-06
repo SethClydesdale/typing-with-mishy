@@ -6,7 +6,7 @@
 
 - [**Play Game**](https://sethclydesdale.github.io/typing-with-mishy/lang/en/)
 
-I hope you have fun, and remember... ENJOY☆MISHY! Mee hee hee
+I hope you have fun, and remember... ENJOY☆MISHY! Meeheehee
 
 
 #### 日本語

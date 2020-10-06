@@ -326,7 +326,7 @@
     },
     
     {
-      words : "Mee hee hee, I'm Mishette!",
+      words : "Meeheehee, I'm Mishette!",
       img : '255'
     },
     
@@ -577,7 +577,7 @@
     },
     
     {
-      words : "Wah hee hee, I'll be taking Mishette.",
+      words : "Wahheehee, I'll be taking Mishette.",
       img : '103-abduction'
     },
     
@@ -781,7 +781,7 @@
     },
     
     {
-      words : 'Wah hee hee',
+      words : 'Wahheehee',
       img : '103'
     },
     
@@ -986,7 +986,7 @@
     },
     
     {
-      words : 'Mee hee hee, have fun!',
+      words : 'Meeheehee, have fun!',
       img : '003'
     },
     
@@ -1449,7 +1449,7 @@
     },
     
     {
-      words : "Mee hee hee, you're totally different from my stupid brother Mishy~",
+      words : "Meeheehee, you're totally different from my stupid brother Mishy~",
       img : '257-clean'
     },
     

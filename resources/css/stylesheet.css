@@ -1113,7 +1113,7 @@ body:before, body:after, #background-extras:before, #background-extras:after {
 
 
 /* disable CSS3 animations; good option to have for low-end PCs */
-body.cssanime-off, .cssanime-off [data-chain-anime], .cssanime-off [data-score-anime], .cssanime-off.playing-game.infinity-mode, .cssanime-off.easy-mode:after, .cssanime-off.game-clear:before, .cssanime-off.game-clear #background-extras:before, .cssanime-off.normal-mode #background-extras:before, .cssanime-off .hard-mode #background-extras:after { animation:none; }
+body.cssanime-off, .cssanime-off [data-chain-anime], .cssanime-off [data-score-anime], .cssanime-off.playing-game.infinity-mode, .cssanime-off.easy-mode:after, .cssanime-off.game-clear:before, .cssanime-off.game-clear #background-extras:before, .cssanime-off.normal-mode #background-extras:before, .cssanime-off.hard-mode #background-extras:after { animation:none; }
 .cssanime-off [data-chain-anime]:before, .cssanime-off [data-score-anime]:before { content:none; }
 
 /* disable options that cannot be changed in game */
