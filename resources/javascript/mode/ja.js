@@ -2032,6 +2032,13 @@
     },
     
     {
+      words : 'かしうす・ぶらいと',
+      helper : 'ka shi u su / bu ra i to',
+      img : 'cassius-01',
+      folder : 'kiseki'
+    },
+    
+    {
       words : 'しぇらざーど・はーヴぇい',
       helper : 'she ra za - do / ha - ve i',
       img : 'schera-01',
@@ -2062,7 +2069,7 @@
     {
       words : 'てぃーた・らっせる',
       helper : 'te xi - ta / ra sse ru',
-      img : 'tita-01',
+      img : 'tita-02',
       folder : 'kiseki'
     },
     
@@ -2074,9 +2081,168 @@
     },
     
     {
+      words : 'けびん・ぐらはむ',
+      helper : 'ke bi n / gu ra ha mu',
+      img : 'kevin-01',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'りーす・あるじぇんと',
+      helper : 'ri - su / a ru je n to',
+      img : 'ries-01',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'れん',
+      helper : 're nn',
+      img : 'renne-01',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'じょぜっと・かぷあ',
+      helper : 'jo ze tto / ka pu a',
+      img : 'josette-01',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'あねらす・えるふぃーど',
+      helper : 'a ne ra su / e ru fi - do',
+      img : 'anelace-01',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'ゆりあ・しゅばるつ',
+      helper : 'yu ri a / shu ba ru tsu',
+      img : 'julia-01',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'あらん・りしゃーる',
+      helper : 'a ra n / ri sha - ru',
+      img : 'alan-01',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'みゅらー・ヴぁんだーる',
+      helper : 'myu ra - / va n da - ru',
+      img : 'mueller-01',
+      folder : 'kiseki'
+    },
+    
+    {
       words : 'あおのきせき',
       helper : 'a o no ki se ki',
       img : 'ao-no-kiseki',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'くろすべるし',
+      helper : 'ku ro su be ru shi',
+      img : 'crossbell',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'ぼくはくろすべるにすんでいます。',
+      helper : 'bo ku ha ku ro su be ru ni su n de i ma su .',
+      img : '106-clean'
+    },
+    
+    {
+      words : 'ろいど・ばにんぐす',
+      helper : 'ro i do / ba ni n gu su',
+      img : 'lloyd-02',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'えりぃ・まくだえる',
+      helper : 'e ri xi / ma ku da e ru',
+      img : 'elie-02',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'てぃお・ぷらとー',
+      helper : 'te xi o / pu ra to -',
+      img : '021'
+    },
+    
+    {
+      words : 'らんでぃ・おるらんど',
+      helper : 'ra n de xi / o ru ra n do',
+      img : 'randy-02',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'せるげい・ろう',
+      helper : 'se ru ge i / ro u',
+      img : 'sergei-01',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'きーあ',
+      helper : 'ki - a',
+      img : 'kea-02',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'つぁいと',
+      helper : 'tsu xa i to',
+      img : 'zeit-02',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'ふらん・しーかー',
+      helper : 'fu ra n / shi - ka -',
+      img : 'fran-01',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'のえる・しーかー',
+      helper : 'no e ru / shi - ka -',
+      img : 'noel-01',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'わじ・へみすふぃあ',
+      helper : 'wa ji / he mi su fi a',
+      img : 'wazy-01',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'りーしゃ・まお',
+      helper : 'ri - sha / ma o',
+      img : 'rixia-01',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'あれっくす・だどりー',
+      helper : 'a re kku su / da do ri -',
+      img : 'dudley-01',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'ありおす・まくれいん',
+      helper : 'a ri o su / ma ku re i n',
+      img : 'arios-01',
       folder : 'kiseki'
     },
     

@@ -1225,7 +1225,7 @@
           'background/game/easy.png', 'background/game/normal.png', 'background/game/hard.png', 'background/game/nightmare.png', 'background/game/infinity.png', 'background/game/game-clear.png', 'background/game/game-over.png', 
           // background extras
           'game/mishy-emoji/078.png', 'game/mishy-sticker/093.png', 'background/extra/grass.png', 'game/mishy-sticker/103.png', 'game/mishy-sticker/011.png', 'game/mishy-sticker/239-clean.png', 'game/kiseki/tio-01.png', 'game/kiseki/tio-02.png', 'background/extra/confetti.png', 'game/mishy-sticker/126-clean.png', 'game/mishy-sticker/041-clean.png', 
-          'game/mishy-sticker/004.png', 'game/kiseki/tio-06.png', 'background/extra/clouds.png',
+          'game/mishy-sticker/004.png', 'game/kiseki/tio-06.png', 'background/extra/clouds.png', 'game/kiseki/lloyd-elie.png', 'game/kiseki/randy-kea.png', 'game/kiseki/mishy-tio.png',
           // misc
           'game/mishy-emoji/039.png'
         ], i, j, k, img;

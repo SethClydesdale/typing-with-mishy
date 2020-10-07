@@ -25,11 +25,11 @@ I hope you have fun, and remember... ENJOY☆MISHY! Meeheehee
 
 
 ### About
-I mainly made this game for fun and practice. Since I am studying Japanese, I thought it would be great practice to make a beginner level Japanese game, to help not only myself, but also other students studying Japanese and even children just learning how to type.
+I mainly made this game for fun and practice. Since I am studying Japanese, I thought it would be a good experience to make a beginner level Japanese game, to help not only myself, but also other students studying the language and even children just learning how to type.
 
-The game was originally only going to be in Japanese, however, I thought other Falcom fans not studying Japanese might be interested in it and would want to try it out as well. Plus it may also help people studying English, and the more people Mishy can help, the better!
+The game was originally only going to be in Japanese, however, I thought other Falcom fans not studying the language might be interested in the game and would want to try it out as well. Plus it may also help people studying English, and the more people Mishy can help, the better!
 
-Why did I choose to make this game with Mishy? Because I love both Falcom and Mishy, and want to spread the word about them! So, please check out and support [Nihon Falcom's](https://falcom.co.jp/) works!
+Why did I choose to make this game with Mishy? Because I love both Falcom and Mishy, and want to spread the word about them!
 
 
 ### Feedback and Bug Reports
