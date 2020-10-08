@@ -1621,7 +1621,7 @@
     },
     
     {
-      words : 'Nevermind, forget I said anything.',
+      words : 'Never mind. Forget I said anything.',
       img : 'tio-kao-04',
       folder : 'kiseki'
     },

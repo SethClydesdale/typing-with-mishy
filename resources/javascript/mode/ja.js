@@ -2001,19 +2001,25 @@
       helper : 'so ra no ki se ki',
       img : 'sora-no-kiseki',
       folder : 'kiseki'
-    },
+    },    
     
     {
-      words : 'りべーるおうこく',
-      helper : 'ri be - ru o u ko ku',
-      img : 'liberl',
-      folder : 'kiseki'
+      words : 'ぼくはそらのきせきにしゅつげんしませんでした。',
+      helper : 'mi sshi xi ha so ra no ki se ki ni shu tsu ge n shi ma se n de shi ta .',
+      img : '036'
     },
     
     {
       words : 'あ、あんですってー！？',
       helper : 'a , a n de su tte - ! ?',
       img : 'andesutte',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'りべーるおうこく',
+      helper : 'ri be - ru o u ko ku',
+      img : 'liberl',
       folder : 'kiseki'
     },
     
@@ -2157,6 +2163,13 @@
     },
     
     {
+      words : 'みっしぃはみしゅらむのますこっとです。',
+      helper : 'mi sshi xi ha mi shu ra mu no ma su ko tto de su .',
+      img : 'tio-kao-01',
+      folder : 'kiseki'
+    },
+    
+    {
       words : 'ろいど・ばにんぐす',
       helper : 'ro i do / ba ni n gu su',
       img : 'lloyd-02',
@@ -2247,23 +2260,267 @@
     },
     
     {
-      words : 'なゆたのきせき',
-      helper : 'na yu ta no ki se ki',
-      img : 'nayuta-no-kiseki',
-      folder : 'kiseki'
-    },
-    
-    {
       words : 'せんのきせき',
       helper : 'se nn no ki se ki',
       img : 'sen-no-kiseki',
       folder : 'kiseki'
     },
+    
+    {
+      words : 'ぼくはみっしぃぱにっくにしゅつげんしました。',
+      helper : 'bo ku ha mi sshi xi pa ni kku ni shu tsu ge n shi ma shi ta .',
+      img : '009'
+    },
+    
+    {
+      words : 'みっしぃは。。。？',
+      helper : 'mi sshi xi ha . . . ?',
+      img : 'alisa-02',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'きゃー！',
+      helper : 'kya - !',
+      img : '154'
+    },
+    
+    {
+      words : 'えれぼにあていこく',
+      helper : 'e re bo ni a te i ko ku',
+      img : 'erebonia',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'りぃん・しゅばるつぁー',
+      helper : 'ri xi n / shu ba ru tsu xa -',
+      img : 'rean-01',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'ありさ・らいんふぉると',
+      helper : 'a ri sa / ra i n fo ru to',
+      img : 'alisa-01',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'えりおっと・くれいぐ',
+      helper : 'e ri o tto / ku re i gu',
+      img : 'elliot-01',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'らうら・あるぜいど',
+      helper : 'ra u ra / a ru ze i do',
+      img : 'laura-01',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'まきあす・れーぐにっつ',
+      helper : 'ma ki a su / re - gu ni ttsu',
+      img : 'machias-01',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'ゆーしす・あるばれあ',
+      helper : 'yu - shi su / a ru ba re a',
+      img : 'jusis-01',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'えま・みるすてぃん',
+      helper : 'e ma / mi ru su te xi nn',
+      img : 'emma-01',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'ふぃー・くらうぜる',
+      helper : 'fi - / ku ra u ze ru',
+      img : 'fie-01',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'がいうす・うぉーぜる',
+      helper : 'ga i u su / u xo - ze ru',
+      img : 'gaius-01',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'みりあむ・おらいおん',
+      helper : 'mi ri a mu / o ra i o nn',
+      img : 'millium-01',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'くろう・あーむぶらすと',
+      helper : 'ku ro u / a - mu bu ra su to',
+      img : 'crow-01',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'さら・ばれすたいん',
+      helper : 'sa ra / ba re su ta i nn',
+      img : 'sara-01',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'とわ・はーしぇる',
+      helper : 'to wa / ha - she ru',
+      img : 'towa-01',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'じょるじゅ・のーむ',
+      helper : 'jo ru ju / no - mu',
+      img : 'george-01',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'あんぜりか・ろげなー',
+      helper : 'a n ze ri ka / ro ge na -',
+      img : 'angelica-01',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'えりぜ・しゅばるつぁー',
+      helper : 'e ri ze / shu ba ru tsu xa -',
+      img : 'elise-01',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'あるふぃん・らいぜ・あるのーる',
+      helper : 'a ru fi n / ra i ze / a ru no - ru',
+      img : 'alfin-01',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'おりヴぁると・らいぜ・あるのーる',
+      helper : 'o ri va ru to / ra i ze / a ru no - ru',
+      img : 'olivert-01',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'しゃろん・くるーがー',
+      helper : 'sha ro n / ku ru - ga -',
+      img : 'sharon-01',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'せりーぬ',
+      helper : 'se ri - nu',
+      img : 'celine-01',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'すごいえいゆうですね。',
+      helper : 'su go i e i yu u de su ne .',
+      img : '053-clean'
+    },
+    
+    {
+      words : 'ぼくはえいゆうにもなりたいです。',
+      helper : 'bo ku ha e i yu ni mo na ri ta i de su .',
+      img : '213-clean'
+    },
+    
+    {
+      words : 'でもいまのところえいゆうでんせつをやります。',
+      helper : 'de mo i ma no to ko ro e i yu u de n se tsu wo ya ri ma su .',
+      img : '226-clean'
+    }
   ];
   
   
-  // Infinity Mode
-  Mishy.mode.infinity = [].concat(Mishy.mode.easy, Mishy.mode.normal, Mishy.mode.hard, Mishy.mode.nightmare, [
+  // Infinity Mode - "みっしぃとチャレンジ"
+  Mishy.mode.infinity = [
+    // TODO: Add images to the countdown
+    // also swap to the ending array once it has been completed.
+    {
+      words : 'じゅう',
+      helper : 'ju u',
+      img : ''
+    },
+    {
+      words : 'きゅう',
+      helper : 'kyu u',
+      img : ''
+    },
+    
+    {
+      words : 'はち',
+      helper : 'ha chi',
+      img : ''
+    },
+    
+    {
+      words : 'なな',
+      helper : 'na na',
+      img : ''
+    },
+    
+    {
+      words : 'ろく',
+      helper : 'ro ku',
+      img : ''
+    },
+    
+    {
+      words : 'ご',
+      helper : 'go',
+      img : ''
+    },
+    
+    {
+      words : 'よん',
+      helper : 'yo nn',
+      img : ''
+    },
+    
+    {
+      words : 'さん',
+      helper : 'sa nn',
+      img : ''
+    },
+    
+    {
+      words : 'に',
+      helper : 'ni',
+      img : ''
+    },
+    
+    {
+      words : 'いち',
+      helper : 'i chi',
+      img : ''
+    },
+    
+    {
+      words : 'くりあおめでとうございます！',
+      helper : 'ku ri a o me de to u go za i ma su !',
+      img : ''
+    },
+  ].concat(Mishy.mode.easy, Mishy.mode.normal, Mishy.mode.hard, Mishy.mode.nightmare, [
     
   ]);
   
