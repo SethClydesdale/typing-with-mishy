@@ -577,7 +577,7 @@
     },
     
     {
-      words : "Wahheehee, I'll be taking Mishette.",
+      words : "Waheehee, I'll be taking Mishette.",
       img : '103-abduction'
     },
     
@@ -781,7 +781,7 @@
     },
     
     {
-      words : 'Wahheehee',
+      words : 'Waheehee',
       img : '103'
     },
     
@@ -1669,9 +1669,528 @@
   ];
   
   
-  // Nightmare Mode
+  // Nightmare Mode - "Trails with Mishy"
   Mishy.mode.nightmare = [
+    {
+      words : 'My favorite game series is...',
+      img : '226-clean'
+    },
     
+    {
+      words : 'the Trails series!',
+      img : 'kiseki-series',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'The Legend of Heroes: Trails with Mishy',
+      img : '193-clean'
+    },
+    
+    {
+      words : "Let's meet some characters!",
+      img : '213-clean'
+    },
+    
+    {
+      words : 'Trails in the Sky',
+      img : 'sora-no-kiseki',
+      folder : 'kiseki'
+    },    
+    
+    {
+      words : "I didn't make an appearance in the Sky trilogy...",
+      img : '036'
+    },
+    
+    {
+      words : 'Whoa, say what, now?!',
+      img : 'andesutte',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'Liberl Kingdom',
+      img : 'liberl',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'Estelle Bright',
+      img : 'estelle-01',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'Joshua Bright',
+      img : 'joshua-01',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'Cassius Bright',
+      img : 'cassius-01',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'Scherazard Harvey',
+      img : 'schera-01',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'Olivier Lenheim',
+      img : 'olivier-01',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'Kloe Rinz',
+      img : 'kloe-01',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'Agate Crosner',
+      img : 'agate-01',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'Tita Russell',
+      img : 'tita-02',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'Zin Vathek',
+      img : 'zin-01',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'Kilika Rouran',
+      img : 'kilika-01',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'Kevin Graham',
+      img : 'kevin-01',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'Ries Argent',
+      img : 'ries-01',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'Renne',
+      img : 'renne-01',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'Leonhardt',
+      img : 'loewe-01',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'Josette Capua',
+      img : 'josette-01',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'Anelace Elfead',
+      img : 'anelace-01',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'Julia Schwarz',
+      img : 'julia-01',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'Alan Richard',
+      img : 'alan-01',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'Mueller Vander',
+      img : 'mueller-01',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'Trails to Azure',
+      img : 'ao-no-kiseki',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'Crossbell City',
+      img : 'crossbell',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'I have my own theme park in Crossbell.',
+      img : '106-clean'
+    },
+    
+    {
+      words : "For those who do not know, Mishy is the mascot of Mishelam Wonderland.",
+      img : 'tio-kao-01',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'Lloyd Bannings',
+      img : 'lloyd-02',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'Elie MacDowell',
+      img : 'elie-02',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'Tio Plato',
+      img : '021'
+    },
+    
+    {
+      words : 'Randy Orlando',
+      img : 'randy-02',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'Sergei Lou',
+      img : 'sergei-01',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'KeA',
+      img : 'kea-02',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'Zeit',
+      img : 'zeit-02',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'Fran Seeker',
+      img : 'fran-01',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'Noel Seeker',
+      img : 'noel-01',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'Wazy Hemisphere',
+      img : 'wazy-01',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'Rixia Mao',
+      img : 'rixia-01',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'Alex Dudley',
+      img : 'dudley-01',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'Arios MacLaine',
+      img : 'arios-01',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'Guy Bannings',
+      img : 'guy-01',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'Trails of Cold Steel',
+      img : 'sen-no-kiseki',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'I appeared in Mishy Panic in the first Cold Steel. Be sure to play it!',
+      img : '009'
+    },
+    
+    {
+      words : 'Which one of these am I supposed to hit..?',
+      img : 'alisa-02',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'Oh no!',
+      img : '154'
+    },
+    
+    {
+      words : 'Erebonia Empire',
+      img : 'erebonia',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'Rean Schwarzer',
+      img : 'rean-01',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'Alisa Reinford',
+      img : 'alisa-01',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'Elliot Craig',
+      img : 'elliot-01',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'Laura S. Arseid',
+      img : 'laura-01',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'Machias Regnitz',
+      img : 'machias-01',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'Jusis Albarea',
+      img : 'jusis-01',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'Emma Millstein',
+      img : 'emma-01',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'Fie Claussell',
+      img : 'fie-01',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'Gaius Worzel',
+      img : 'gaius-01',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'Millium Orion',
+      img : 'millium-01',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'Crow Armbrust',
+      img : 'crow-01',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'Sara Valestein',
+      img : 'sara-01',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'Towa Herschel',
+      img : 'towa-01',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'George Nome',
+      img : 'george-01',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'Angelica Rogner',
+      img : 'angelica-01',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'Elise Schwarzer',
+      img : 'elise-01',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'Alfin Reise Arnor',
+      img : 'alfin-01',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'Olivert Reise Arnor',
+      img : 'olivert-01',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'Victor S. Arseid',
+      img : 'victor-01',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'Sharon Kreuger',
+      img : 'sharon-01',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'Claire Rieveldt',
+      img : 'claire-01',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'Toval Randonneur',
+      img : 'toval-01',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'Celine',
+      img : 'celine-01',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'Those are some amazing heroes..',
+      img : '053-clean'
+    },
+    
+    {
+      words : 'I want to be a hero, too!',
+      img : '213-clean'
+    },
+    
+    {
+      words : "Waheehee, you'll never be a hero.",
+      img : '103'
+    },
+    
+    {
+      words : 'DIE.',
+      img : '103-evil'
+    },
+    
+    {
+      words : 'EEK, SOMEONE SAVE ME!',
+      img : '196'
+    },
+    
+    {
+      words : 'This ends here!',
+      img : 'estelle-02',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'Tiger Charge!',
+      img : 'lloyd-03',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : "Eight Leaves One Blade's second form: Gale!",
+      img : 'rean-02',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'Gyaaah!',
+      img : '103-fading'
+    },
+    
+    {
+      words : 'Piece of cake',
+      img : 'estelle-03',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'Nice work, everyone.',
+      img : 'lloyd-kao-01',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'Are you alright, Mishy?',
+      img : 'rean-03',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'Yes, thank you!',
+      img : '115'
+    },
+    
+    {
+      words : 'Wha?',
+      img : '067-clean'
+    },
+    
+    {
+      words : 'It was another dream!',
+      img : '075'
+    },
+    
+    {
+      words : "I've been playing too many of these games...",
+      img : '058-clean'
+    },
+    
+    {
+      words : "But one day, I'll become a hero just like them!",
+      img : '213-clean'
+    }
   ];
   
   

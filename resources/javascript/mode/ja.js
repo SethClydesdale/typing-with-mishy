@@ -1972,14 +1972,14 @@
   // Nightmare Mode - "みっしぃと軌跡"
   Mishy.mode.nightmare = [
     {
-      words : 'ぼくのすきなげーむしりーずは',
-      helper : 'bo ku no su ki na ge - mu shi ri - zu ha',
+      words : 'ぼくのすきなげーむしりーずは。。。',
+      helper : 'bo ku no su ki na ge - mu shi ri - zu ha . . .',
       img : '226-clean'
     },
     
     {
-      words : 'きせきしりーずですよ',
-      helper : 'ki se ki shi ri - zu de su yo',
+      words : 'きせきしりーずですよ。',
+      helper : 'ki se ki shi ri - zu de su yo .',
       img : 'kiseki-series',
       folder : 'kiseki'
     },
@@ -1991,8 +1991,8 @@
     },
     
     {
-      words : 'きゃらをあいましょう',
-      helper : 'e i yu u wo a i ma sho u',
+      words : 'きゃらをあいましょう！',
+      helper : 'kya ra wo a i ma sho u !',
       img : '213-clean'
     },
     
@@ -2004,8 +2004,8 @@
     },    
     
     {
-      words : 'ぼくはそらのきせきにしゅつげんしませんでした。',
-      helper : 'mi sshi xi ha so ra no ki se ki ni shu tsu ge n shi ma se n de shi ta .',
+      words : 'ぼくはそらのきせきにしゅつげんしませんでした。。。',
+      helper : 'mi sshi xi ha so ra no ki se ki ni shu tsu ge n shi ma se n de shi ta . . .',
       img : '036'
     },
     
@@ -2067,7 +2067,7 @@
     
     {
       words : 'あがっと・くろすなー',
-      helper : 'ku ro - ze / ri n tsu',
+      helper : 'a ga tto / ku ro su na -',
       img : 'agate-01',
       folder : 'kiseki'
     },
@@ -2083,6 +2083,13 @@
       words : 'じん・ヴぁせっく',
       helper : 'ji n / va se kku',
       img : 'zin-01',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'きりか・ろうらん',
+      helper : 'ki ri ka / ro u ra nn',
+      img : 'kilika-01',
       folder : 'kiseki'
     },
     
@@ -2104,6 +2111,13 @@
       words : 'れん',
       helper : 're nn',
       img : 'renne-01',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'れおんはると',
+      helper : 're o n ha ru to',
+      img : 'loewe-01',
       folder : 'kiseki'
     },
     
@@ -2256,6 +2270,13 @@
       words : 'ありおす・まくれいん',
       helper : 'a ri o su / ma ku re i n',
       img : 'arios-01',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'がい・ばにんぐす',
+      helper : 'ga i / ba ni n gu su',
+      img : 'guy-01',
       folder : 'kiseki'
     },
     
@@ -2419,9 +2440,30 @@
     },
     
     {
+      words : 'ヴぃくたー・あるぜいど',
+      helper : 'vi ku ta - / a ru ze i do',
+      img : 'victor-01',
+      folder : 'kiseki'
+    },
+    
+    {
       words : 'しゃろん・くるーがー',
       helper : 'sha ro n / ku ru - ga -',
       img : 'sharon-01',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'くれあ・りーヴぇると',
+      helper : 'ku re a / ri - ve ru to',
+      img : 'claire-01',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'とヴぁる・らんどなー',
+      helper : 'to va ru / ra n do na -',
+      img : 'toval-01',
       folder : 'kiseki'
     },
     
@@ -2445,9 +2487,99 @@
     },
     
     {
-      words : 'でもいまのところえいゆうでんせつをやります。',
-      helper : 'de mo i ma no to ko ro e i yu u de n se tsu wo ya ri ma su .',
-      img : '226-clean'
+      words : 'わるしし、あんたはぜんぜんえいゆうにならないよ。',
+      helper : 'wa ru shi shi , a n ta ha ze n ze nn e i yu u ni na ra na i yo',
+      img : '103'
+    },
+    
+    {
+      words : 'しね。',
+      helper : 'shi ne。',
+      img : '103-evil'
+    },
+    
+    {
+      words : 'ぎゃー、たすけて！',
+      helper : 'gya - , ta su ke te !',
+      img : '196'
+    },
+    
+    {
+      words : 'これできめる！',
+      helper : 'ko re de ki me ru !',
+      img : 'estelle-02',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'たいがーちゃーじ！',
+      helper : 'ta i ga - cha - ji !',
+      img : 'lloyd-03',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'はちよういっとうりゅう、にのかた、はやて！',
+      helper : 'ha chi yo u i tto u ryu u , ni no ka ta , ha ya te !',
+      img : 'rean-02',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'ぎゃあああっ！',
+      helper : 'gya a a a xtsu',
+      img : '103-fading'
+    },
+    
+    {
+      words : 'ちょろいちょろい',
+      helper : 'cho ro i cho ro i',
+      img : 'estelle-03',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'おつかれさま、みんな。',
+      helper : 'o tsu ka re sa ma , mi nn na .',
+      img : 'lloyd-kao-01',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'みっしぃ、だいじょぶか？',
+      helper : 'mi sshi xi , da i jo bu ka ?',
+      img : 'rean-03',
+      folder : 'kiseki'
+    },
+    
+    {
+      words : 'はい、ありがとうございます！',
+      helper : 'ha i , a ri ga to u go za i ma su !',
+      img : '115'
+    },
+    
+    {
+      words : 'えっ？',
+      helper : 'e xtsu ?',
+      img : '067-clean'
+    },
+    
+    {
+      words : 'またゆめです！',
+      helper : 'ma ta yu me de su !',
+      img : '075'
+    },
+    
+    {
+      words : 'げーむをしすぎました。。。',
+      helper : 'ge - mu wo shi su gi ma shi ta . . .',
+      img : '058-clean'
+    },
+    
+    {
+      words : 'でも、いつかえいゆうになりますよ！',
+      helper : 'de mo , i tsu ka e i yu u ni na ri ma su yo !',
+      img : '213-clean'
     }
   ];
   
