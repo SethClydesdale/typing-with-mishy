@@ -2585,75 +2585,83 @@
   
   
   // Infinity Mode - "みっしぃとチャレンジ"
-  Mishy.mode.infinity = [
-    // TODO: Add images to the countdown
-    // also swap to the ending array once it has been completed.
+  Mishy.mode.infinity = [].concat(Mishy.mode.easy, Mishy.mode.normal, Mishy.mode.hard, Mishy.mode.nightmare, [
     {
       words : 'じゅう',
       helper : 'ju u',
-      img : ''
+      img : '10',
+      folder : 'infinity'
     },
+    
     {
       words : 'きゅう',
       helper : 'kyu u',
-      img : ''
+      img : '09',
+      folder : 'infinity'
     },
     
     {
       words : 'はち',
       helper : 'ha chi',
-      img : ''
+      img : '08',
+      folder : 'infinity'
     },
     
     {
       words : 'なな',
       helper : 'na na',
-      img : ''
+      img : '07',
+      folder : 'infinity'
     },
     
     {
       words : 'ろく',
       helper : 'ro ku',
-      img : ''
+      img : '06',
+      folder : 'infinity'
     },
     
     {
       words : 'ご',
       helper : 'go',
-      img : ''
+      img : '05',
+      folder : 'infinity'
     },
     
     {
       words : 'よん',
       helper : 'yo nn',
-      img : ''
+      img : '04',
+      folder : 'infinity'
     },
     
     {
       words : 'さん',
       helper : 'sa nn',
-      img : ''
+      img : '03',
+      folder : 'infinity'
     },
     
     {
       words : 'に',
       helper : 'ni',
-      img : ''
+      img : '02',
+      folder : 'infinity'
     },
     
     {
       words : 'いち',
       helper : 'i chi',
-      img : ''
+      img : '01',
+      folder : 'infinity'
     },
     
     {
-      words : 'くりあおめでとうございます！',
-      helper : 'ku ri a o me de to u go za i ma su !',
-      img : ''
-    },
-  ].concat(Mishy.mode.easy, Mishy.mode.normal, Mishy.mode.hard, Mishy.mode.nightmare, [
-    
+      words : 'いんふぃにてぃくりあおめでとうございます！',
+      helper : 'i n fi ni te xi ku ri a o me de to u go za i ma su !',
+      img : 'clear',
+      folder : 'infinity'
+    }
   ]);
   
   

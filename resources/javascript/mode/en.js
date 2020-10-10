@@ -1322,13 +1322,13 @@
     },
     
     {
-      words : "Bruh, I was not expecting that.",
+      words : "Well that was outta the blue. Then again, this IS Tio Tot we're talkin' about here.",
       img : 'randy-kao-06',
       folder : 'kiseki'
     },
     
     {
-      words : "Haha, that's our Tio for you. She really likes Mishy.",
+      words : "Haha, true. That's our Tio for you though. When it comes to liking Mishy, she's unrivaled.",
       img : 'lloyd-kao-10',
       folder : 'kiseki'
     },
@@ -2194,11 +2194,74 @@
   ];
   
   
-  // Infinity Mode
-  // contains exclusive infinity mode cards + all cards from prior modes (order is completely randomized)
-  Mishy.mode.infinity = [
+  // Infinity Mode - "Challenge with Mishy"
+  Mishy.mode.infinity = [].concat(Mishy.mode.easy, Mishy.mode.normal, Mishy.mode.hard, Mishy.mode.nightmare, [
+    {
+      words : 'Ten',
+      img : '10',
+      folder : 'infinity'
+    },
     
-  ].concat(Mishy.mode.easy, Mishy.mode.normal, Mishy.mode.hard, Mishy.mode.nightmare);
+    {
+      words : 'Nine',
+      img : '09',
+      folder : 'infinity'
+    },
+    
+    {
+      words : 'Eight',
+      img : '08',
+      folder : 'infinity'
+    },
+    
+    {
+      words : 'Seven',
+      img : '07',
+      folder : 'infinity'
+    },
+    
+    {
+      words : 'Six',
+      img : '06',
+      folder : 'infinity'
+    },
+    
+    {
+      words : 'Five',
+      img : '05',
+      folder : 'infinity'
+    },
+    
+    {
+      words : 'Four',
+      img : '04',
+      folder : 'infinity'
+    },
+    
+    {
+      words : 'Three',
+      img : '03',
+      folder : 'infinity'
+    },
+    
+    {
+      words : 'Two',
+      img : '02',
+      folder : 'infinity'
+    },
+    
+    {
+      words : 'One',
+      img : '01',
+      folder : 'infinity'
+    },
+    
+    {
+      words : 'Congratulations on clearing Infinity!',
+      img : 'clear',
+      folder : 'infinity'
+    }
+  ]);
   
   
 }(window, document));

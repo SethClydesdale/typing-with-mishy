@@ -502,6 +502,10 @@ body:before, body:after, #background-extras:before, #background-extras:after {
   animation:mishette-peek 20s ease infinite;
 }
 
+/* TODO:NIGHTMARE BACKGROUND EXTRAS */
+
+/* TODO:INFINITY BACKGROUND EXTRAS */
+
 /* GAME OVER BACKGROUND EXTRAS */
 /* Evil Mishy */
 .game-over:before {
@@ -1242,6 +1246,14 @@ body.cssanime-off, .cssanime-off [data-chain-anime], .cssanime-off [data-score-a
   right:30px;
 }
 
+#clear-bonus-art #bonus-art-all {
+  width:500px;
+  bottom:0px;
+  left:50%;
+  margin-left:-250px;
+  z-index:-2;
+}
+
 
 /* MEDIA QUERIES */
 @media (max-width:500px) {
@@ -1269,6 +1281,13 @@ body.cssanime-off, .cssanime-off [data-chain-anime], .cssanime-off [data-score-a
   #bonus-art-infinity {
     top:85px;
     right:0px;
+  }
+  
+  #clear-bonus-art #bonus-art-all {
+    width:200px;
+    bottom:0px;
+    left:50%;
+    margin-left:-100px;
   }
   
   /* game clear art */

@@ -832,6 +832,11 @@
           }
         }
         
+        // show the last piece of bonus art if the player cleared all 5 modes
+        if (clear.join(',') == '1,1,1,1,1') {
+          Mishy.cache.bonusArt.querySelector('#bonus-art-all').style.display = '';
+        }
+        
         // update random bgs
         Mishy.mainBG = bg.slice();
       }
@@ -1301,8 +1306,9 @@
       
       // show beta test option (mode that is currently in development) and special debug options
       if (Mishy.debug) {
-        var beta = document.getElementById('beta-test');
-        if (beta) beta.style.display = '';
+        for (var debugOption = document.querySelectorAll('.debug-option'), i = 0, j = debugOption.length; i < j; i++) {
+          debugOption[i].style.display = '';
+        }
         
         // special debug functions
         Mishy.debugTools = {
