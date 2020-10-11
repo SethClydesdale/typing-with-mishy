@@ -2565,8 +2565,8 @@
     },
     
     {
-      words : 'またゆめです！',
-      helper : 'ma ta yu me de su !',
+      words : 'またゆめでした！',
+      helper : 'ma ta yu me de shi ta !',
       img : '075'
     },
     

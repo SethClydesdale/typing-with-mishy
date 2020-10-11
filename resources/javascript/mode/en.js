@@ -711,7 +711,7 @@
     },
     
     {
-      words : "They're at theme park!?",
+      words : "They're at the theme park!?",
       img : '122'
     },
     
