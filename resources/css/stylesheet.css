@@ -34,6 +34,11 @@
   to { left:150%; }
 }
 
+@keyframes pom-move {
+  from { left:-100%; transform:rotate(0deg); }
+  to { left:200%; transform:rotate(10000deg); }
+}
+
 @keyframes tio-peek {
   0% { right:-200px; }
   25% { right:-200px; }
@@ -56,6 +61,14 @@
   50% { top:-140px; }
   75% { top:-140px }
   100% { top:-300px; }
+}
+
+@keyframes mishy-peek {
+  0% { top:-300px; right:-300px; }
+  25% { top:-300px; right:-300px; }
+  50% { top:-120px; right:-85px; }
+  75% { top:-120px; right:-85px; }
+  100% { top:-300px; right:-300px; }
 }
 
 @keyframes grade-slide {
@@ -294,6 +307,32 @@ li:hover .menu-info {
 }
 
 
+/* policy link */
+#website-policy {
+  color:#19B;
+  font-weight:bold;
+  text-decoration:none;
+  border:1px solid #3BD;
+  height:25px;
+  line-height:25px;
+  padding:0px 5px;
+  box-sizing:border-box;
+  position:absolute;
+  left:-1px;
+  bottom:-1px;
+  max-width:100%;
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  transition:300ms;
+}
+
+#website-policy:hover, #website-policy:focus {
+  color:#FFF;
+  background:#3BD;
+}
+
+
 /* BUTTONS */
 .button, a.button, .button, a.button {
   color:#FFF;
@@ -466,7 +505,6 @@ body:before, body:after, #background-extras:before, #background-extras:after {
   height:200px;
   bottom:-25px;
   left:-2px;
-  z-index:-4;
 }
 
 /* Randy and KeA */
@@ -502,9 +540,95 @@ body:before, body:after, #background-extras:before, #background-extras:after {
   animation:mishette-peek 20s ease infinite;
 }
 
-/* TODO:NIGHTMARE BACKGROUND EXTRAS */
+/* NIGHTMARE BACKGROUND EXTRAS */
+/* Rean */
+.nightmare-mode:before {
+  background:url(../../resources/images/game/kiseki/rean-sd.png) no-repeat;
+  background-size:100%;
+  width:259px;
+  height:224px;
+  bottom:-10px;
+  left:-5px;
+}
 
-/* TODO:INFINITY BACKGROUND EXTRAS */
+/* Lloyd */
+.nightmare-mode:after {
+  background:url(../../resources/images/game/kiseki/lloyd-sd.png) no-repeat;
+  background-size:100%;
+  width:259px;
+  height:224px;
+  bottom:-10px;
+  right:-20px;
+}
+
+/* Estelle */
+.nightmare-mode #background-extras:before {
+  background:url(../../resources/images/game/kiseki/estelle-sd.png) no-repeat;
+  background-size:100%;
+  width:259px;
+  height:224px;
+  bottom:0px;
+  left:50%;
+  margin-left:-129.5px;
+}
+
+/* Mishy peeking in */
+.nightmare-mode #background-extras:after {
+  background:url(../../resources/images/game/mishy-sticker/001.png) no-repeat;
+  background-size:100%;
+  width:180px;
+  height:223px;
+  top:-120px;
+  right:-85px;
+  transform:rotate(200deg);
+  animation:mishy-peek 20s ease infinite;
+}
+
+/* INFINITY BACKGROUND EXTRAS */
+/* Left */
+.infinity-mode:before {
+  background:url(../../resources/images/game/infinity/bg-01.png) no-repeat;
+  background-size:100%;
+  width:250px;
+  height:300px;
+  bottom:0px;
+  left:-5px;
+}
+
+/* Right */
+.infinity-mode:after {
+  background:url(../../resources/images/game/infinity/bg-02.png) no-repeat;
+  background-size:100%;
+  width:250px;
+  height:300px;
+  bottom:0px;
+  right:-5px;
+}
+
+/* Middle */
+.infinity-mode #background-extras:before {
+  background:url(../../resources/images/game/infinity/bg-03.png) no-repeat;
+  background-size:100%;
+  width:300px;
+  height:300px;
+  bottom:-30px;
+  left:50%;
+  margin-left:-170px;
+  z-index:-4;
+}
+
+/* Pom */
+.infinity-mode #background-extras:after {
+  background:url(../../resources/images/game/infinity/pom.png) no-repeat;
+  background-size:100%;
+  width:100px;
+  height:70px;
+  left:-29px;
+  bottom:-15px;
+  transform:rotate(40deg);
+  animation:pom-move 10s linear infinite;
+  z-index:-1;
+}
 
 /* GAME OVER BACKGROUND EXTRAS */
 /* Evil Mishy */
@@ -618,6 +742,10 @@ body:before, body:after, #background-extras:before, #background-extras:after {
     -1px 1px 0 #000,
      1px 1px 0 #000;
 }
+
+/* hide ???'s true name until infinity is cleared */
+.is-clear, .mode-clear + div .not-clear { display:none; }
+.mode-clear + div .is-clear { display:inline; }
 
 /* mode list */
 #mode-list {
@@ -1117,7 +1245,7 @@ body:before, body:after, #background-extras:before, #background-extras:after {
 
 
 /* disable CSS3 animations; good option to have for low-end PCs */
-body.cssanime-off, .cssanime-off [data-chain-anime], .cssanime-off [data-score-anime], .cssanime-off.playing-game.infinity-mode, .cssanime-off.easy-mode:after, .cssanime-off.game-clear:before, .cssanime-off.game-clear #background-extras:before, .cssanime-off.normal-mode #background-extras:before, .cssanime-off.hard-mode #background-extras:after { animation:none; }
+body.cssanime-off, .cssanime-off [data-chain-anime], .cssanime-off [data-score-anime], .cssanime-off.playing-game.infinity-mode, .cssanime-off.easy-mode:after, .cssanime-off.game-clear:before, .cssanime-off.game-clear #background-extras:before, .cssanime-off.normal-mode #background-extras:before, .cssanime-off.hard-mode #background-extras:after, .cssanime-off.nightmare-mode #background-extras:after, .cssanime-off.infinity-mode #background-extras:after { animation:none; }
 .cssanime-off [data-chain-anime]:before, .cssanime-off [data-score-anime]:before { content:none; }
 
 /* disable options that cannot be changed in game */
@@ -1383,5 +1511,66 @@ body.cssanime-off, .cssanime-off [data-chain-anime], .cssanime-off [data-score-a
     height:80px;
     bottom:-28px;
     margin-left:-50px;
+  }
+  
+  /* nightmare mode art */
+  /* Rean */
+  .nightmare-mode:before {
+    width:150px;
+    height:150px;
+    bottom:-25px;
+    left:0px;
+  }
+
+  /* Lloyd */
+  .nightmare-mode:after {
+    width:150px;
+    height:150px;
+    bottom:-25px;
+    right:-10px;
+  }
+
+  /* Estelle */
+  .nightmare-mode #background-extras:before {
+    width:150px;
+    height:150px;
+    bottom:-20px;
+    left:50%;
+    margin-left:-75px;
+  }
+  
+  /* infinity mode art */
+  /* Left */
+  .infinity-mode:before {
+    width:100px;
+    height:150px;
+    bottom:-30px;
+    left:0px;
+  }
+
+  /* Right */
+  .infinity-mode:after {
+    width:100px;
+    height:150px;
+    bottom:-30px;
+    right:0px;
+  }
+
+  /* Middle */
+  .infinity-mode #background-extras:before {
+    width:150px;
+    height:150px;
+    bottom:-15px;
+    left:50%;
+    margin-left:-85px;
+    z-index:-4;
+  }
+
+  /* Pom */
+  .infinity-mode #background-extras:after {
+    width:50px;
+    height:50px;
+    left:-19px;
+    bottom:-20px;
   }
 }

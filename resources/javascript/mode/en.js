@@ -2196,6 +2196,7 @@
   
   // Infinity Mode - "Challenge with Mishy"
   Mishy.mode.infinity = [].concat(Mishy.mode.easy, Mishy.mode.normal, Mishy.mode.hard, Mishy.mode.nightmare, [
+    // ??? = Countdown with Mishy
     {
       words : 'Ten',
       img : '10',

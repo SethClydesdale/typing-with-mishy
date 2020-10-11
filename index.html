@@ -23,6 +23,7 @@
 
     <link rel="stylesheet" href="resources/css/stylesheet.min.css">
     <script src="resources/javascript/head.min.js"></script>
+    <script src="resources/javascript/ga.js" async></script>
   </head>
 
   <body class="main-menu loading">
@@ -57,6 +58,8 @@
         <button id="fork-me" class="button menu-opt" onclick="this.querySelector('A').click();"><a href="https://github.com/SethClydesdale/typing-with-mishy" target="_blank"></a>View on GitHub</button>
         <button id="main-menu-quit" class="button menu-opt opt-danger" onclick="Mishy.quitGame();">Quit</button>
       </div>
+      
+      <a id="website-policy" href="https://sethclydesdale.github.io/privacy/" target="_blank">ウェブサイトポリシー</a>
     </div>
     
     <!-- MODE SELECT -->
@@ -77,22 +80,18 @@
             <button class="button menu-opt mishy-mode-opt" onclick="Mishy.startGame('hard');">Hard</button>
             <div class="menu-info"><span class="info-title">みっしぃとデート</span></div>
           </li>
-          <li class="debug-option" style="display:none;">
+          <li>
             <button class="button menu-opt mishy-mode-opt" onclick="Mishy.startGame('nightmare');">Nightmare</button>
             <div class="menu-info"><span class="info-title">みっしぃと<ruby>軌跡<rt>きせき</rt></ruby></span></div>
           </li>
-          
-          <li class="debug-option" style="display:none;">
+          <li>
             <button class="button menu-opt mishy-mode-opt" onclick="Mishy.startGame('infinity');">Infinity</button>
             <div class="menu-info">
               <span class="info-title">みっしぃとチャレンジ</span><br>
-              みっしぃと<ruby>日<rt>ひ</rt></ruby> + みっしぃと<ruby>夢<rt>ゆめ</rt></ruby> + みっしぃとデート + みっしぃと<ruby>軌跡<rt>きせき</rt></ruby> + ???
+              みっしぃと<ruby>日<rt>ひ</rt></ruby> + みっしぃと<ruby>夢<rt>ゆめ</rt></ruby> + みっしぃとデート + みっしぃと<ruby>軌跡<rt>きせき</rt></ruby> + <span class="not-clear">???</span><span class="is-clear">みっしぃとカウントダウン</span>
             </div>
           </li>
         </ul>
-        <div class="content-title">Coming Soon</div>
-        <button class="button menu-opt mishy-mode-opt" onclick="Mishy.startGame('nightmare');" disabled>Nightmare</button>
-        <button class="button menu-opt mishy-mode-opt" onclick="Mishy.startGame('infinity');" disabled>Infinity</button>
       </div>
       
       <div class="menu-footer">

@@ -16,6 +16,17 @@ I hope you have fun, and remember... ENJOY☆MISHY! Meeheehee
 
 <ruby>楽<rt>たの</rt></ruby>しんでくださいね。エンジョーイ☆みっしぃ！みしし
 
+#### Offline Use
+Want to play Typing with Mishy offline? Click the link below to download Typing with Mishy!
+
+- [**Download**](https://github.com/SethClydesdale/typing-with-mishy/archive/master.zip)
+
+Once Typing with Mishy has been downloaded, follow the steps below to start playing:
+1. Unzip the files.
+2. Open any of the **index.html** files in the browser of your choice to start playing! (default is Japanese, so navigate to Option > Language > English for the English version)
+3. Click **Play** to start playing!
+4. Enjoy Mishy!
+
 -----
 
 **Quick Links**

@@ -2586,6 +2586,7 @@
   
   // Infinity Mode - "みっしぃとチャレンジ"
   Mishy.mode.infinity = [].concat(Mishy.mode.easy, Mishy.mode.normal, Mishy.mode.hard, Mishy.mode.nightmare, [
+    // ??? = みっしぃとカウントダウン
     {
       words : 'じゅう',
       helper : 'ju u',
