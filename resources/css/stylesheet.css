@@ -210,7 +210,7 @@ ruby rt { font-size:11px; }
 }
 
 #ja .main-menu.loading.fade-loader-out:after { content:"みしし" }
-#en .main-menu.loading.fade-loader-out:after { content:"Mee hee hee" }
+#en .main-menu.loading.fade-loader-out:after { content:"Meeheehee" }
 .main-menu.loading.fade-loader-out:before, .main-menu.loading.fade-loader-out:after {
   opacity:0;
   pointer-events:none;
