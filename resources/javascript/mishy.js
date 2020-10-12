@@ -713,8 +713,9 @@
               m = Math.floor(Mishy.stats.time % 3600 / 60), // minutes
               s = Math.floor(Mishy.stats.time % 3600 % 60); // seconds
           
+          // [!] the bonus score inflated the score, too much, so we'll stick with the standard score earned through cards
           // calculate score bonus based on completion time (no bonus if game over)
-          if (!gameOver) {
+          /*if (!gameOver) {
             // determine the total time based on the total amount of characters to type. (so, 1 char = 1 second)
             for (var i = 0, j = Mishy.mode[Mishy.gameMode].length, bonus = 0; i < j; i++) {
               if (Mishy.mode.ja && Mishy.mode[Mishy.gameMode][i].helper && Mishy.romaji) {
@@ -734,11 +735,11 @@
                     Mishy.stats.time <= Math.round(bonus / 3) ? 3 :
                     Mishy.stats.time <= Math.round(bonus / 2) ? 2 :
                                                                1.5; // standard completion bonus if no time bonus
-          }
+          }*/
           
           // parse stats
           Mishy.cache.gameEndStats.innerHTML = '<ul class="menu-list">'+
-            '<li><span class="label">' + MishyLang.stats.score + '</span>' + (gameOver ? Mishy.stats.score : Math.round(Mishy.stats.score * bonus)) + '</span></li>'+
+            '<li><span class="label">' + MishyLang.stats.score + '</span>' + /*(gameOver ? */Mishy.stats.score/* : Math.round(Mishy.stats.score * bonus))*/ + '</span></li>'+
             '<li><span class="label">' + MishyLang.stats.mode + '</span><span class="game-mode mode-' + Mishy.gameMode + '">' + Mishy.gameMode.charAt(0).toUpperCase() + Mishy.gameMode.slice(1) + '</span></li>'+
             '<li><span class="label">' + MishyLang.stats.time + '</span>' + (h < 10 ? '0' + h : h) + ':' + (m < 10 ? '0' + m : m) + ':' + (s < 10 ? '0' + s : s) + '</li>'+
             '<li><span class="label">' + MishyLang.stats.keystrokes + '</span>' + Mishy.stats.strokes + '</li>'+
@@ -1298,6 +1299,12 @@
     },
     
     
+    // enables debug mode
+    enableDebug : function () {
+      window.location.search = '?debug=true';
+    },
+    
+    
     // sets up Mishy's functionality
     init : function () {
       // preload assets
@@ -1363,4 +1370,19 @@
   
   // fallback that removes the loading placeholder after 10 seconds of waiting
   Mishy.loaderTimeout = window.setTimeout(Mishy.stopLoading, 10000);
+  
+  // debugger notes
+  if (!Mishy.debug) {
+    console.log(
+      '> Meeheehee, hiya developer! (=´・ω・`=)\n'+
+      '> If you want to take a look at things, type `Mishy.enableDebug();` in the console to enable debug mode!\n'+
+      '> This enables some logs, variables, the super secret card debugger, and sometimes new options!'
+    );
+  } else {
+    console.log(
+      '> Meeheehee, welcome to debug mode developer! (=´・ω・`=)\n'+
+      '> As a reminder: this enables some logs, variables, the super secret card debugger, and sometimes new options!\n'+
+      '> Have fun debugging! Meeheehee'
+    );
+  }
 }(window, document));
