@@ -284,7 +284,8 @@
         // automatically calculate typing time based on number of characters (if no time is specified with the card)
         // for japanese version, we're expecting romaji input, so we calculate the time based on the helper (with white space removed)
         if (!card.time) {
-          Mishy.time = (Mishy.mode.ja && card.helper && Mishy.romaji ? card.helper.replace(/\s/g, '') : card.words).length * 1000;
+          var len = (Mishy.mode.ja && card.helper && Mishy.romaji ? card.helper.replace(/\s/g, '') : card.words).length;
+          Mishy.time = len * 1000;
 
           // multiply or divide the time
           switch (Mishy.multiType) {
@@ -300,8 +301,13 @@
               break;
           }
 
-          // lowest possible time should be 2 seconds
-          if (Mishy.time < 2000) Mishy.time = 2000;
+          // lowest possible time should be 5 seconds
+          if (Mishy.time < 5000) Mishy.time = 5000;
+          
+          // highest possible time should be 30 seconds for <=60 chars
+          if (len <= 60 && Mishy.time > 30000) Mishy.time = 30000;
+          // and 60 seconds for >60 chars
+          if (len > 60 && Mishy.time > 60000) Mishy.time = 60000;
         }
         
         // if set, use the time included with the card
@@ -1234,16 +1240,22 @@
           // misc
           'game/mishy-emoji/039.png'
         ], i, j, k, img;
-
+        //var l = 0; // for longest word logger
+        
         // loop through modes and gather images that require preloading
         for (i in Mishy.mode) {
           for (k in Mishy.mode[i]) {
             if (Mishy.mode[i][k].img) {
               img = 'game/' + (Mishy.mode[i][k].folder ? Mishy.mode[i][k].folder : 'mishy-sticker') + '/' + Mishy.mode[i][k].img + '.png';
-
+              
               // only add the image if it's not present
               if (images.indexOf(img) == -1) images.push(img);
             }
+            /*// Log the longest words in the game
+            if (Mishy.mode[i][k].words.length > l) {
+              l = Mishy.mode[i][k].words.length;
+              console.log(Mishy.mode[i][k].words.length, Mishy.mode[i][k].words);
+            }*/
           }
         }
 
