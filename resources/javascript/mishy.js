@@ -303,11 +303,11 @@
 
           // lowest possible time should be 5 seconds
           if (Mishy.time < 5000) Mishy.time = 5000;
-          
+          /* disabled, since this game is more geared towards beginners, we want to provide them with enough time
           // highest possible time should be 30 seconds for <=60 chars
           if (len <= 60 && Mishy.time > 30000) Mishy.time = 30000;
           // and 60 seconds for >60 chars
-          if (len > 60 && Mishy.time > 60000) Mishy.time = 60000;
+          if (len > 60 && Mishy.time > 60000) Mishy.time = 60000;*/
         }
         
         // if set, use the time included with the card
