@@ -484,7 +484,7 @@
     
     {
       words : 'びょういんにいきなさい、みっしぃ。',
-      helper : 'byo u i nn ni i ki na sa i',
+      helper : 'byo u i nn ni i ki na sa i , mi sshi xi .',
       img : '165'
     },
     
