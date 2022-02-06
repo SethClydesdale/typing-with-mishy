@@ -349,13 +349,14 @@
       var match = [],
           written = caller.value.split(''),
           words = Mishy.words.split(''),
-          i = 0, j = written.length;
+          i = 0, j = written.length, cleaned;
       
       // find where the match ends
       for (; i < j; i++) {
+        cleaned = written[i].replace(/〜/g, '～'); // see issue #4
         // add matching letters to the match array
-        if (written[i] == words[i]) {
-          match.push(written[i]);
+        if (cleaned == words[i]) {
+          match.push(cleaned);
         } 
         
         // break out of the loop when the letters don't match
@@ -414,7 +415,7 @@
       if (Mishy.paused) Mishy.paused = false;
       
       // check if the written text matches the card
-      if ((caller && caller.value == Mishy.words && !Mishy.changingCards) || (correct && !Mishy.changingCards)) {
+      if ((caller && caller.value.replace(/〜/g, '～') == Mishy.words && !Mishy.changingCards) || (correct && !Mishy.changingCards)) {
         Mishy.changingCards = true;
         Mishy.stats.correct++; // increment correctly typed cards
         Mishy.timer.stop();
