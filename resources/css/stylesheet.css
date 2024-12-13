@@ -1383,6 +1383,13 @@ body.cssanime-off, .cssanime-off [data-chain-anime], .cssanime-off [data-score-a
 }
 
 
+/* ADS */
+.ad-container {
+  text-align:center;
+  margin:15px 0;
+}
+
+
 /* MEDIA QUERIES */
 @media (max-width:500px) {
   #mishy-card-container { margin-top:100px; }

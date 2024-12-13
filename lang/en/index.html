@@ -44,22 +44,24 @@
     <div id="background-extras"></div>
     
     <!-- MAIN MENU -->
-    <div id="menu-main" class="menu no-footer">
-      <div id="main-title" class="menu-title">Main Menu</div>
-      <div id="main-title-paused" class="menu-title">Paused</div>
-      
-      <div class="menu-content">
-        <button id="main-menu-start" class="button menu-opt" onclick="Mishy.showMenu('mode', this);">Play</button>
-        <button id="main-menu-resume" class="button menu-opt" onclick="Mishy.resume();">Resume</button>
-        <button class="button menu-opt" onclick="Mishy.showMenu('option', this);">Option</button>
-        <button class="button menu-opt" onclick="Mishy.showMenu('about', this);">About</button>
-        <button class="button menu-opt" onclick="Mishy.showMenu('credits', this);">Credits</button>
-        <button class="button menu-opt" onclick="Mishy.showMenu('feedback', this);">Feedback</button>
-        <button id="fork-me" class="button menu-opt" onclick="this.querySelector('A').click();"><a href="https://github.com/SethClydesdale/typing-with-mishy" target="_blank"></a>View on GitHub</button>
-        <button id="main-menu-quit" class="button menu-opt opt-danger" onclick="Mishy.quitGame();">Quit</button>
+    <div id="menu-main">
+      <div class="menu no-footer">
+        <div id="main-title" class="menu-title">Main Menu</div>
+        <div id="main-title-paused" class="menu-title">Paused</div>
+
+        <div class="menu-content">
+          <button id="main-menu-start" class="button menu-opt" onclick="Mishy.showMenu('mode', this);">Play</button>
+          <button id="main-menu-resume" class="button menu-opt" onclick="Mishy.resume();">Resume</button>
+          <button class="button menu-opt" onclick="Mishy.showMenu('option', this);">Option</button>
+          <button class="button menu-opt" onclick="Mishy.showMenu('about', this);">About</button>
+          <button class="button menu-opt" onclick="Mishy.showMenu('credits', this);">Credits</button>
+          <button class="button menu-opt" onclick="Mishy.showMenu('feedback', this);">Feedback</button>
+          <button id="fork-me" class="button menu-opt" onclick="this.querySelector('A').click();"><a href="https://github.com/SethClydesdale/typing-with-mishy" target="_blank"></a>View on GitHub</button>
+          <button id="main-menu-quit" class="button menu-opt opt-danger" onclick="Mishy.quitGame();">Quit</button>
+        </div>
+
+        <a id="website-policy" href="https://sethclydesdale.github.io/privacy/" target="_blank">Privacy Policy</a>
       </div>
-      
-      <a id="website-policy" href="https://sethclydesdale.github.io/privacy/" target="_blank">Privacy Policy</a>
     </div>
     
     <!-- MODE SELECT -->
