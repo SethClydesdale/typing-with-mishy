@@ -35,8 +35,16 @@
 }
 
 @keyframes pom-move {
-  from { left:-100%; transform:rotate(0deg); }
-  to { left:200%; transform:rotate(10000deg); }
+  from {
+    left:-100%;
+    -webkit-transform:rotate(0deg);
+            transform:rotate(0deg);
+  }
+  to {
+    left:200%;
+    -webkit-transform:rotate(10000deg);
+            transform:rotate(10000deg);
+  }
 }
 
 @keyframes tio-peek {
@@ -87,12 +95,14 @@
 
 @keyframes chain-increase {
   from {
-    transform:scale(1);
+    -webkit-transform:scale(1);
+            transform:scale(1);
     opacity:1;
   }
   
   to {
-    transform:scale(2);
+    -webkit-transform:scale(2);
+            transform:scale(2);
     opacity:0;
   }
 }
@@ -100,13 +110,15 @@
 @keyframes score-increase {
   from {
     color:#FFF;
-    transform:scale(1);
+    -webkit-transform:scale(1);
+            transform:scale(1);
     opacity:1;
   }
   
   to {
     color:#FF0;
-    transform:scale(2);
+    -webkit-transform:scale(2);
+            transform:scale(2);
     opacity:0;
   }
 }
@@ -420,7 +432,8 @@ body:before, body:after, #background-extras:before, #background-extras:after {
   height:100px;
   top:0;
   left:0;
-  transform:rotate(-35deg);
+  -webkit-transform:rotate(-35deg);
+          transform:rotate(-35deg);
 }
 
 /* cloud */
@@ -536,7 +549,8 @@ body:before, body:after, #background-extras:before, #background-extras:after {
   height:224px;
   top:-140px;
   right:50%;
-  transform:rotate(180deg);
+  -webkit-transform:rotate(180deg);
+          transform:rotate(180deg);
   animation:mishette-peek 20s ease infinite;
 }
 
@@ -580,7 +594,8 @@ body:before, body:after, #background-extras:before, #background-extras:after {
   height:223px;
   top:-120px;
   right:-85px;
-  transform:rotate(200deg);
+  -webkit-transform:rotate(200deg);
+          transform:rotate(200deg);
   animation:mishy-peek 20s ease infinite;
 }
 
@@ -625,7 +640,8 @@ body:before, body:after, #background-extras:before, #background-extras:after {
   height:70px;
   left:-29px;
   bottom:-15px;
-  transform:rotate(40deg);
+  -webkit-transform:rotate(40deg);
+          transform:rotate(40deg);
   animation:pom-move 10s linear infinite;
   z-index:-1;
 }
@@ -680,7 +696,8 @@ body:before, body:after, #background-extras:before, #background-extras:after {
   height:222px;
   right:-90px;
   top:-10px;
-  transform:rotate(-90deg);
+  -webkit-transform:rotate(-90deg);
+          transform:rotate(-90deg);
   animation:tio-peek 10s ease infinite;
 }
 
@@ -735,7 +752,8 @@ body:before, body:after, #background-extras:before, #background-extras:after {
   position:absolute;
   top:9px;
   right:-77px;
-  transform:rotate(40deg);
+  -webkit-transform:rotate(40deg);
+          transform:rotate(40deg);
   text-shadow:
    -1px -1px 0 #000,  
     1px -1px 0 #000,
